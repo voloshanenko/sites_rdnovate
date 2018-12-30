@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="template">      
+	<name>SpectInterSite</name>
+	<creationDate>December 2009</creationDate>
+	<author>Demchenko Ivan</author>
+	<copyright>GPL</copyright>
+	<authorEmail>ivan@web-star.com.ua</authorEmail>      
+	<authorUrl>www.web-star.com.ua</authorUrl>
+	<version>1.0</version>
+	<description>SpectInterSite</description>
+		<files>
+			<filename>index.php</filename>
+			<filename>templateDetails.xml</filename>
+			<filename>css/template.css</filename>
+			<filename>params.ini</filename>
+		</files>
+		<positions>            
+			<position>user1</position>
+			<position>top</position>
+			<position>left</position>
+			<position>banner</position>
+			<position>right</position>
+			<position>footer</position>
+			<position>copyrights</position>
+			<position>counters</position>
+		</positions>
+		<params addpath="/templates/spectr_intersite/elements">   
+			<param default="----- ----- ----- ----- ----- ----- ----- ----- Основные настройки" name="@spacer" type="spacer" label="" description="" />
+			<param name="font_face" type="list" default="Arial" label="Основной шрифт сайта" description="Основной шрифт сайта">
+				<option value="Arial, Helvetica, sans-serif">Arial, Helvetica, sans-serif</option>
+				<option value="Trebuchet MS, Arial, Helvetica, sans-serif">Trebuchet MS, Arial, Helvetica, sans-serif</option>
+				<option value="Comic Sans MS, cursive">Comic Sans MS, cursive</option>
+				<option value="Lucida Console, Monaco, monospace">Lucida Console, Monaco, monospace</option>
+				<option value="MS Serif, New York, serif">MS Serif, New York, serif</option>
+				<option value="Palatino Linotype, Book Antiqua, Palatino, serif">Palatino Linotype, Book Antiqua, Palatino, serif</option>
+				<option value="Times New Roman, Times, serif">Times New Roman, Times, serif</option>
+				<option value="Georgia, Times New Roman, Times, serif">Georgia, Times New Roman, Times, serif</option>
+				<option value="Tahoma, Geneva, sans-serif">Tahoma, Geneva, sans-serif</option>
+			</param>
+			<param name="sides_background_color" type="colorchooser" default="#FFFFFF" label="Цвет фона боковых полей" description="Цвет фона боковых полей" />
+			<param name="background_color" type="colorchooser" default="#FFFFFF" label="Цвет фона страницы" description="Цвет фона страницы" />
+			<param name="links_color" type="colorchooser" default="#0000FF" label="Цвет ссылок" description="Цвет ссылок" />
+			<param name="links_color_hover" type="colorchooser" default="#0044FF" label="Цвет ссылок при наведении" description="Цвет ссылок при наведении" />
+			<param name="h1_color" type="colorchooser" default="#000000" label="Цвет текста заголовка первого уровня" description="Цвет текста заголовка первого уровня" />
+			<param name="h2_color" type="colorchooser" default="#000000" label="Цвет текста заголовка второго уровня" description="Цвет текста заголовка второго уровня" />
+			<param name="h3_color" type="colorchooser" default="#000000" label="Цвет текста заголовка третьего уровня" description="Цвет текста заголовка третьего уровня" />
+			<param name="decor_color" type="colorchooser" default="#F6F7F8" label="Цвет декоративных элементов" description="Цвет декоративных элементов" />
+			
+			<param default="----- ----- ----- ----- ----- ----- ----- ----- Настройка модулей" name="@spacer" type="spacer" label="" description="" />
+			<param name="module_title_color" type="colorchooser" default="#000000" label="Цвет шрифта заголовка модулей" description="Цвет шрифта заголовка модулей" />
+			<param name="module_title_font_size" type="text" default="1.3em" label="Размер шрифта заголовка модулей" description="Размер шрифта заголовка модулей" />
+			
+			<param default="----- ----- ----- ----- ----- ----- ----- ----- Горизонтальное главное меню" name="@spacer" type="spacer" label="" description="" />
+			<param name="main_menu_font_face" type="list" default="Arial" label="Шрифт меню" description="Шрифт меню">
+				<option value="Arial, Helvetica, sans-serif">Arial, Helvetica, sans-serif</option>
+				<option value="Trebuchet MS, Arial, Helvetica, sans-serif">Trebuchet MS, Arial, Helvetica, sans-serif</option>
+				<option value="Comic Sans MS, cursive">Comic Sans MS, cursive</option>
+				<option value="Lucida Console, Monaco, monospace">Lucida Console, Monaco, monospace</option>
+				<option value="MS Serif, New York, serif">MS Serif, New York, serif</option>
+				<option value="Palatino Linotype, Book Antiqua, Palatino, serif">Palatino Linotype, Book Antiqua, Palatino, serif</option>
+				<option value="Times New Roman, Times, serif">Times New Roman, Times, serif</option>
+				<option value="Georgia, Times New Roman, Times, serif">Georgia, Times New Roman, Times, serif</option>
+				<option value="Tahoma, Geneva, sans-serif">Tahoma, Geneva, sans-serif</option>
+			</param>
+			<param name="main_menu_font_bold" type="radio" default="0" label="Жирный шрифт в меню" description="Жирный шрифт в меню">
+				<option value="0">Нет, не жирный</option>
+				<option value="1">Да, жирный</option>
+			</param>
+			<param name="main_menu_font_italic" type="radio" default="0" label="Наклонный шрифт в меню" description="Наклонный шрифт в меню">
+				<option value="0">Нет, не наклонный</option>
+				<option value="1">Да, наклонный</option>
+			</param>
+			<param name="main_menu_font_size" type="text" default="1.1em" label="Размер шрифта главного меню" description="Размер шрифта главного меню" />
+			<param name="main_menu_links_color" type="colorchooser" default="#0000FF" label="Цвет ссылок главного меню" description="Цвет ссылок главного меню" />
+			<param name="main_menu_links_color_hover" type="colorchooser" default="#FFFFFF" label="Цвет ссылок главного меню при наведении" description="Цвет ссылок главного меню при наведении" />
+			<param name="main_menu_links_padding" type="text" default="2px 20px" label="Отсуты в ссылках главного меню" description="Отсуты в ссылках главного меню" />
+			
+			<param default="----- ----- ----- ----- ----- ----- ----- ----- Меню каталога" name="@spacer" type="spacer" label="" description="" />
+			<param name="catalogue_links_color" type="colorchooser" default="#0000FF" label="Цвет ссылок" description="Цвет ссылок" />
+			<param name="catalogue_links_zebra_color" type="colorchooser" default="#0000FF" label="Цвет зебры" description="Цвет зебры" />
+			<param name="catalogue_links_font_size" type="text" default="1em" label="Размер шрифта" description="Размер шрифта" />
+			
+		</params>
+</install>

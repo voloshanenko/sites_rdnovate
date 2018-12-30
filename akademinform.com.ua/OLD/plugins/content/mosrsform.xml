@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install version="1.5" type="plugin" group="content">
+	<name>Content - RSForm! Pro</name>
+	<author>www.rsjoomla.com</author>
+	<creationDate>May 2008</creationDate>
+	<copyright>(C) 2007-2009 www.rsjoomla.com</copyright>
+	<authorEmail>support@rsjoomla.com</authorEmail>
+	<authorUrl>www.rsjoomla.com</authorUrl>
+	<version>1.2.0</version>
+	<description>Loads RSform!Pro Forms within Content, Syntax: {rsform 1}&lt;br/&gt;&lt;br/&gt;&lt;font color="red"&gt;&lt;strong&gt;Make sure you publish the mambot before you use it.&lt;/strong&gt;&lt;/font&gt;</description>
+	<files>
+		<filename plugin="mosrsform">mosrsform.php</filename>
+	</files>
+	<params>
+	</params>
+</install>

@@ -1,0 +1,8 @@
+Changelog for Latest Reviewed Module for SOBI2
+Authors: Sigrid and Radek Suski, Sigsiu.NET
+
+1.0 (10.2.2009)
+-------------------
+Initial Version based on SOBI2 Most Reviewed Module version 1.0
+
+

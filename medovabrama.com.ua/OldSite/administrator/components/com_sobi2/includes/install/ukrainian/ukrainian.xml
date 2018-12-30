@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: ukrainian.xml 79 2010-04-17 09:26:12Z PAlexA $ -->
+<sobi2lang>
+	<language>ukrainian</language>
+	<author>Alex Pastushenko</author>
+	<creationDate>July 2010</creationDate>
+	<copyright>Copyright (C) 2007 - 2010 Alex Pastushenko. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>palexa@bk.ru</authorEmail>
+	<authorUrl>www.webadmin.lviv.ua</authorUrl>
+	<version>RC 2.9.2.4</version>
+	<files>
+		<front_file>ukrainian.php</front_file>
+		<backend_file>admin.ukrainian.php</backend_file>
+		<syscheck_file>syscheck.ukrainian.php</syscheck_file>
+		<about_file>ukrainian.html</about_file>
+		<flag_img>ukrainian.gif</flag_img>
+	</files>
+	<joomla_files>
+		<file lang="uk-UA">uk-UA.com_sobi2.ini</file>
+		<file lang="uk-UA">uk-UA.com_sobi2.menu.ini</file>
+	</joomla_files>
+	<labels>
+		<label id="1" name="street">Вулиця</label>
+		<label id="2" name="postcode">Індекс</label>
+		<label id="3" name="city">Місто</label>
+		<label id="4" name="county">Район</label>
+		<label id="5" name="federal_state">Область</label>
+		<label id="6" name="country">Країна</label>
+		<label id="7" name="email">E-mail</label>
+		<label id="8" name="website">Сайт</label>
+		<label id="9" name="contact_person">Контактна особа</label>
+		<label id="10" name="phone">Телефон</label>
+		<label id="11" name="fax">Факс</label>
+		<label id="12" name="hotline">Горяча ліниія</label>
+		<label id="13" name="description">Опис</label>
+		<label id="14" name="longitude">Довгота</label>
+		<label id="15" name="latitude">Широта</label>
+	</labels>
+</sobi2lang>

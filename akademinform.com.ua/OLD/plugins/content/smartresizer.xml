@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content">
+	<name>Content - SmartResizer</name>
+	<author>igort</author>
+	<creationDate>Sep 2009</creationDate>
+	<copyright>Copyright (C) 2009 LoT studio, LLC. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>support@lot-studio.ru</authorEmail>
+	<authorUrl>www.lot-studio.ru</authorUrl>
+	<version>1.7</version>
+	<description>To automatically create thumbnails for images in articles and articles blog template.</description>
+	<files>
+		<filename plugin="smartresizer">smartresizer.php</filename>
+		<filename>smartresizer/smartimagehandler.php</filename>
+		<filename>smartresizer/js/multithumb.js</filename>
+		<filename>smartresizer/index.html</filename>
+	</files>
+	<languages folder="">
+		<language tag="en-GB">en-GB.plg_content_smartresizer.ini</language>
+		<language tag="ru-RU">ru-RU.plg_content_smartresizer.ini</language>
+		<language tag="fr-FR">fr-FR.plg_content_smartresizer.ini</language>
+		<language tag="de-DE">de-DE.plg_content_smartresizer.ini</language>
+   	</languages>	
+	
+	<params>
+		<param name="" type="spacer" />	
+		<param name="thumb_width" type="text" default="" label="Thumbnail width for blogs" description="THUMBNAIL WIDTH FOR BLOGS DESC">
+		</param>
+		<param name="thumb_height" type="text" default="" label="Thumbnail height for blogs" description="THUMBNAIL HEIGHT FOR BLOGS DESC">
+		</param>
+		
+		<param name="" type="spacer" />	
+		
+		<param name="thumb_medium_width" type="text" default="" label="Default thumbnail width for articles" description="DEFAULT THUMBNAIL WIDTH FOR ARTICLES DESC">
+		</param>
+		<param name="thumb_medium_height" type="text" default="" label="Default thumbnail height for articles" description="DEFAULT THUMBNAIL HEIGHT FOR ARTICLES DESC">
+		</param>
+		
+		<param name="" type="spacer" description="Thumbnail size for other components" />	
+		
+		<param name="thumb_other_width" type="text" default="" label="Default thumbnail width for others" description="DEFAULT THUMBNAIL WIDTH FOR OTHERS DESC">
+		</param>
+		<param name="thumb_other_height" type="text" default="" label="Default thumbnail height for others" description="DEFAULT THUMBNAIL HEIGHT FOR OTHERS DESC">
+		</param>
+	</params>
+	<params group="advanced">
+		<param name="processall" type="radio" default="0" label="Create thumb for all images" description="CREATE THUMB FOR ALL IMAGES DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		
+		<param name="ignoreindividual" type="radio" default="0" label="Ignore individual image size" description="IGNORE INDIVIDUAL IMAGE SIZE DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="readmorelink" type="radio" default="1" label="Create link on article in blogs" description="Create link DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+
+		<param name="openstyle" type="radio" default="0" label="Full image display style" description="full image display style">
+			<option value="0">New window or RokBox</option>
+			<option value="1">Popup window</option>
+		</param>
+
+		<param name="thumb_quality" type="text" default="90" label="Thumbnail quality" description="THUMBNAIL QUALITY DESC">
+		</param>
+
+		<param name="thumb_ext" type="text" default="_thumb" label="Thumbnail Extension" description="THUMBNAIL EXTENSION DESC">
+		</param>
+	</params>
+	
+</install>

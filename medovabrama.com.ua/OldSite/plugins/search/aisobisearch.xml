@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="search">
+	<name>Search - aiSobiSearch</name>
+	<author>Algis Info Grup SRL</author>
+	<creationDate>April 2009</creationDate>
+	<copyright>(c)2009 Algis Info Grup SRL. All rights reserved.</copyright>
+	<authorEmail>contact@algis.ro</authorEmail>
+	<authorUrl>www.algis.ro</authorUrl>
+	<version>1.0.10</version>
+	<license>GNU/GPL License - http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<description>A plugin to extend the search function of Joomla to SOBI2 items and categories.</description>
+
+	<files>
+		<filename plugin="aisobisearch">aisobisearch.php</filename>
+		<filename>aidonate.php</filename>
+		<filename>aisobisearchitemsorder.php</filename>
+	</files>
+
+	<languages folder="languages">
+		<language tag="de-DE">de-DE.plg_search_aisobisearch.ini</language>
+		<language tag="en-GB">en-GB.plg_search_aisobisearch.ini</language>
+		<language tag="ro-RO">ro-RO.plg_search_aisobisearch.ini</language>
+	</languages>
+
+	<params addpath="/plugins/search">
+		<param name="sobi2_clones" type="textarea" default="" label="Sobi2 clones" description="Leave it empty if you don't use clones. Enter all the Sobi2 clones you want to search in, separated by comma (,). Ex: Melbourne, Perth, Sydney." rows="3" cols="30" />
+		<param name="search_limit" type="text" size="5" default="50" label="Search Limit" description="Number of Search items to return."/>
+		<param name="search_categories" type="radio" default="1" label="Search SOBI2 categories" description="Activate / deactivate search in SOBI2 categories.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="search_categories_description" type="radio" default="1" label="Search categories description" description="Activate / deactivate search in the description of SOBI2 categories. It is ignored if the search in categories is disabled.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="order_categories" type="list" default="0" label="Order categories" description="Select the order in which to return the categories.">
+			<option value="1">Category order</option>
+			<option value="2">Category name</option>
+		</param>
+		<param name="order_categories_direction" type="list" default="ASC" label="Order direction" description="Select the direction in which to order the categories.">
+			<option value="ASC">Ascending</option>
+			<option value="DESC">Descending</option>
+		</param>
+		<param name="search_items" type="radio" default="1" label="Search SOBI2 items" description="Activate / deactivate search in SOBI2 items.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="search_fields" type="list" default="0" label="Search in" description="Select in which fields to search.">
+			<option value="0">All fields</option>
+			<option value="1">Only fields displayed</option>
+			<option value="2">Only fields activated for search</option>
+		</param>
+		<param name="order_items" type="aisobisearchitemsorder" label="Order items" description="Select the order in which to return the items." />
+		<param name="order_items_direction" type="list" default="ASC" label="Order direction" description="Select the direction in which to order the items.">
+			<option value="ASC">Ascending</option>
+			<option value="DESC">Descending</option>
+		</param>
+		<param name="activate_sobi_sef" type="radio" default="0" label="Activate SOBI SEF" description="Generate the SEF URLs using SOBI's classes.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param type="spacer" />
+		<param name="donate" type="aidonate" label="You can help us" description="If you think this extension helped you, you can help us keep the projects going, with a Paypal donation." />
+	</params>
+</install>

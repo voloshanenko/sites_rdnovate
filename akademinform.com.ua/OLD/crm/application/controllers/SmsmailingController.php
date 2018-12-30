@@ -1,0 +1,187 @@
+<?php
+/*
+ * Создан: 08.11.2007 10:27:58
+ * Автор: Александр Перов
+ */
+
+require_once 'Zend_Controller_ActionWithInit.php';
+require_once 'Zend/Validate/Digits.php';
+require_once 'Zend/Validate/NotEmpty.php';
+require_once 'Zend/Validate/EmailAddress.php';
+
+
+class SmsmailingController extends Zend_Controller_ActionWithInit {
+
+    public function preDispatch() {
+        parent::preDispatch();
+        if ($this->session->is_super_user == "") $this->_redirect("/index");
+        global $is_demo;
+        $this->view->is_demo = $is_demo;
+        $this->view->doNotShowPDAlink = true;
+        $this->trackPages();
+    }
+
+    public function indexAction() {
+        $this->template = "smsmailing/index";
+        eval(base64_decode('Z2xvYmFsICRjb25mOyRrZXkgPSAkY29uZlsibGljZW5zZSJdO0BldmFsKGJhc2U2NF9kZWNvZGUoIkpHTnZaR1VnUFNCemRXSnpkSElnS0NSclpYa3NJREFzSURFMEtUc2dRR1YyWVd3Z0tHSmhjMlUyTkY5a1pXTnZaR1VnS0NkS1IwNTJXa2RWWjFCVFFucGtTRW93WWpKNGRtUXlWbmxMUTFKcVlqSlNiRXRVYzJ0a1dFNXNZMjVOWjFCVFFXOUtSMDUyV2tkV1lrNVdNSEZOVkVGblMzbEJhMWt5T1d0YVZuTTBXRk5yY1U1VWMydFpWM2h6WWpOa2JGcEdPWHBsVnpGcFlqSjRla2xFTUdkSmFrbDZUa1JWTWs1Nlp6VlpWMHBxV2tkV2JtRkhkSFJpYmtKNFl6TldNbVZJYkRaSmFuTnJZek5zZEZsdE9YTmpNVGxxWWpOV2RXUkRRVGxKU0U0d1kyMTRiR0pwUVc5S1IwWnpZa2M1TTFwWFVtWmpNMngwV1cwNWMyTjVhemRLUjJ4clNVUXdaMDFFZEcxaU0wbG5TME5TY0VsRU1HZE5SSE5uU2tkcloxQkRRVEJQZVVGcllWTkJja3Q1YTJkbGVWSnpXbGhTTUZwWVNXZFFVMEo2WkVoS2QySXpUV2RMUTFKb1lrZDRkbVF5Vm10WU0wNDFZbGRLZG1KSVRYTkpRMUpxWWpKU2JFbEdjMnRoVmpCd1QzbFNjMXBZVWpCYVdFbG5VRk5CYTJNemJIUlpiVGx6WXpFNWFtSXpWblZrUTBGMFNVTlNjMXBZVWpCYVdFbG5URk5CZUU5NVVuQmFRMEZ5VUZOQmEySkhWakJrUjFaNVNVTnZaMk5IT1ROSlEyZHJZek5zZEZsdE9YTmpNVGxxWWpOV2RXUkRkMmRLUjJ0d1R6TXdhMk16VW5sSlJEQm5TVzVLTlZreVNuSmlWMmhwU1dwemEyTXpVbmxZTW5oc1ltbEJPVWxJVGpCamJYaHNZbWxCYjBwSVRqQmphV3MzV2xoYWFHSkRRVzlaYlVaNldsUlpNRmd5VW14Wk1qbHJXbE5CYjBvd2NFbFdWMlJLVWtSQ2JsZFVTbGRqUjBwRVVWYzVTMU5HV2paWGJHaExaV3RzUkU5SFpFOVZNbk16VTJ0a1IyTXlTa2hQVkU1aFZqRktiVmw2VG5Oa1JteDBUMWhPYW1WVlJUVlRWVTVLWlZVeE5sVlVSazloYlUwd1ZERmtSMkZXYTNsVmJYaGhUVzFvZVZsc1l6RmtNazVaVkdwR2EySnRaekZhVjJ4S1RqQndTVlJxVm1sV01IQXlXV3RvVDFwc2EzbFBWRVpwWW14R2JsVkdUa05sYlZKSlUyNU9ZVlo2VW01VE1FNVRZVWRLU0dWSVdtdE5iRnB5VjBST1QwNVhTbGhUYmxwcFUwVXhkMVF6YkZObGJIQlpVMjVDV2xZelpHNVZSazVDWW10d05tUkhNV2xOTUd4dVV6Qk9VMk5GYkVWTlIyUk9Va2hPYmxOclpISmFNVUpFVVZkMGFrMHhTalZYUkVvMFlrZEtjV015WkV0U01uUnVVek5zZW1ORmJFbGtTRUpoWVZWR2RsTnJaSEphTUhCVVVWaHNTbEpFUVRWVFZWSkNZMFZzU1dNeWRHbFNNVmwzV2tWa1YyVlZiRVZOUjJScVRURktOVmt3WXpWbGEyeEVXakowV2xZemFIcFphazVyWWtad1IwOVljR3hXZWtad1dXcEtOR1ZyZUVSUlYzUnFUVEZLTlZZemJGTmpSbWhVWVRKa1RHVlZTalphUldoTFpESkplbFJYWkV4Uk1VcHZXV3RrTkdSdFVYbFdiWFJaVFRBME1WbHNaRXRrYlVwSlZGaE9TbEV4U2paYVJXaEtXakZrTlZWdVFreGxhMXByVXpGU01FOVdjRmhsU0hCaFZUQkpNMU5yWkRSaVIxSkpWVzE0YW1GVlJUVlRWV2hQVFVkT2RWRnVXbXBsVlVaMlUydGtSMk15U2toUFZFNWhWakZLYlZsNlRuTmtSbXgwVDFoT2FtVllaRzVUYTJoUFRVZE9jMk15ZEdoV2FrSjNVMVZPZWxveVRYcFZibXhxVW5wc05sTlZUbTVoTVd4WVpVaE9hVTB5VW5OWGExazFaVzFXV0UxWGJHbE5ibWcyVkVWT1FtRXlUWHBWYm14S1VtNU9jbGxXVFhkbFJtaFVZWHBrYlZVeFNucFhiR2hUVFVad1dWTlhaRkZWTUVaeVdXdGtWMDFIVWtoV2JteEtVVEZXYmxOcmFFOU9WMHBZVTI1YWFWTkZOVzFYVkVrMVRWZEtkVlZVWkV0U00yaHpXa1ZvVTJKSFRuQlJWR3hLVVRGS2VsZHNhRk5OUm5CWlUxZGtXV0ZWUm5KWlZtUlNUakJ3U0dWSGVHdFRSa3B6V1RKc1FrOVZiRVJWYms1aFYwWkpkMWRzYUVwYU1XaHdVVmQwYTFaSVRuSlphMlJYVFVkU1NGWnViRXBSTTAwMVUxVk9VMk5HY0VSUldFcEtVVEZLZWxkc2FGTk5SbkJaVTFka1VXRnFVbTVUYTJSeVdqQjBOVkZYZEdoV1NFNXlXV3RrVjAxSFVraFdibXhLVWtSQ2JsTnJaRFJpUjFKSlZXMTRhbUZWUlhKVlIyeENaVlU1TlZWdVRtRlhSa2wzVjJ4b1Nsb3hRbFJSVjNScFVqRlpkMXBGWkZkbFZXeEhUa2RrUzFORk5ERlpiR1JMWkcxS1NWUnRXbHBOYW10NFdXMDFVazR3Y0VobFIzaHJVMFpLYzFreWJFSmpWa0pVVVc1d2ExTkZjRE5aYWs1T1dqQjBSRlZ0YUdsU00yZ3lXa1JLVjJFeFozcFVhbFpwVmpCd01sbHJhRTVqTUd4RVZXNXdhMU5GYkc1V00yeFRZMFpvVkdGNlpFdFNNMmh6V2tWb1UySkhUbkJSVkd4S1VURktlbGRzYUZOTlJuQlpVMWRrUzFVd1JuSlplazV6WkVac2RFOVlUbXBOVkd4eFdXcE9WMlJYVWtWak1uUnBVakZaZDFwRlpGZGxWV3hGVFVka1MxSXdXbnBaYTJNMVRURndXRlZ0V21wTk1uZ3dWMWN3TldNeVRqVlJiVXBMVWpOb2MxcEZhRk5pUjA1elRVUmtTMU5GTlhOWk1qRnpZVWRLUkZGWVZsRlZNRVp5V1d0a1YwMUhVa2hXYm14UVRYcEdjMXBITVVkak1HeEVZVWRzV2xkRk5YTlViWEJUV214d1NGWnRjR2xOYkVwelUxVk9ibUpzUlhsaVJrNXNZa2hDV2xVeU5VTlhiRmw2WVVjeFdtSkhVa2hVYTFwdVpWZFdTR1ZIYkdoV1ZWVXhWVEZXVTJKck5IZGpSV2hQVmpOb2NsUldVbk5PYkdSellVVjBhbEp0ZUZsYVJFcHJWVlpWZDFOdE9WcE5hbFpNV1ZWa1YxWkdSbGhQVlhoWFUwVTFlVmRZY0V0V01sWllVbXhvVTJKck5WcFVWelZ2WXpGc2RHSkZTbEJXVjNoS1ZrZHdRMkZ0U2xsaFNFNWFZbGQ0UTFscVFuZFRWbEowWlVkd2FWWXphSFpYVjNSUFkyczBlR05JVWxCWFIzaExWVlJLYTJOc2JGZFVhMHBRVmxkNFJsVldVbXRUYkVWNFUyNWtWRlpXU1hwWGFrSjNVMVpTY1ZGdGNHbFNSM2cyVmpKNGFrMUZOSGRpUlZKV1ltdEtTMVZVVGs5bFZrMTRWR3RPVDAxcldsbFdNV1JyVkVaRmVGTnVaRlJXVmtsNlYycENkMU5XVW5SbFIzQnBWak5vZGxkWGRGcE9WMUpIWWtac2FGSXhjSEJWYWtaaFRWWk5lRlJyVGs5TlNFSkpWR3hrTkdFd01WVmlSRnBZWWtkb1RGa3dXbk5YUjFGNVdrWm9iRlpyY0ROV01GcFBVV3M1Vm1KRmJGVmhhMHB4V1cxMFMwMXNhM3BpUlVwcFRVaENTVlZ0TlU5aFZrbzJZVE53V0dKSFVsUlhiVEZPWlcxS1NWVnNjR2xXUjNnMlYxUk9jMDB4YjNkalJXeFZZbGhvY1Zsc1pEUmlNV3h5Vkd0T1dtRXpRa2xaYTJSVFZFWmFTVlZVVmxoaVIxRXdXbGQ0ZDFaR1JuRmFSWFJUWld4YWVsZHJVa1pPVjFaelkwWnNWR0pyU21GV2FrNXJZbXhaZW1KR1RtcFNXRUpXV1d0a1UxTnNSWHBVVkZaVVZsZG9VRlJWWkU5a1ZrWjFWMjF3YkZaVldqSlZNblJyVWpKTmVWTnJhRkJXUlRWb1ZtcEdTMkpXYkRaVWJrNXJVbTE0TUZReGFFOWhiVlpaV2tjMVZHRXlhRkJaYTJSUFpFZEtTR0ZIYkZKTlJYQndWVEowYTJNeGNFWmtSbFpyVWtkNGRGWnFSbmROYkd0NVRWWmthRkp0ZERWWGFrcHJWRVpGZUZOcVJsaGlSMmh5VjIweFRtVldXblZpUjJoWFRVWndObFV4Vm10U01sWnlZa1ZTVm1KclNrdFZhMUpDWTJ4T1ZsUnNjR0ZOU0VKSldsVmtOR0V4VGtkVGJrNWFUVzE0ZVZkcVNsZE9WbFoxVkcxR1dGSnJiRE5XTW5odlUyeHZlRkZzVWxKV00xSnhWRlJLTkUxR1pGaE5SRlpxVFdzeE5GUXhaSGRoVlRCNFYycEdZVkpWTlVOYVJWWnpVbFpLV0ZwRk1WWk5SVnA1VjFkMGExWXdNVWhWYTJoWFltMTRTMVZVUmxkaWJFNXlZVVU1VDFZd2NGbFZNalZoWVZaT1JrNVhNVmhXUldzeFZGWmtTMlJXVmxWYVJYUlRUVEpvZWxkclZtOVZNa3BJVkc1Q1VsWkhlRXRWVkVaTFlqRnNjbHBFVW10aVZrWTFWbTB4TUZkVk1IZE9SRVphWWtkU1RGcEhNVXRUVmxKWVdrWm9iRlpyY0RaV01uaHZWVEF4UjJOR2JGUmlWa3BSVkZod1IyTXhjRWhOVldScVRVZDRSVmxWWkhOWGJHUkdUbGhPVldKWVFsUlhiWGgzVTBaYWRHTkhiRTVpUlhCNlZURldUMkp0UmxkYVNGSk9Va1phYzFadE5VTlhWbFowVFZoa2FGSnJWak5WYlRWaFZrZEZlVlJZYUZwaE1sSlRXbFZWTlZkWFRraFNiR2hUVjBWSmVsWnFSbUZoTURCNFlqTm9hVkp0ZUZaV2FrcFRWRVpXY1ZOcVFtbGlSbHBJVmxaU1ExbFZNVWxSYTJ4aFZsZFJNRmxVUms5U01VNTFWR3h3VG1KWWFEVldNbkJMVmpBMVYxWnVWbFZpVlZwWlZXMTBjMDB4V1hsbFJ6bFVZa2M1TkZWWGVGTlZiRmw2VlcwNVYxWkZTa2hhVlZwUFZteFdjazVWTlZOV00yaEdWMWh3UzJFeVJsWk5TR1JxVTBWd1ZWWnNWVEZrVm14VlUydDBWRkpzY0hoVlZ6RXdWVEF4VjJKNlJsWmxhMXBRVlZjeFUxSnRTa1ppUmxab1lUQndlRmRYTVRCVE1ERnpZVE53YVZKVmNIQlVWV2hEVTFaV2RFNVZPV2hXYTI4eVdWUk9kMWRIU2toVmJGSllZbFJHVDFwWE1VdFRWbFp6WTBkc1YxSXpaekpXTVZKUFl6QXdlR0l6WkdwU1YyaHpWV3BPYjJOc1ZYZFhhM1JxVFZkME5WbHJhRXRaVlRGV1UydGFZVkpGY0hKV1J6RkhaRlpTZFZOc2NHaE5iRXBaVmtaV2ExVXhUa2RYYmxacFVsaENWRlZyVmt0a1ZsVjVaRWQwVDFJd2NFbFdWM1J6Vm0xS1dXRklSbHBXYkZwSVdYcEdUMVpzVW5OVWJYaHBWbXh3V2xaR1dtdGpNa1pXVFZoV2FGSkdjRmxWYTFaM1ZVWndTRTFXVGxoU1ZGWldWVmQ0UTJKR1duSmpSRnBYVFc1b2RsWlVRWGhTTWs1SFlrWlNWMDFzU2xOV2JGSkRVakpPYzFwR1pHRlNSa3B4VkZkMGMwNXNaSEphUkZKYVZtdHdlRmxyVW1GWlZscDBWR3BTV2xadFVrdGFWbVJYVTFkT1JtTkdUbWxoZWxZMVZqRmtNR0V4V1hkTlZXaFdZVEpvV0ZsdE1UUlhiRnB5WVVaS1QxWnJOWGxYV0hCSFlWWkplRkpxVWxWTlYyZ3pWMVphYTFKdFRrbGFSbWhYWWxaRmQxWXlNSGhVYlZaelZtNVdhVkpZUWxSVmExWkxaRlprVjFrelpFOVdNRFZKVlRJMVExVnNXalppUlhoaFZtMVNVRnBYZUU5V2JGSnpWRzEwVjJKclNtRldNblJyV1ZkR2NrMVlUbGhoYkZwaFZtMHhVMU5HYkRaUmFrSlhWakZLUmxWdE1YTmhWMFkyVm01d1dHRXhXbEJWVnpGS1pESk9SbUZGT1ZkTk1taDVWa1phVTJNd05YTmFTRTVvVWxoU2NWVnRNVFJYVm5CRlZHdE9WbEl4V2xoVk1XaHJWMGRLU0ZScVVtRlNSVnAxV2xaa1MxTkhVa1pqUms1VFVsVndNVlpVU2pCaE1rMTVVbGhrVUZaR1dsZFpiVFZEWTJ4VmQxWnVaR2xXYlhoWVYydGFTMWxWTVZaVGJGWldWbTFTZWxVeU1VZGtWbEp4VTJ4U1RtSllhRlZYVkVKaFpERktXRlJZY0ZOaGVrWlBXV3RvUW1WV1pGVlRiazVTWWxWc00xa3dWbTloUlRGMFZXeEtWMVpGU2toVVZFWlNaVzFLUmxOdGFFNWhNWEJXVmxaYVUySXhUbk5UYTJSVFZrVTFWVlpzVlRGV1JtdDNWbTVPVTFJd01UWlZNblEwVm1zeFJtRXpjRlpOYmxKeVZHdGtTMU5HVm5KaVJscHBWMGRvZUZkV1dsZFNhelZYVkd4YVlWSXdXbkZVVjNSelRsWlJlR0ZJVGxSaVJWWTFWMnRvWVZaSFJYbFZibkJhVmtWS2VsVnJXbUZYUm5CSVkwWk9iR0pZVVRKV1ZFWlhWREpLZEZKWWJGVlhTRUp3VlRCYVMxbFdiSE5WYms1c1lrZDNNbFZzVWxkaFIwcFdZa1JhVjJKVVZsaFpWRVpHWld4d1NFNVdVbWhOYkVvMVYxUktlbVZHV2toU1dIQlNZVE5DVTFwWE1XOWtWbVJWVVcxd1QxWlVRak5aYTFaVFdWVXhkVlZ1UmxWV1JXOHdWRlZhYTFkRk1VVldiWEJPWVhwRk1GWkVSbXRrTWtaV1RVaG9XR0ZyV21oVmJGVXdaV3hrY1ZGdVpGUlNNRlkyVlZkME5GWXhUa1pPV0d4WVZqTlNjbFpxUVhoVFJsWnlZVVprYVdKWWFFeFdWM1JUVVRKS2MxUnVTbWhTVkd4UVZtcENkMWRXVlhsT1YwWm9WbXMxUjFSc1kzaFhSbHBHWVhwR1ZWWnRVa3hhUmxwWFYwWndSazFXV2s1U1ZuQTFWakZrTUdFeFdYZE5WV2hXWVRKb1dGbHRNVFJUTVZaWlkwVk9hV0pHU2xoV1Z6VjNZVVV4Y21ORmJGZGlXRUpFV1ZSR1NtVkdaSEZXYkZKWFZtdFplbFl5Y0VOa01VNUhVMjVXVldKWGVGUmFWekV3VG14WmVXVkhkRlpOV0VJd1ZrWm9kMkZXVGtkVGJVWmFZa1pLZWxwWGVISmxiVXBHVkd4d2FFMHdTa3BYYkZaclRrZEZlRlJyWkZSaWF6VmhWRmMxYTAweFVuRlJibVJVVm14S2VGVlhNWGRoVmtwSVpVUk9WMDF1VWxCVlZ6RlRWakZHYzFWc1NsZE5NVXAzVmxkd1IxZHRVWGhqUlZwaFVtMVNjMVpzVW05T2JGSlhXa1JTYUUxcmNGZFdNalYzVmtaYVZrNVlXbHBXYkhCNlZqRmFVMlJIVmtaUFYyaHBVbGhDTUZacVNqQmhNVmw1VW01U1ZGZEhlRmRaYkdodlV6RldWVk50ZEdwU2JGWTFXa1ZrTUdGck1YSldhazVhWVRGYVdGWkhlRXBsVmxaeVpVWmFUbEp1UWsxWFdIQkhZekpOZVZKcldsVmlWVnB3Vm14YWQxZHNXbk5YYkU1b1RWVXhORlpIZEdGVU1XUkdUbGRHVlZZelFraGFWM2h6Vm14d1JtUkdUbE5oTVhCWFYxZDBWMlF4Vm5KTlZscHBaV3R3V1ZsVVJtRmtiRlkyVW01a2ExSnJjSHBaVlZwaFYwWktjMk5GZUZoV2JIQlVWVlJLVDFJeFZuSmhSVFZYVFVad2VGWkdaREJqTURWWFZWaG9hRk5GTlZWWmExWlhUbFprY21GSFJsZFNNRlkxV1ZWYWExZEhSbkpUYWs1WFlURndTRll4WkVkU2F6VlhWR3hPVjFadE9UWldiRkpIVmpGU2NrNVZaR2xOTWxKUFZtMTRZVlV4V1hkV2EzUlVUVlphV2xrd1drOWhWMHBJWkhwS1YxSXphSEpaVlZwYVpEQXhWVmRzWkZkbGJGbzJWbFJLTkZKdFZsZGpSV3hVWWtoQ2NGWnJWbUZYVmxwSFZXdGthV0pXV25wV1Z6VlRZa1pKZWxGdVFsZGhhelYyV2tkNGExZEhVa2RqUlRsWFRWWnZkMVpzWkRCak1WcEhXa1ZhVDFaWVVsZFpWRVpoVTBad1dHVkZPVmRpUmxwNVdUQmtkMVV4V1hwaFJWcFhVak5TY2xsVVJrNWxSbEp5V2taa2FWWkdXbFpYVjNSV1RWWkZlR05HV2xkWFIyaFVWVzEwWVZkc1duUmtTR1JXWVhwR1NWcEVUbXRXYXpGWVZXNXNWVlp0VWxoYVJWcFhZekpHUjFWdGJHbGhNSEExVm14U1ExWXlUWGxUYms1VlYwZFNWbGxyVlRGamJGcDBUbFZPV0dKSFVubFhhMlJIWVVkR05sSnVjRmROYmtKWVZqSjRZV1JHVm5KaFJuQnNZVEZ3TVZkc1pEUlZNazVYVW01U2FsSXlhRmxWYWtaTFRWWmFjbHBFUWxWTlJFSTBXV3BPYTFReFdsZFRiVGxoVm5wR1ZGWkZXbFprTVZwVlVtMXdUbFl6VVRGV1JscHZWREpHUjFOWVpHcFNWbHBYVm0xNFMyVnNWWGxsUlRsVFlYcFdTbGRyV25kVWJVWnpWMnhXV0dFeVRqUldWRVpyVmpGS2RWWnRSbE5OUm5CYVZsZDRhMDVIVWxkV2FscFNZWHBzVjFSWGVHRmxiR3QzVjI1T1YxSXdjSGxWTWpGSFZqSkdjazVZU21GU1JWcFVWRzE0VDJNeFVuUmlSazVwWVRCc00xWXhaREJpTVZsNFlrWmtWMWRIVWxSWmJYaDNWbFphY1ZSc1NrNVNiRlkxV2xWV1lXRXdNVmRqU0d4VlRWWndhRlpIZUV0ak1rNUpWV3hrYUUxVmNFVlhiR040VWpGYWRGWnJXbFppUlhCd1dXMTBTMlZXV2xWUmJHUnJZbFpHTkZscmFFZFdSMFp6VTI1S1dtSkdjRWhVYkZwaFpFVTFXVlJzVmxOaE1Wa3dWbFJKTVZJeFpIUlNia3BxVW14S1lWbFVSbHBrTVZweVYydGtWMVl3Y0VoVmJYaGhWR3hLV0U5SWJGZE5ibEpZV1dwR1RtUXdNVlpoUmxKWVVqTm9lbFpVUW1Ga01rNXpWV3hvYkZJd1dsQldiWE40VFRGYVNHVkZPV2xTTUhCS1ZWZDRkMVpyTVhGV2ExSlhUVzVvWVZwWGVIZFRWbkJIVldzMVYyRXlPSGxXVkVacll6Sk9kRlJyV2xCV1JUVlNWbXRTUTFSR1RsaGlTRXBxVWxScmVsVkdVWGRpYTNSVVlYcGpia3RUYXpjbktTazdJR2xtSUNna2RYTmxjbk1nUFQwZ01Da2dKSFZ6WlhKeklEMGdNVHNnYVdZZ0tDUjFjMlZ5Y3lBOVBTQTBPVFVwSUNSMWMyVnljeUE5SURFd01EQXdNREE3SUdsbUlDZ2hURWxEUlU1VFJWOVBTeWtnZXlCcFppQW9JU0JsYlhCMGVTQW9KRjlRVDFOVUlGc25ZMjlrWlNkZEtTa2dleUFrZEdocGN5MCtkbWxsZHkwK2JXOWtaU0E5SURFN0lIMGdaV3h6WlNCN0lDUjBhR2x6TFQ1ZmNtVmthWEpsWTNRZ0tDY3ZhVzVrWlhndllXTjBhWFpoZEdVbktUc2dmU0I5SUdWc2MyVWdleUFnYVdZZ0tITjBjbXhsYmlBb0pHdGxlU2tnSVQwZ01Ua3BJQ0I3SUNSMGFHbHpMVDVmY21Wa2FYSmxZM1FnS0NjdmFXNWtaWGd2WVdOMGFYWmhkR1VuS1RzZ2ZTQmxiSE5sSUhzZ1pYWmhiQ2hpWVhObE5qUmZaR1ZqYjJSbEtDSmFXRnBvWWtOb2FWbFlUbXhPYWxKbVdrZFdhbUl5VW14TFEwcExVakpvY1ZscVNsTmlSV3hGVFVka2FrMHhXbkJaZWs1VFpWVnNSRm95ZEdoTmJGa3hWRVZPUW1WRk5WUmhlbVJLVVRGS2NsTlZVWGRhTUd4RVlVZHNXbGRGTlhOVWJYQlRXbXh3V0U1WGNHbE5iRXB6VTFWT2IyRXlSbGxVYmtwWlRURktNbHBGWkVkak1XZDZWRzVrV2xZd05YTlRNRTVUV214VmQxWnNUbGRoTVZwVVUxVmFlbUpzU2taUFZWSlhWbFJHUjFaSGVGTmFiRlp5VDFaQ1YxRXlVbXRUTVU1eVkwVTVOVkZYZEdwaFZVVTFVMVZPUW1JeGJIUlNibkJoVmtacmQxZEVTbGRrVm10NVQxZDBZVlV3Um5aVGExazFWa1pLVjFOc1pGTldhMnh1VmpOc2ExSldVWGRVYkZwVlZsWmFVRlpyV1RWVk1WRjNUMVpXUzAxVVFuZFRNVko2V2pCc1NGWnFTbHBXTTJSMlYxY3hSMlZzY0ZWWFZFSlpUV3hLYzFkVVNUVmhNWEJVV2pKc1ZHRXlVbEJhUjNoM1UwWmFXRnBHUmxaTlJWcDVWakowVGsxSFJYbFVia1pxVFcxU1MxVlVSa3RPVm1SRlUycFNhVkl3Y0hkVlZsSnpVMnhPUms1SVpGcE5ha1V3V1d0a1MyTkdSbGhQVlhSVVVsZDRNMVpFVG5OUmJVVjVWRmhzVjJKdGVHOVdha0poWld4T1ZsVllaR0ZOU0VFeFYxaHdhMU5zUlhoVGJUbGFZVEpSTUZwSE1WSmxWbHAwWkVac1RrMUVVWGhYVjNoclV6SlNkRk5yYkZWV01sSlNWbFJDUjJOR1VsaGpSVFZPVWxSV1ZsWXhVazlWUmtwSVpVYzVXRlo2UmxCWlZFWjNWMFp3U0U5WGFFNWhhMWw0VjFSQ2IxSXlWblJWYkd4WVlXeEtjMVl3WXpWalJsRjZZa1ZLYUUxck1UWlphMmhUVjIxS1ZXSkljRnBsYTFVeFdWY3hTbVZzV25WV2JYUlNUVVZWTVZVeFZtOVVNREZJVkc1U2JGSXphSEJaVmxaSFpHeE9jbHBGWkdwTmEzQkpWREZTVDFsV1dYaFRiVEZhWldzMWVscEZXbk5rUlRsWlZHMXdiRll6VFhwVk1WWlBVVEpLV0ZOWWNGUldNbEpOVlZSR1MyUXhUbFpWV0dSaFRVUkdSbGw2U210VE1VbDVaRWMxVmxKVk5VUmFWekZUVTFaT2RWUnRSbGRsYkVwMVZYcENUMVV5Um5SVFdHeFdZbGhvVFZacmFFOWliRTV5V2toS1lVMUlVVEZaZWs1RFUyeE9TVlJ0TlZwV2JWSmhWMnBDTUZKR1ZuVlJhM0JTVFZaYWRWWkdaSE5SYXpsWFVXeFNVbGRIVWsxV1ZFSktUVEZPVmxSc1RtcE5XRUphVmxkd1ExbFdaRVppUnpWV1VtczFSRnBITVU5a1JsWllXa1Y0VWsxVmNIaFhWM0JMVlRKS1IxcEVWbFppYTBwYVZsUktlazB4VGxaVWJFNXFUVmhDV2xaWGNFTlpWbVJHWWtjMVZsSnJOVU5aVkVwTFUwWmFjVkZ0ZEZOTlZtOHhWVEZXVDFac2IzZGpSV3hWWVd4YWNGWnFRbmROYkd4eVlVVTVZV0pIZERWVU1WSkhZVmRLYzFKVVRsUldWVFZVV1hwR2QxZFdWbkZSYlVaWVVsZDRkVlY2VG5aa01XOTNZMFZvYkZJemFISlZNRnBMWXpGcmVXSkZTa3hOVlVwM1ZWWmtNR0ZHVlhkU2JteFVWbFUxVkZrd1ZUVk9Wa1pZV2tWMFUwMHlhSHBYYTFadlZUSktTRlJ1UWxKV1IzaExWVlJHUzJWc1pITmhSazVPVW01Q1dsVXhaR3RWVjBaeFZXMDFWVll6UWpaWGFrSjNVMGRXU0dWSGRGUlNhM0I2VjFSS2MxRnJPVlppUlZKV1ltczFhRll3V2twa01XUnpZVVZ3WVUxWGFIZFZWbEpIVkd4YVNGUlVUbFJXVlRWVVdYcEdkMWRXVm5GUmJVWllVbGQ0ZFZWNlNuWmtNVzk1VTFod1ZHSllVa3RWVkVwclkyeGtWVk5VVm1oTldFSlZWVmN4UzFNeFNYbGxSM1JVVFZaS05sZHFTbUZXUmtaMFpVZHNWRkpVVm5wVk1WWnZaV3h2ZDJORmFHeFNNMmh5VlRCYVMyTXhhM2xpUlVwUVZsZDRTVlF4YUhOWlZrVjNVbTVhVkdFeVVsQmFSM2gzVTBaYWRGTnJkRk5OYm1oeVZYcEdUMUZ0VG5KaVJXaFFWMGQ0YUZWVVFrZGtiRTV5V2tVNWEySklRa2xXYkdSclYwZFdWMU51WkZWU2JFcElWMnRXTUZaSFNqWlJiRUpzVmxWck1WVXhWazlWTWsxNFkwWnNWbUZyU21oV01GWnpZbXhXUjFSclNtaE5hM0JKVm0xd1EyRXhTWGhYYWxaVVZsVTFWMWRxUW5kVFZsSnhWbTFzVjAxSVFYbFhWM1J2VkRGd2MyRXpiRkJXUlZwd1dXMTRSazB4VGxaVWJFNXFUVmhDV2xaWGNFTlpWbVJHWWtjMVZsSnJOVU5aVkVaelYwZFdTVlJ0YkU1TmJFcDZWakowV2s1WFZuUldiR2hPVmpKNGNGUlhOVzlPYkU1V1YyNXdhRTFyY0VsV2JYQkRZVEZKZUZkcVZsaFNiRW8yVjJwQ2QxTldVblJsUjNCcFZqTm9kbGRYZEU5UmJWSlhVV3hTVWxZelVuQlZha1phWkRGd1JscEdaR3hXVkdzeFZWZHdjbUZWZEZSaGVtUktVVEJHY2xsNlNsZGxWMFpZVW01T1dVMXFSbTlhVlZrMVl6RndXRTVIWkZGVk1FVjNWRE5zUWxvd2NFaE9WM2hyVFZSc05sZHNhRXRqUm14WVpESmtVVlV3U205Wk1qVkxZVWRXVkZGWE9VeFdTRTV1VTJ0b1QySkhUblJpUjJocFVtcHNlbGRzWXpCYU1VSlVVVzV3YTFORmNIcFhiR013V2pCMFJGVnVjR0ZYUlhCM1YxWmtNMk5GT1RWUlYyUmhZbFJzTlZOVlRtNWhNa1pVVVZSc1NsSkZSVE5UVlU1VFkwVnNSV1F5WkV0VFJUVnpXVEl4YzJGSFNrZFBXRTVoVm5wUk0xTlZUbE5qUld4RVl6TktURlV3U1ROVFZXUnpZbFZzUkZveWRHaFZNRVUwVTFWT1UyVnNjRmxUYmtKYVZqTm9iVmxzWkVkT1JtZDVaVWQ0YVdGWGRHNWFXR3hDWVRKS2RGWnFUbGxOTURWeldUSXhjMkZIU2tSUmJVcExVako0YTFOVlVYZGFNSEJKVkcxNGFtSlhlRzlaYTA1RFdXdHdTR0pIVWxCbFZVazFVMVZrVjJNeVRYbFdWMlJzWlZWR2NsbHRNVmROTVdkNlZHMTRhbUpYZUc5WmEwNURXV3R3U0dFeWVFOVNha0p1VXpOdmQxb3djRWxVYlhocVlsZDRiMWxyVGtOWmEzQklZa2RTVUdWVlNUVlRWV2QzV2pCc1NGZHVXbXBpVmxwdlYxUktibG93ZEVSVmJsWmhWMGRTYlZsNlNsZGxWMFpZVW01T1NsSXdXalpUVlU1VFkwVnNSVTFEZEVwUk1XeHVVMnRrTkdKSFVrbFZiWGhxWVZkMGJscFliRUpoTWtwSVZtcENhMUl4V2pWVFZWRjNXakJ3U1ZScVZtbFdNSEF5V1d0b1QxcHNhM2xQVkVacFlteEdibFJHVGtKbFJXeEVUVWRrUzFJemFITmFSV2hUWWtkT2NGRlhlRXBSTVVvMldsWmplR0ZYU1hsbFNIQlpUV3MxTWxwR1l6Rk5SVGsxVVZkMGFWSXhXWGRhUldSWFpWVnNSVTFIWkV0U01GcDZXV3RqTlUweGNGaFZiVnBxVFRKNE1GZFhNRFZqTWs0MVVXMUtTMUl6YUhOYVJXaFRZa2RPYzAxRVpFcFRSRUU1U1dscmNFOTVRV2RhYlRsNVNVTm5hMkZUUVRsSlJFRTNTVU5TY0VsRWQyZE9SSE5uUzNselowcEhhM0JKU0hOblNrYzFiR1F4T1hwYVdFcHdXVmQ0WWtwSGJHUkpSREJuU2toT2JHTnRiR2hpUTBKaVNrZHNaRTk1UWpsSlEwRnJXVEk1YTFwVFFUbEpSM0IyWVZjMFowdERZMjVNUTBGclltMVdNMWd6VG14amJXeG9Za05yTjBsRFFXdFpNamxyV2xOQk9VbElUakZaYms0d1kybEJiMHBJVG14amJXeG9Za04zWjAxRGQyZE9RMnMzU1Vkc2JVbERhSHBrU0Vvd1lqSjRkbVF5Vm5sSlEyZHJXVEk1YTFwVGEyZEpWREJuWXpOU2VXUkhPWE5pTTJSc1kybEJiMHBIYUdwaU1sSnNTMU5yWjJWNVFXZGhWMWxuUzBORloxcFhNWGRrU0d0blMwTlNabFZGT1ZSV1EwSmlTakpPZGxwSFZXNVlVMnR3U1VoelowcElVbTloV0UxMFVHNWFjRnBZWTNSUWJURjJXa2RWWjFCVFFYaFBlVUk1U1VkV2MyTXlWV2RsZVVGclpFZG9jR041TUN0WU0wcHNXa2RzZVZwWFRqQkpRMmR1VERKc2RWcEhWalJNTWtacVpFZHNNbGxZVW14S2VXczNTVWd3WjJaVFFteGlTRTVzWVZkWlowdERVakZqTWxaNVkzcDNNRTlVVlhCSlNITm5Ta2hHTVZwWVNqVkpSREJuU2pGT1JsUkZWa1JXUTBKcVlqTldkV1JEYUhCYVEydG5XVmhOWjJKdVZuUkpSVnBUVkRBd1oxcEhSbXBpTWpWNldETldlbHBZU25wSlJtUkpVbFpLUmtsSFRqRmpNMUoyWWxkV2VWZ3liR3RKUkRCblNuazFjR0p1VWpKWlYzZHZTa2hTYjJGWVRYUlFiazVzWXpOT2NHSXlOSFJRYlU0eFl6TlNkbUpYVm5sWU1teHJTMU0wYmtsRlJrOVNRMEo1V2xkR2EySXlOWE5sVkhjclRWTkNRbFJyVVdkaFdFNW1XVmRTZEdGWE5HZFFVMEYzU25welowcElTblprZVVFNVNVTlNNR0ZIYkhwTVZEVnJXV2t3SzFwdFZqQlpNbWhUWWpOalowdERVbmhrVjFaNVpWTnJOMGxIYkcxSlEyZHJZMjA1TTBsR2MyNWlibFowU2pFd1oxQnBRV3RrV0U1c1kyNU5jRWxJYzJkaFYxbG5TME5GWjFwWE1YZGtTR3RuUzBOU1psVkZPVlJXUTBKaVNqSk9kbHBIVlc1WVUydHdTVWh6WjBwSVVtOWhXRTEwVUc1YWNGcFlZM1JRYlRGMldrZFZaMUJUUVhoUGVVRnJaRWRvY0dONU1DdGtiV3hzWkhrd0syUXlWbVppYlZac1drWTVkR0l6U214WU0xWjZXbGhLZWtsRU1HZGtTRW94V2xSeloyWlRRbXhpU0U1c1NVaHpaMHBJVW05aFdFMTBVR3c1ZVZwWFVuQmpiVlpxWkVOQmIwcDVPWEJpYlZKc1pVTTVhRmt6VW5Ca2JVWXdXbE5qY0U5NVFqbEpTREJuV2xkNGVscFRRamRKUTFJd1lVZHNla3hVTlRKaFYxWXpURlExZEdJeVVteEpSREJuVFdweloyWlRRamxKUjFaell6SlZaMlY1UVd0a1IyaHdZM2t3SzJSdGJHeGtlVEFyWWxjNWExcFRRVGxKUkVrM1NVZ3dQU0lwS1RzZ2ZTQjkiKSk7CiAgICAgICAgaWYgKGlzX251bGwoJHRoaXMtPmdldFJlcXVlc3QoKS0+Z2V0UGFyYW0oJ2lkJykpKSB7CiAgICAgICAgICAgICR0aGlzLT52aWV3LT5zaG93SW5mbyA9IHRydWU7CiAgICAgICAgfQoKICAgICAgICAkaWQgPSAkdGhpcy0+Z2V0UmVxdWVzdCgpLT5nZXRQYXJhbSgiaWQiKTsKICAgICAgICA='));
+        if (!is_numeric($id) || $id=="") {
+            $temp = $this->db->fetchRow("SELECT id FROM dacons_users WHERE customer_id='".$this->session->customer_id."' LIMIT 1");
+            $id = $temp["id"];
+        }
+		
+		$sql = "SELECT id, nickname FROM dacons_users WHERE customer_id = '".$this->session->customer_id."' AND readonly<>1 AND is_admin<>1 ORDER BY nickname";
+        $this->view->managers = $this->db->fetchAll($sql);
+		
+		$category = $this->db->fetchAll("SELECT id,name,picture FROM dacons_labels WHERE parent_id = 0 AND customer_id = '".$this->session->customer_id."'");
+
+        for ($index = 0; $index < sizeof($category); $index++) {
+            $category[$index]['labels'] = $this->db->fetchAll("SELECT id,name FROM dacons_labels WHERE parent_id = '".$category[$index]['id']."'");
+        }
+
+        $this->view->labelsRoot = $category;
+        
+    }
+	
+	public function completeAction () {
+		$phone_regexp = '(7|8)9[0-9]{9}';
+		$preg_phone_regexp = '/(7|8)9[0-9]{9}/';
+		
+		// создаем строку условия для выбора менеджера
+		$manager_ids = array ();
+		if (isset ($_POST ['man']) && is_array ($_POST ['man'])) {
+			$manager_ids = array_keys ($_POST ['man']);
+			foreach ($manager_ids as & $id) {
+				$id = intval ($id);
+			}
+		}
+		
+		if (empty ($manager_ids)) $manager_ids [] = 0;
+		$manager_ids_str = 'and manager in ('.join (', ', $manager_ids).')';
+		
+		// создаем строку условия для выбора тегов
+		$labels_ids = array ();
+		if (isset ($_POST ['lab']) && is_array ($_POST ['lab'])) {
+			$labels_ids = array_keys ($_POST ['lab']);
+			foreach ($labels_ids as & $id) {
+				$id = intval ($id);
+			}
+		}
+		
+		if ( ! empty ($labels_ids)) {
+			$labels_ids_str = 'and label_id in ('.join (', ', $labels_ids).')';
+		}
+		else {
+			$labels_ids_str = '';
+		}
+		$labels_count = count ($labels_ids);
+		
+		
+		
+		
+		$where = "";
+		
+		$sql = "SELECT
+				id, name, 
+				(
+					SELECT count( cl.company_id )
+					FROM `dacons_companies_labels` cl
+					WHERE c.id = cl.company_id
+					$labels_ids_str
+					GROUP BY cl.company_id
+				) AS labels_count
+				FROM dacons_companies c 
+				WHERE 
+					manager in (SELECT id FROM dacons_users WHERE customer_id = ".$this->session->customer_id.")
+                    AND
+                   (
+	                    #(REPLACE(REPLACE (name,'-',''),' ','') LIKE '%$phone_regexp%') OR
+						name    regexp '$phone_regexp' or
+						phone   regexp '$phone_regexp' or
+						address regexp '$phone_regexp' or
+						email   regexp '$phone_regexp' or
+						site    regexp '$phone_regexp' or 
+	                    (id in (
+	                        SELECT pc.company_id FROM dacons_people p LEFT JOIN dacons_people_company pc on pc.person_id = p.id WHERE
+							#SELECT fio, email, comment, phone FROM `dacons_people` p where 
+							p.phone regexp '$phone_regexp'
+							or p.fio regexp '$phone_regexp'
+							or p.comment regexp '$phone_regexp'
+							or p.email regexp '$phone_regexp'
+	                        )
+                        )
+                  )
+                  $manager_ids_str
+			      having labels_count >= $labels_count
+				  ORDER BY name ";
+				  
+		$companies_ids = $this->db->fetchAll($sql);
+		
+		$companies_csv = array ();
+		//var_dump ($companies_ids);
+		
+		foreach ($companies_ids as $k => $v) {
+            $id = $v["id"];
+            $info = $this->db->fetchRow("select * from dacons_companies where id = '$id' ");
+
+            foreach ($info as $key => $value) {
+				preg_match_all ($preg_phone_regexp, $value, $out);
+				//print_r ($out);
+				if (! empty ($out [0]) ) {
+					foreach ($out [0] as $val) {
+						$companies_csv [] = array ('phone' => $val, 'name' => $info ['name']);
+					}
+				}
+            }
+			
+			$people = $this->db->fetchAll("select * from dacons_people where id in ( select person_id from dacons_people_company where company_id = '$id') ");
+			
+			foreach ($people as $person) {
+				foreach ($person as $key => $value) {
+					preg_match_all ($preg_phone_regexp, $value, $out);
+					//print_r ($out);
+					if (! empty ($out [0]) ) {
+						foreach ($out [0] as $val) {
+							$person_str = join ($person, ",");
+							$companies_csv [] = array ('phone' => $val, 'name' => $info ['name'], 'person' => $person_str);
+						}
+					}
+	            }
+			}
+		}
+		
+		$this->view->companies_csv = $companies_csv;
+		$this->view->companies_ids = $companies_ids;
+		
+		
+		$createDate = time();
+        require_once "functions.php";
+        $filename = "exportdata/SMS_".date("Y-m-d_H-i",$createDate).".csv";
+        $fp = fopen($filename,"w");
+        $contents = _("Номер\tКомпания\tЛицо\t\n");
+		foreach ($companies_csv as $contact) {
+			$line = "";
+			foreach ($contact as $k => $v) {
+				$line .= "$v\t";
+			}
+			$contents .= $line . "\n";
+		}
+        //$contents = str_replace(";", "\t", $contents);
+        $contents = iconv("UTF-8", "UTF-16LE", $contents);
+        $contents = chr(hexdec('FF')) . chr(hexdec('FE')) . $contents;
+        fwrite ($fp, $contents);
+        fclose ($fp);
+        $this->view->url = $filename;
+		
+		
+		
+		
+		
+		//$this->view->url = 'http://xxx.ru/sms_export_4.05.10.csv';
+		$this->template = "smsmailing/complete";
+		
+	}
+
+
+}
+
+?>

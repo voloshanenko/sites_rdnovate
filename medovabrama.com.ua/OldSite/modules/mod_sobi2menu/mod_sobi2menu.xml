@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install type="module" version="1.5.0">
+	<name>SOBI2 Menu Module</name>
+	<author>Sigrid and Radek Suski, Sigsiu.NET</author>
+	<creationDate>September 2009</creationDate>
+	<copyright>(C) 2007-2009 Sigsiu.NET All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>sobi@sigsiu.net</authorEmail>
+	<authorUrl>www.Sigsiu.NET</authorUrl>
+	<version>1.9</version>
+	<description>Menu Module for Sigsiu Online Business Index 2 (SOBI2) Component</description>
+
+	<files>
+		<filename module="mod_sobi2menu">mod_sobi2menu.php</filename>
+		<filename>mod_sobi2menu.txt</filename>
+		<filename>mod_sobi2dtree.js</filename>
+		<filename>index.html</filename>
+	</files>
+
+	<params>
+	
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module, this allows individual module styling." />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="new_entry" type="radio" default="1" label="Show Add Entry Link" description="Show the add entry link in the module.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="search" type="radio" default="1" label="Show Search Link" description="Show the search link in the module.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="show_image" type="radio" default="0" label="Show Images" description="Show an image for the Add Entry and Search link instead of the texts. Set the image in 'Add Entry Image' resp. 'Search Image'. Only valid if 'Show Add Entry Link' resp. 'Show Search Link' is set to 'Yes'.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="image_new" size="50" type="text" default="" label="Add Entry Image" description="Image to be used instead of text for Add Entry link. Valid only if 'Show Images' is set to 'Yes'." />
+		<param name="image_search" size="50" type="text" default="" label="Search Image" description="Image to be used instead of text for Search link. Valid only if 'Show Images' is set to 'Yes'." />
+
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="menu_dtree" type="radio" default="1" label="Menu Type" description="Show the categories as tree or only the first level categories in flat view.">
+			<option value="0">Flat List</option>
+			<option value="1">Tree Style</option>
+		</param>
+		<param name="count_entries" type="radio" default="0" label="Show Counter" description="Show the number of entries in a category next to the category name.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="useIcons" type="radio" default="1" label="Show Tree Icons" description="Show the tree icons. Valid only if 'Menu Type' is set to 'Tree Style'.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="root_img" size="50" type="text" default="" label="Tree Root Image" description="Image to be used as root image instead of the default image. Enter the full path to the image. Valid only if 'Show Tree Icons' is set to 'Yes'." />
+		<param name="folder_img" size="50" type="text" default="" label="Tree Folder Image" description="Image to be used as folder image instead of the default image. Enter the full path to the image. Valid only if 'Show Tree Icons' is set to 'Yes'." />
+		<param name="folderopen_img" size="50" type="text" default="" label="Tree Open Folder Image" description="Image to be used as open folder image instead of the default image. Enter the full path to the image. Valid only if 'Show Tree Icons' is set to 'Yes'." />
+		<param name="addCatId" type="radio" default="0" label="Add Category ID" description="Append the category id to the folder images. Use this to have different icons for each category. Valid only if 'Menu Type' is set to 'Tree Style' and NO own folder images are set. Copy images with the names folderX.gif and folderopenX.gif to 'components/com_sobi2/images', replace 'X' by the catId. Only GIF images can be used.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+
+		<param name="menu_resize" type="radio" default="0" label="Use Fixed Height" description="Resize menu to a fixed height to prevent dynamic resizing.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="menu_height" size="10" type="text" default="100" label="Menu Height" description="Set the menu height in pixels if resizing is switched off." />
+
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+
+		<param name="ignoreTask" type="textarea" default="" label="Tasks to Ignore" cols="50" rows="2" description="Enter the SOBI2 tasks (comma separated) where the module should not be displayed. Do not show a menu module title if you use this feature." />
+
+		</params>
+
+</install>

@@ -1,0 +1,315 @@
+.no-photos-msg {
+    margin-bottom: 10px;
+}
+.contest-winners {
+    border-right: solid 1px #ccc;
+    padding: 0 6px 20px 0;
+}
+.contest-text-info {
+    margin: 10px 0;
+    padding: 10px 0;
+}
+.contest-text-info .winners-listing {
+    width: 429px;
+    border-right: solid 1px #ccc;
+    margin-right: 10px;
+}
+.contest-text-info .winners-listing .contest-position {
+    margin-bottom: 5px;
+    padding-left: 15px;
+}
+#contests-wrapper h2 {
+    text-align: center;
+    border-bottom: solid 1px #ccc;
+}
+.contest-info {
+    width: 33.3333%;
+}
+.contest-info small {
+    color: #777;
+    font-size: 0.9em;
+}
+.sponsor-info {
+    width: 66.6666%;
+}
+.sponsor-info table {
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+}
+.sponsor-info table td {
+    padding: 0;
+    text-align: right;
+}
+.sponsor-info table td.text-info {
+    width: 240px;
+}
+.sponsor-info table td.sponsor-icon {
+    width: 80px;
+}
+.sponsor-info table .text-info h3 {
+    margin: 0;
+}
+.sponsor-info img {
+    box-shadow: 0 0 4px #fff;
+    float: right;
+    margin-left: 10px;
+}
+.contest {
+	padding-bottom: 13px;
+	margin-bottom: 15px;
+	background: url(/images/Design/wide-shadow.png) 50% 100% no-repeat;
+}
+.contest h3.contest-title {
+    color: #51BF00;
+    margin: 0 0 0.6em 0;
+}
+.contest h3.contest-title a {
+	color: #51BF00;
+}
+.contest .image-collection {
+    margin-top: 5px;
+}
+.contest-sponsor-showcase {
+    color: #FFFFFF;
+    text-align: right;
+    width: 49%;
+    margin-right: 1%;
+    float: right;
+}
+.contest-title-showcase {
+    width: 49%;
+    float: left;
+    margin-left: 1%;
+    text-align: center;
+}
+.contest .contest-notes {
+    font-size: 1.23em;
+    margin-bottom: 5px;
+}
+.contest-wall {
+    height: 245px;
+    overflow: hidden;
+    position: relative;
+    padding-top: 2px;
+}
+.contest-wall-wrapper {
+    height: 245px;
+    overflow: hidden;
+    position: relative;
+}
+.contest-top-three {
+	border-right: solid 1px #ccc;
+	padding-right: 10px;
+}
+.contest-image {
+	display: inline-block;
+    margin: 5px 0 5px 5px;
+	vertical-align: middle;
+	text-align: center;
+}
+.contest-image strong {
+    text-shadow: 1px 1px 0px #fff;
+}
+.contest-image img {
+	box-shadow: 0px 0px 4px #444;
+	border-radius: 5px;
+}
+.prizes {
+    background: #ECFBD4;
+    padding: 10px 0;
+}
+.prizes img {
+    margin: 5px 10px 0 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #aaa;
+}
+
+.photo-item {
+	position: relative;
+    line-height: 0;
+}
+/* This is for thumbnail. It fades in on mouse over */
+.photo-item-votes {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	right: 2px;
+	padding: 2px;
+	border-radius: 5px;
+	background-color: #000;
+	display: none;
+    line-height: 1;
+    color: #fff;
+    text-align: left;
+}
+.photo-item-votes > span {
+    display: inline-block;
+}
+.photo-item-votes a {
+    color: #fff;
+    text-decoration: none;
+}
+.photo-item-votes-up {
+    float: left;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url('/images/Design/white_thumbs_up.png') no-repeat;
+}
+.photo-item-votes-counter {
+    color: #fff;
+    font-weight: bold;
+    margin-top: 1px;
+}
+.black-star .photo-item-votes-counter {color:#000;}
+.black-lupa .photo-item-votes-counter {color:#000;}
+/* This is for shadowbox voting box */
+.shadowbox-content > .photo-item-votes {
+    display: block;
+    position: relative;
+    width: 49%;
+    float: left;
+    text-align: center;
+    font-size: 1em;
+    color: #888;
+}
+.shadowbox-content > .photo-item-votes small {
+    font-size: 1em;
+}
+.shadowbox-content > .photo-item-votes > span {
+    margin: 4px 7px;
+}
+.shadowbox-content .photo-item-votes a {
+    color: #888;
+    display: inline-block;
+    text-decoration: underline;
+}
+.shadowbox-content .photo-item-votes a:hover {
+    color: #fff;
+}
+.shadowbox-content .photo-item-owner {
+    color: #888;
+    display: block;
+    position: relative;
+    width: 49%;
+    float: right;
+    text-align: center;
+    font-size: 1em;
+}
+.shadowbox-content #photo-description small {
+    font-size: .7em;
+}
+.shadowbox-content #photo-description a {
+    color: #ccc;
+}
+#photo-header {
+    border: none;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    float: left;
+    margin-bottom: 5px;
+    color: #888888;
+    font-size: 1em;
+}
+#photo-header a {
+    color: #888;
+}
+#photo-header a:hover {
+    color: #fff;
+}
+#photo-header td {
+    padding: 0 10px;
+    vertical-align: top;
+}
+#photo-header td#photo-header-title {
+    width: 33.333%;
+}
+#photo-header td#photo-header-partner {
+    width: 33.333%;
+    text-align: right;
+}
+#photo-header-sponsor {
+    width: 33.333%;
+    text-align: right;
+}
+.photos-private-box img {
+    float: left;
+    margin-right: 5px;
+}
+
+.photos-private-box .photo-item {
+    width: 31%;
+    margin: 1%;
+    float: left;
+    height: 70px;
+    line-height: 1em;
+}
+#images-wall .contest-image {
+    margin: 14px 6px 6px 7px;
+}
+
+.shadowbox-content #photo-description {
+    font-size: 1.1em;
+    color: #fff;
+    padding: 5px 0;
+}
+
+#big-image-holder {
+    position: relative;
+    width: 640px;
+    height: 480px;
+    float: left;
+}
+#big-image-holder .new-window {
+    position: absolute;
+    right: 4px;
+    top: 2px;
+}
+#big-image-holder img {
+    margin-bottom: 7px;
+}
+
+/* Advertizment */
+#foto-ad-bottom, #foto-ad-left, #foto-ad-right {
+	position: absolute;
+}
+#foto-ad-bottom {
+	top: 680px;
+	width: 640px;
+	overflow: hidden;
+}
+#foto-ad-bottom img,
+#foto-ad-left img,
+#foto-ad-right img {
+	margin: 2px;
+}
+#foto-ad-left, #foto-ad-right {
+	top: 0;
+	width: 170px;
+	overflow: hidden;
+	left: 50%;
+}
+#foto-ad-left {
+	margin-left: -500px;
+	text-align: right;
+}
+#foto-ad-right {
+	margin-left: 329px;
+	text-align: left;
+}
+#foto-ad-left img, #foto-ad-right img {
+	max-width: 170px;
+}
+.appeal {
+	padding-top: 10px;
+}
+.appeal big {
+	float: left;
+	display: block;
+	width: 825px;
+}
+.appeal div .button {
+	margin-top: 4px;
+}

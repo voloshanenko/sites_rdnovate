@@ -1,0 +1,13 @@
+
+#maamaasobi2eSobi2Sort{display: inline-block; width: 620px; height: auto; background: #fff; padding: 20px 0 10px 10px; border: 1px #c9c9c9 solid; z-index: 20}
+#maamaasobi2eSobi2Sort .search_more{display: inline-block; background: url('images/plus.png') no-repeat 0 50%; padding: 0 0 0 15px; font: 12px Tahoma; color :#e27703;  cursor: pointer; margin-top: 5px;}
+#maamaasobi2eSobi2Sort .search_more span{border-bottom: 1px #e27703 dashed;}
+#maamaasobi2eSobi2Sort .SearchLabel{display: inline-block; width: auto; background: url('images/search_label.png') no-repeat 0 50%; padding: 0 0 0 40px; height: 32px; font: 14px/32px Tahoma; color: #e27703}
+
+#maamaasobi2eSobi2Sort #sobi2Search{width: 332px; height: 19px; float: left; margin-right: 8px; border: 1px #c8c8c8 solid; padding: 3px 5px;}
+
+#maamaasobi2eSobi2Sort select{width: 435px; height: 20px; background: #fff; border: 1px #ccc solid; color :#000;}
+#maamaasobi2eSobi2Sort .free_search{display: none;}
+#maamaasobi2eSobi2Sort .free_search td{ padding: 10px 0 0 0;}
+
+#maamaasobi2eSobi2Sort #sobiSearchSubmitBt{background: url('images/search_button.png') no-repeat 0 0; width: 83px; height: 27px;font: 14px Tahoma; color :#fff!important; padding:0 0px 5px 0px!important; display: block; line-height: 27px; cursor: pointer;}

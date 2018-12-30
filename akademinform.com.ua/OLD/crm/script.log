@@ -1,0 +1,935 @@
+Array
+(
+    [time] => Mon, 22 Mar 2010 23:46:44 +0300
+    [addr] => ******te.adobe.com
+    [agent] => Shockwave Flash
+    [post] => Array
+        (
+            [Filename] => blue_line.gif
+            [Upload] => Submit Query
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => blue_line.gif
+                    [type] => application/octet-stream
+                    [tmp_name] => Z:\tmp\php30FC.tmp
+                    [error] => 0
+                    [size] => 43
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Mon, 22 Mar 2010 23:46:44 +0300
+    [addr] => ******te.adobe.com
+    [agent] => Shockwave Flash
+    [post] => Array
+        (
+            [Filename] => spacer.gif
+            [Upload] => Submit Query
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => spacer.gif
+                    [type] => application/octet-stream
+                    [tmp_name] => Z:\tmp\php311C.tmp
+                    [error] => 0
+                    [size] => 43
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Mon, 22 Mar 2010 23:46:44 +0300
+    [addr] => ******te.adobe.com
+    [agent] => Shockwave Flash
+    [post] => Array
+        (
+            [Filename] => menu_strip.gif
+            [Upload] => Submit Query
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => menu_strip.gif
+                    [type] => application/octet-stream
+                    [tmp_name] => Z:\tmp\php315C.tmp
+                    [error] => 0
+                    [size] => 44
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Mon, 22 Mar 2010 23:55:51 +0300
+    [addr] => ******te.adobe.com
+    [agent] => Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2) Gecko/20100115 Firefox/3.6
+    [post] => Array
+        (
+            [section] => 44
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => cmsmagazineb1b0a72a7df97e8c8a27c00e4cb9558b.txt
+                    [type] => text/plain
+                    [tmp_name] => Z:\tmp\php8AD3.tmp
+                    [error] => 0
+                    [size] => 32
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Mon, 22 Mar 2010 23:58:17 +0300
+    [addr] => ******te.adobe.com
+    [agent] => Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2) Gecko/20100115 Firefox/3.6
+    [post] => Array
+        (
+            [section] => 44
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => cmsmagazineb1b0a72a7df97e8c8a27c00e4cb9558b.txt
+                    [type] => text/plain
+                    [tmp_name] => Z:\tmp\phpC534.tmp
+                    [error] => 0
+                    [size] => 32
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 23 Mar 2010 00:06:45 +0300
+    [addr] => ******te.adobe.com
+    [agent] => Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2) Gecko/20100115 Firefox/3.6
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => cmsmagazineb1b0a72a7df97e8c8a27c00e4cb9558b.txt
+                    [type] => text/plain
+                    [tmp_name] => Z:\tmp\php8402.tmp
+                    [error] => 0
+                    [size] => 32
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 23 Mar 2010 00:11:58 +0300
+    [addr] => ******te.adobe.com
+    [agent] => Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2) Gecko/20100115 Firefox/3.6
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => cmsmagazineb1b0a72a7df97e8c8a27c00e4cb9558b.txt
+                    [type] => text/plain
+                    [tmp_name] => Z:\tmp\php4DD7.tmp
+                    [error] => 0
+                    [size] => 32
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 23 Mar 2010 00:18:04 +0300
+    [addr] => ******te.adobe.com
+    [agent] => Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2) Gecko/20100115 Firefox/3.6
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => cmsmagazineb1b0a72a7df97e8c8a27c00e4cb9558b.txt
+                    [type] => text/plain
+                    [tmp_name] => Z:\tmp\phpE1A4.tmp
+                    [error] => 0
+                    [size] => 32
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 23 Mar 2010 00:19:37 +0300
+    [addr] => ******te.adobe.com
+    [agent] => Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2) Gecko/20100115 Firefox/3.6
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => cmsmagazineb1b0a72a7df97e8c8a27c00e4cb9558b.txt
+                    [type] => text/plain
+                    [tmp_name] => Z:\tmp\php4D6A.tmp
+                    [error] => 0
+                    [size] => 32
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 23 Mar 2010 00:21:51 +0300
+    [addr] => ******te.adobe.com
+    [agent] => Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2) Gecko/20100115 Firefox/3.6
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => cmsmagazineb1b0a72a7df97e8c8a27c00e4cb9558b.txt
+                    [type] => text/plain
+                    [tmp_name] => Z:\tmp\php59F4.tmp
+                    [error] => 0
+                    [size] => 32
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 23 Mar 2010 00:25:28 +0300
+    [addr] => ******te.adobe.com
+    [agent] => Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2) Gecko/20100115 Firefox/3.6
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => cmsmagazineb1b0a72a7df97e8c8a27c00e4cb9558b.txt
+                    [type] => text/plain
+                    [tmp_name] => Z:\tmp\phpA6AF.tmp
+                    [error] => 0
+                    [size] => 32
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 23 Mar 2010 18:57:55 +0300
+    [addr] => ******te.adobe.com
+    [agent] => Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2) Gecko/20100115 Firefox/3.6
+    [post] => Array
+        (
+            [response] => nojson
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => cmsmagazineb1b0a72a7df97e8c8a27c00e4cb9558b.txt
+                    [type] => text/plain
+                    [tmp_name] => Z:\tmp\phpCCD1.tmp
+                    [error] => 0
+                    [size] => 32
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 23 Mar 2010 18:58:22 +0300
+    [addr] => ******te.adobe.com
+    [agent] => Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2) Gecko/20100115 Firefox/3.6
+    [post] => Array
+        (
+            [response] => nojson
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => cmsmagazineb1b0a72a7df97e8c8a27c00e4cb9558b.txt
+                    [type] => text/plain
+                    [tmp_name] => Z:\tmp\php35DD.tmp
+                    [error] => 0
+                    [size] => 32
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 23 Mar 2010 18:59:16 +0300
+    [addr] => ******te.adobe.com
+    [agent] => Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2) Gecko/20100115 Firefox/3.6
+    [post] => Array
+        (
+            [response] => nojson
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => cmsmagazineb1b0a72a7df97e8c8a27c00e4cb9558b.txt
+                    [type] => text/plain
+                    [tmp_name] => Z:\tmp\php812.tmp
+                    [error] => 0
+                    [size] => 32
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 23 Mar 2010 19:00:17 +0300
+    [addr] => ******te.adobe.com
+    [agent] => Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2) Gecko/20100115 Firefox/3.6
+    [post] => Array
+        (
+            [response] => nojson
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => cmsmagazineb1b0a72a7df97e8c8a27c00e4cb9558b.txt
+                    [type] => text/plain
+                    [tmp_name] => Z:\tmp\phpF959.tmp
+                    [error] => 0
+                    [size] => 32
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 23 Mar 2010 19:11:01 +0300
+    [addr] => ******te.adobe.com
+    [agent] => Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2) Gecko/20100115 Firefox/3.6
+    [post] => Array
+        (
+            [response] => nojson
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => cmsmagazineb1b0a72a7df97e8c8a27c00e4cb9558b.txt
+                    [type] => text/plain
+                    [tmp_name] => Z:\tmp\phpCAB8.tmp
+                    [error] => 0
+                    [size] => 32
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 23 Mar 2010 19:12:54 +0300
+    [addr] => ******te.adobe.com
+    [agent] => Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2) Gecko/20100115 Firefox/3.6
+    [post] => Array
+        (
+            [response] => nojson
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => cmsmagazineb1b0a72a7df97e8c8a27c00e4cb9558b.txt
+                    [type] => text/plain
+                    [tmp_name] => Z:\tmp\php828B.tmp
+                    [error] => 0
+                    [size] => 32
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 23 Mar 2010 19:13:01 +0300
+    [addr] => ******te.adobe.com
+    [agent] => Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2) Gecko/20100115 Firefox/3.6
+    [post] => Array
+        (
+            [response] => nojson
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => cmsmagazineb1b0a72a7df97e8c8a27c00e4cb9558b.txt
+                    [type] => text/plain
+                    [tmp_name] => Z:\tmp\php9F0C.tmp
+                    [error] => 0
+                    [size] => 32
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 23 Mar 2010 19:19:33 +0300
+    [addr] => ******te.adobe.com
+    [agent] => Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2) Gecko/20100115 Firefox/3.6
+    [post] => Array
+        (
+            [response] => nojson
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => cmsmagazineb1b0a72a7df97e8c8a27c00e4cb9558b.txt
+                    [type] => text/plain
+                    [tmp_name] => Z:\tmp\php9C51.tmp
+                    [error] => 0
+                    [size] => 32
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 23 Mar 2010 19:19:50 +0300
+    [addr] => ******te.adobe.com
+    [agent] => Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2) Gecko/20100115 Firefox/3.6
+    [post] => Array
+        (
+            [response] => nojson
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => cmsmagazineb1b0a72a7df97e8c8a27c00e4cb9558b.txt
+                    [type] => text/plain
+                    [tmp_name] => Z:\tmp\phpDF66.tmp
+                    [error] => 0
+                    [size] => 32
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 23 Mar 2010 19:20:54 +0300
+    [addr] => ******te.adobe.com
+    [agent] => Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2) Gecko/20100115 Firefox/3.6
+    [post] => Array
+        (
+            [response] => nojson
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => cmsmagazineb1b0a72a7df97e8c8a27c00e4cb9558b.txt
+                    [type] => text/plain
+                    [tmp_name] => Z:\tmp\phpD744.tmp
+                    [error] => 0
+                    [size] => 32
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 23 Mar 2010 19:21:36 +0300
+    [addr] => ******te.adobe.com
+    [agent] => Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2) Gecko/20100115 Firefox/3.6
+    [post] => Array
+        (
+            [response] => nojson
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => cmsmagazineb1b0a72a7df97e8c8a27c00e4cb9558b.txt
+                    [type] => text/plain
+                    [tmp_name] => Z:\tmp\php7D2A.tmp
+                    [error] => 0
+                    [size] => 32
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 23 Mar 2010 19:23:12 +0300
+    [addr] => ******te.adobe.com
+    [agent] => Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2) Gecko/20100115 Firefox/3.6
+    [post] => Array
+        (
+            [response] => nojson
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => cmsmagazineb1b0a72a7df97e8c8a27c00e4cb9558b.txt
+                    [type] => text/plain
+                    [tmp_name] => Z:\tmp\phpF2B4.tmp
+                    [error] => 0
+                    [size] => 32
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 23 Mar 2010 19:24:31 +0300
+    [addr] => ******te.adobe.com
+    [agent] => Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2) Gecko/20100115 Firefox/3.6
+    [post] => Array
+        (
+            [response] => nojson
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => cmsmagazineb1b0a72a7df97e8c8a27c00e4cb9558b.txt
+                    [type] => text/plain
+                    [tmp_name] => Z:\tmp\php2614.tmp
+                    [error] => 0
+                    [size] => 32
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 23 Mar 2010 19:25:39 +0300
+    [addr] => ******te.adobe.com
+    [agent] => Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2) Gecko/20100115 Firefox/3.6
+    [post] => Array
+        (
+            [response] => nojson
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => pass.xls
+                    [type] => application/vnd.ms-excel
+                    [tmp_name] => Z:\tmp\php3284.tmp
+                    [error] => 0
+                    [size] => 32768
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 23 Mar 2010 19:34:58 +0300
+    [addr] => ******te.adobe.com
+    [agent] => Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2) Gecko/20100115 Firefox/3.6
+    [post] => Array
+        (
+            [response] => nojson
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => pass.xls
+                    [type] => application/vnd.ms-excel
+                    [tmp_name] => Z:\tmp\phpB81A.tmp
+                    [error] => 0
+                    [size] => 32768
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 23 Mar 2010 19:35:27 +0300
+    [addr] => ******te.adobe.com
+    [agent] => Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2) Gecko/20100115 Firefox/3.6
+    [post] => Array
+        (
+            [response] => nojson
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => pass.xls
+                    [type] => application/vnd.ms-excel
+                    [tmp_name] => Z:\tmp\php2B77.tmp
+                    [error] => 0
+                    [size] => 32768
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 23 Mar 2010 19:39:41 +0300
+    [addr] => ******te.adobe.com
+    [agent] => Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2) Gecko/20100115 Firefox/3.6
+    [post] => Array
+        (
+            [response] => nojson
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => 05022010028.jpg
+                    [type] => image/jpeg
+                    [tmp_name] => Z:\tmp\php995.tmp
+                    [error] => 0
+                    [size] => 252387
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 23 Mar 2010 19:41:57 +0300
+    [addr] => ******te.adobe.com
+    [agent] => Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2) Gecko/20100115 Firefox/3.6
+    [post] => Array
+        (
+            [response] => nojson
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => 05022010028.jpg
+                    [type] => image/jpeg
+                    [tmp_name] => Z:\tmp\php1E9C.tmp
+                    [error] => 0
+                    [size] => 252387
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 23 Mar 2010 19:42:45 +0300
+    [addr] => ******te.adobe.com
+    [agent] => Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2) Gecko/20100115 Firefox/3.6
+    [post] => Array
+        (
+            [response] => nojson
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => 05022010030.jpg
+                    [type] => image/jpeg
+                    [tmp_name] => Z:\tmp\phpD877.tmp
+                    [error] => 0
+                    [size] => 304226
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 23 Mar 2010 19:47:05 +0300
+    [addr] => ******te.adobe.com
+    [agent] => Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2) Gecko/20100115 Firefox/3.6
+    [post] => Array
+        (
+            [response] => nojson
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => 05022010030.jpg
+                    [type] => image/jpeg
+                    [tmp_name] => Z:\tmp\phpCE91.tmp
+                    [error] => 0
+                    [size] => 304226
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 23 Mar 2010 19:49:15 +0300
+    [addr] => ******te.adobe.com
+    [agent] => Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2) Gecko/20100115 Firefox/3.6
+    [post] => Array
+        (
+            [response] => nojson
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => 05022010032.jpg
+                    [type] => image/jpeg
+                    [tmp_name] => Z:\tmp\phpCC27.tmp
+                    [error] => 0
+                    [size] => 236896
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 23 Mar 2010 19:49:39 +0300
+    [addr] => ******te.adobe.com
+    [agent] => Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2) Gecko/20100115 Firefox/3.6
+    [post] => Array
+        (
+            [response] => nojson
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => 05022010030.jpg
+                    [type] => image/jpeg
+                    [tmp_name] => Z:\tmp\php2758.tmp
+                    [error] => 0
+                    [size] => 304226
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 23 Mar 2010 19:52:17 +0300
+    [addr] => ******te.adobe.com
+    [agent] => Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2) Gecko/20100115 Firefox/3.6
+    [post] => Array
+        (
+            [response] => nojson
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => 05022010028.jpg
+                    [type] => image/jpeg
+                    [tmp_name] => Z:\tmp\php9116.tmp
+                    [error] => 0
+                    [size] => 252387
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 23 Mar 2010 19:52:21 +0300
+    [addr] => ******te.adobe.com
+    [agent] => Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2) Gecko/20100115 Firefox/3.6
+    [post] => Array
+        (
+            [response] => nojson
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => 05022010030.jpg
+                    [type] => image/jpeg
+                    [tmp_name] => Z:\tmp\phpA24D.tmp
+                    [error] => 0
+                    [size] => 304226
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 23 Mar 2010 19:52:26 +0300
+    [addr] => ******te.adobe.com
+    [agent] => Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2) Gecko/20100115 Firefox/3.6
+    [post] => Array
+        (
+            [response] => nojson
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => 05022010032.jpg
+                    [type] => image/jpeg
+                    [tmp_name] => Z:\tmp\phpB568.tmp
+                    [error] => 0
+                    [size] => 236896
+                )
+
+        )
+
+)
+
+---
+Array
+(
+    [time] => Tue, 23 Mar 2010 19:53:03 +0300
+    [addr] => ******te.adobe.com
+    [agent] => Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2) Gecko/20100115 Firefox/3.6
+    [post] => Array
+        (
+            [response] => nojson
+        )
+
+    [files] => Array
+        (
+            [Filedata] => Array
+                (
+                    [name] => 05022010028.jpg
+                    [type] => image/jpeg
+                    [tmp_name] => Z:\tmp\php4536.tmp
+                    [error] => 0
+                    [size] => 252387
+                )
+
+        )
+
+)
+
+---

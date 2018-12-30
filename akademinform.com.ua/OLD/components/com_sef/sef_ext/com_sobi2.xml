@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="sef_ext">
+	<name>sobi2</name>
+	<author>Vladas Freimanas</author>
+	<creationDate>20 August 2007</creationDate>
+	<copyright>http://ewebdev.com</copyright>
+	<license></license>
+	<authorEmail>fallen@ewebdev.com</authorEmail>
+	<authorUrl>http://ewebdev.com</authorUrl>
+	<version>3.7.5</version>
+	<description>Adds SEO support for SOBI2 business directory component using ARTIO JoomSEF 2.1.0</description>
+	<files>
+		<filename sef_ext="sobi2">com_sobi2.php</filename>
+	</files>
+	<params>
+ 		<param name="ignoreSource" type="radio" default="2" label="Ignore multiple sources:" description="You can choose to override the default behaviour of this option.">
+ 			<option value="2">Use global config</option>
+ 			<option value="0">No</option>
+ 			<option value="1">Yes</option>
+ 		</param>
+ 		<param name="itemid" type="radio" default="0" label="Itemid handling:" description="You can choose to override the default behaviour with your own Itemid.">
+ 			<option value="0">Use global config</option>
+ 			<option value="1">Override</option>
+ 		</param>
+ 		<param name="overrideId" type="text" default="" label="Override Itemid:" description="Itemid to always use with this component. Leave blank to use the default one."></param>
+ 	</params>
+</mosinstall>

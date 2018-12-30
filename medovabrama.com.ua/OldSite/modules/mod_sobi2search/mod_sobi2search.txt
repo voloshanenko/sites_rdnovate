@@ -1,0 +1,36 @@
+
+Changelog for Search Module for SOBI2
+Authors: Sigrid and Radek Suski, Sigsiu.NET
+
+1.6 (14.1.2009)
+-------------------
++ Bugfix: Undefined Variable searchstring.
++ Bugfix: missing moduleclass_sfx for widths changes added
+
+1.5 (23.11.2008)
+-------------------
++ Change: Works in Joomla! 1.5 native mode (installation with legacy plugin on)
++ Bugfix: Module class suffix works now.
+
+1.4 (2.8.2008)
+-------------------
++ Bugfix: Several changes for IE if the module is displayed in the standard SOBI2 search function
+
+1.3
+-------------------
++ Bugfix: Missing Itemid added
+
+1.2
+-------------------
++ Add: Parameter to add module table code
++ Add: Possibility to add label text of custom fields into the drop down boxes instead of in front of them
+! Change: Search Module also available within SOBI2 search
+! Change: Header sent only once (to work with Gallery Plugin)
+# Bugfix: Module class header
+
+1.1 (17.3.2008)
+-------------------
+! Change: JS function $() to $_()
+
+Initial version 1.0 (2.3.2008)
+-------------------

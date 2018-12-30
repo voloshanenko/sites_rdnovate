@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<structure>
+	<menu>
+		<options var="sobi2Task">
+			<default name="SOBI_FRONT" msg="SOBI_FRONT_EXPL" />
+			<option value="search" name="SOBI_SEARCH" msg="SOBI_SEARCH_EXPL"/>
+			<option value="addNew" name="SOBI_ADD_FORM" msg="SOBI_ADD_FORM_EXPL" />
+			<option value="usersListing" name="SOBI_USER_LISTING" msg="SOBI_USER_LISTING_EXPL" />
+			<option value="showNew" name="SOBI_NEW_LISTING" msg="SOBI_NEW_LISTING_EXPL" />
+			<option value="updated" name="SOBI_UPDATED_LISTING" msg="SOBI_UPDATED_LISTING_EXPL" />
+			<option value="popular" name="SOBI_POPULAR_LISTING_CATS" msg="SOBI_POPULAR_LISTING_CATS_EXPL" />
+			<option value="popularListing" name="SOBI_POPULAR_LISTING" msg="SOBI_POPULAR_LISTING_EXPL" />
+		</options>
+	</menu>
+	<state>
+		<url addpath="/administrator/components/com_sobi2/elements" >
+			<param name="SOBI_SELECT_CAT" type="sobi2" msg="SOBI_SELECT_CAT_EXPL" />
+			<param name="cid" type="sobi2" />
+		</url>
+	</state>
+</structure>

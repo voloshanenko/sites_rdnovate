@@ -1,0 +1,75 @@
+2018/12/22 04:30:01 [trace] [system.CModule] Loading "log" application component
+2018/12/22 04:30:01 [trace] [system.CModule] Loading "db" application component
+2018/12/22 04:30:01 [trace] [system.db.CDbConnection] Opening DB connection
+2018/12/22 04:30:01 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `ads`
+2018/12/22 04:30:01 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `ads`
+2018/12/22 04:30:01 [trace] [system.db.ar.CActiveRecord] Ads.findAll()
+2018/12/22 04:30:01 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `ads` `t` WHERE `end_publishing_date` BETWEEN now() and DATE_ADD(NOW(), INTERVAL 3 DAY) ORDER BY publishing_date desc
+2018/12/23 04:30:01 [trace] [system.CModule] Loading "log" application component
+2018/12/23 04:30:01 [trace] [system.CModule] Loading "db" application component
+2018/12/23 04:30:01 [trace] [system.db.CDbConnection] Opening DB connection
+2018/12/23 04:30:01 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `ads`
+2018/12/23 04:30:01 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `ads`
+2018/12/23 04:30:01 [trace] [system.db.ar.CActiveRecord] Ads.findAll()
+2018/12/23 04:30:01 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `ads` `t` WHERE `end_publishing_date` BETWEEN now() and DATE_ADD(NOW(), INTERVAL 3 DAY) ORDER BY publishing_date desc
+2018/12/24 04:30:02 [trace] [system.CModule] Loading "log" application component
+2018/12/24 04:30:02 [trace] [system.CModule] Loading "db" application component
+2018/12/24 04:30:02 [trace] [system.db.CDbConnection] Opening DB connection
+2018/12/24 04:30:02 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `ads`
+2018/12/24 04:30:02 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `ads`
+2018/12/24 04:30:02 [trace] [system.db.ar.CActiveRecord] Ads.findAll()
+2018/12/24 04:30:02 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `ads` `t` WHERE `end_publishing_date` BETWEEN now() and DATE_ADD(NOW(), INTERVAL 3 DAY) ORDER BY publishing_date desc
+2018/12/25 04:30:01 [trace] [system.CModule] Loading "log" application component
+2018/12/25 04:30:01 [trace] [system.CModule] Loading "db" application component
+2018/12/25 04:30:01 [trace] [system.db.CDbConnection] Opening DB connection
+2018/12/25 04:30:01 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `ads`
+2018/12/25 04:30:01 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `ads`
+2018/12/25 04:30:01 [trace] [system.db.ar.CActiveRecord] Ads.findAll()
+2018/12/25 04:30:01 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `ads` `t` WHERE `end_publishing_date` BETWEEN now() and DATE_ADD(NOW(), INTERVAL 3 DAY) ORDER BY publishing_date desc
+2018/12/26 04:30:01 [trace] [system.CModule] Loading "log" application component
+2018/12/26 04:30:01 [trace] [system.CModule] Loading "db" application component
+2018/12/26 04:30:01 [trace] [system.db.CDbConnection] Opening DB connection
+2018/12/26 04:30:01 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `ads`
+2018/12/26 04:30:01 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `ads`
+2018/12/26 04:30:02 [trace] [system.db.ar.CActiveRecord] Ads.findAll()
+2018/12/26 04:30:02 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `ads` `t` WHERE `end_publishing_date` BETWEEN now() and DATE_ADD(NOW(), INTERVAL 3 DAY) ORDER BY publishing_date desc
+2018/12/27 04:30:01 [trace] [system.CModule] Loading "log" application component
+2018/12/27 04:30:01 [trace] [system.CModule] Loading "db" application component
+2018/12/27 04:30:01 [trace] [system.db.CDbConnection] Opening DB connection
+2018/12/27 04:30:01 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `ads`
+2018/12/27 04:30:01 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `ads`
+2018/12/27 04:30:01 [trace] [system.db.ar.CActiveRecord] Ads.findAll()
+2018/12/27 04:30:01 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `ads` `t` WHERE `end_publishing_date` BETWEEN now() and DATE_ADD(NOW(), INTERVAL 3 DAY) ORDER BY publishing_date desc
+2018/12/28 04:30:01 [trace] [system.CModule] Loading "log" application component
+2018/12/28 04:30:01 [trace] [system.CModule] Loading "db" application component
+2018/12/28 04:30:01 [trace] [system.db.CDbConnection] Opening DB connection
+2018/12/28 04:30:01 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `ads`
+2018/12/28 04:30:01 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `ads`
+2018/12/28 04:30:01 [trace] [system.db.ar.CActiveRecord] Ads.findAll()
+2018/12/28 04:30:01 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `ads` `t` WHERE `end_publishing_date` BETWEEN now() and DATE_ADD(NOW(), INTERVAL 3 DAY) ORDER BY publishing_date desc
+2018/12/28 04:30:01 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `users`
+2018/12/28 04:30:01 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `users`
+2018/12/28 04:30:01 [trace] [system.db.ar.CActiveRecord] Users.findByPk()
+2018/12/28 04:30:01 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `users` `t` WHERE `t`.`user_id` IS NULL LIMIT 1
+2018/12/29 04:30:01 [trace] [system.CModule] Loading "log" application component
+2018/12/29 04:30:01 [trace] [system.CModule] Loading "db" application component
+2018/12/29 04:30:01 [trace] [system.db.CDbConnection] Opening DB connection
+2018/12/29 04:30:01 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `ads`
+2018/12/29 04:30:01 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `ads`
+2018/12/29 04:30:01 [trace] [system.db.ar.CActiveRecord] Ads.findAll()
+2018/12/29 04:30:01 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `ads` `t` WHERE `end_publishing_date` BETWEEN now() and DATE_ADD(NOW(), INTERVAL 3 DAY) ORDER BY publishing_date desc
+2018/12/29 04:30:01 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `users`
+2018/12/29 04:30:01 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `users`
+2018/12/29 04:30:01 [trace] [system.db.ar.CActiveRecord] Users.findByPk()
+2018/12/29 04:30:01 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `users` `t` WHERE `t`.`user_id` IS NULL LIMIT 1
+2018/12/30 04:30:02 [trace] [system.CModule] Loading "log" application component
+2018/12/30 04:30:02 [trace] [system.CModule] Loading "db" application component
+2018/12/30 04:30:02 [trace] [system.db.CDbConnection] Opening DB connection
+2018/12/30 04:30:02 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `ads`
+2018/12/30 04:30:02 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `ads`
+2018/12/30 04:30:02 [trace] [system.db.ar.CActiveRecord] Ads.findAll()
+2018/12/30 04:30:02 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `ads` `t` WHERE `end_publishing_date` BETWEEN now() and DATE_ADD(NOW(), INTERVAL 3 DAY) ORDER BY publishing_date desc
+2018/12/30 04:30:02 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `users`
+2018/12/30 04:30:02 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `users`
+2018/12/30 04:30:02 [trace] [system.db.ar.CActiveRecord] Users.findByPk()
+2018/12/30 04:30:02 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `users` `t` WHERE `t`.`user_id` IS NULL LIMIT 1

@@ -1,0 +1,10 @@
+Disallow: /system
+Disallow: /application
+Disallow: /css
+Disallow: /js
+Disallow: /captcha
+Disallow: /textblocks
+
+Host: medovabrama.com.ua
+
+Crawl-delay: 2

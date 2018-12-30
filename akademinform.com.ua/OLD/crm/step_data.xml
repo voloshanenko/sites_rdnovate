@@ -1,0 +1,12 @@
+<lang>ru</lang>
+<step>4</step>
+<db_host>localhost</db_host>
+<db_user>u_akademcr</db_user>
+<db_password>leqXgGWn</db_password>
+<db_base>akademcrm</db_base>
+<dacons_mail_from>info@akademinform.com.ua</dacons_mail_from>
+<dacons_admin_email>info@akademinform.com.ua</dacons_admin_email>
+<mailer_type>mail</mailer_type>
+<mailer_smtp_host>localhost</mailer_smtp_host>
+<mailer_smtp_port>25</mailer_smtp_port>
+<license>BQZZ-0ZU2-PDZA</license>

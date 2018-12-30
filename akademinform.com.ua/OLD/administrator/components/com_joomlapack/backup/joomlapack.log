@@ -1,0 +1,295 @@
+INFO    |091206 |--------------------------------------------------------------------------------
+INFO    |091206 |JoomlaPack 2.3.1 (2009-08-19)
+INFO    |091206 |Got backup?
+INFO    |091206 |--------------------------------------------------------------------------------
+INFO    |091206 |--- System Information ---
+INFO    |091206 |PHP Version        :5.2.4
+INFO    |091206 |OS Version         :Windows NT
+INFO    |091206 |DB Version         :5.0.45-community-nt
+INFO    |091206 |DB Collation       :utf8_general_ci
+INFO    |091206 |Web Server         :Apache/2.2.4 (Win32) mod_ssl/2.2.4 OpenSSL/0.9.8d PHP/5.2.4
+INFO    |091206 |PHP Interface      :apache2handler
+INFO    |091206 |Joomla! version    :Joomla! 1.5.14 Stable [ Wojmamni Ama Naiki ] 30-July-2009 23:00 GMT
+INFO    |091206 |Mozilla/5.0 (Windows; U; Windows NT 5.1; ru; rv:1.9.1.5) Gecko/20091102 Ant.com Toolbar 1.4 Firefox/3.5.5
+INFO    |091206 |Safe mode          :
+INFO    |091206 |Display errors     :1
+INFO    |091206 |Error reporting    :E_ALL
+INFO    |091206 |Disabled functions :
+INFO    |091206 |open_basedir restr.:
+INFO    |091206 |Max. exec. time    :300
+INFO    |091206 |Memory limit       :512M
+INFO    |091206 |Current mem. usage :6858736
+INFO    |091206 |GZIP Compression   : available (good)
+INFO    |091206 |JPATH_BASE         :<root>\administrator
+INFO    |091206 |JPATH_ROOT         :<root>
+INFO    |091206 |JPATH_CACHE        :<root>\administrator\cache
+INFO    |091206 |Output directory   :<root>/administrator/components/com_joomlapack/backup
+INFO    |091206 |Temporary directory:Z:\\home\\test3.ru\\www\\tmp
+INFO    |091206 |BASE64 Encoding    :Available; will be used for temp vars
+INFO    |091206 |CUBEObject Storage :Temporary file
+INFO    |091206 |--------------------------------------------------------------------------------
+INFO    |091206 |JoomlaPack has detected the following potential problems:
+INFO    |091206 |- 203 Default output directory in use (medium)
+INFO    |091206 |- 401 ZIP format selected (low)
+INFO    |091206 |You probably do not have to worry about them, but you should be aware of them.
+INFO    |091206 |--------------------------------------------------------------------------------
+INFO    |091206 |Loading profile #1
+INFO    |091206 |JoomlaPack is starting a new full site backup
+DEBUG   |091206 |Creating packer engine of type zip
+DEBUG   |091206 |Trying to read engine setup data for packer
+DEBUG   |091206 |Trying to include engine file engine.packer.zip
+DEBUG   |091206 |Instanciating JoomlapackPackerZIP
+DEBUG   |091206 |JoomlapackPackerZIP :: New instance
+DEBUG   |091206 |Chunk size for CRC is now 1048576 bytes
+DEBUG   |091206 |Archive template name: site-[HOST]-[DATE]-[TIME]
+DEBUG   |091206 |Expanded template name: site-localhost-20091206-121141
+DEBUG   |091206 |Archive template name: site-[HOST]-[DATE]-[TIME]
+DEBUG   |091206 |Expanded template name: site-localhost-20091206-121141
+DEBUG   |091206 |Calculated archive absolute path: <root>/administrator/components/com_joomlapack/backup\site-localhost-20091206-121141.zip
+DEBUG   |091206 |Backup type is now set to 'full'
+DEBUG   |091206 |Expanded archive file name: Z:/home/localhost/www/newcms/administrator/components/com_joomlapack/backup/site-localhost-20091206-121141.zip
+DEBUG   |091206 |Seeding archive with installer
+DEBUG   |091206 |JoomlapackPackerZIP :: initialize - archive Z:/home/localhost/www/newcms/administrator/components/com_joomlapack/backup/site-localhost-20091206-121141.zip
+INFO    |091206 |JoomlapackPackerZIP :: Split ZIP creation enabled
+DEBUG   |091206 |JoomlapackPackerZIP :: CntDir Tempfile = Z:\home\test3.ru\www\tmp\jpz750.tmp
+DEBUG   |091206 |JoomlapackPackerZIP :: Killing old archive
+DEBUG   |091206 |Updating multipart status to 1
+DEBUG   |091206 |Saving CUBEObject instance
+INFO    |091206 |Creating new CUBEObject storage file: Z:\home\test3.ru\www\tmp\jp751.tmp
+DEBUG   |091206 |JoomlapackCUBE::getInstance - Loading from database
+DEBUG   |091206 |====== Starting Step number 1 ======
+DEBUG   |091206 |CUBE :: Domain 'init' has finished
+DEBUG   |091206 |Next domain --> Installer deployment
+DEBUG   |091206 |JoomlapackCUBEDomainInstaller :: New instance
+DEBUG   |091206 |====== Finished Step number 1 ======
+DEBUG   |091206 |Saving CUBEObject instance
+DEBUG   |091206 |JoomlapackCUBE::getInstance - Loading from database
+DEBUG   |091206 |====== Starting Step number 2 ======
+DEBUG   |091206 |Using smart algorithm for JoomlapackCUBEDomainInstaller
+DEBUG   |091206 |Smart Stepping
+DEBUG   |091206 |----- Finished operation 1 ------
+DEBUG   |091206 |Initializing with JPA package 
+DEBUG   |091206 |  Adding installation/js/jquery-ui.min.js; Next offset:11466
+DEBUG   |091206 |  Virtual add:installation/js/jquery-ui.min.js (40324) - 8
+DEBUG   |091206 |----- Finished operation 2 ------
+DEBUG   |091206 |  Adding installation/js/jquery.blockUI.js; Next offset:16671
+DEBUG   |091206 |  Virtual add:installation/js/jquery.blockUI.js (15137) - 8
+DEBUG   |091206 |----- Finished operation 3 ------
+DEBUG   |091206 |  Adding installation/js/install.js; Next offset:20727
+DEBUG   |091206 |  Virtual add:installation/js/install.js (16113) - 8
+DEBUG   |091206 |----- Finished operation 4 ------
+DEBUG   |091206 |  Adding installation/js/jquery.min.js; Next offset:40500
+DEBUG   |091206 |  Virtual add:installation/js/jquery.min.js (57254) - 8
+DEBUG   |091206 |----- Finished operation 5 ------
+DEBUG   |091206 |Successful Smart algorithm on JoomlapackCUBEDomainInstaller
+DEBUG   |091206 |CUBE :: More work required in domain 'installer
+DEBUG   |091206 |====== Finished Step number 2 ======
+DEBUG   |091206 |Saving CUBEObject instance
+DEBUG   |091206 |JoomlapackCUBE::getInstance - Loading from database
+DEBUG   |091206 |====== Starting Step number 3 ======
+DEBUG   |091206 |Using smart algorithm for JoomlapackCUBEDomainInstaller
+DEBUG   |091206 |Smart Stepping
+DEBUG   |091206 |  Adding installation/index.php; Next offset:41656
+DEBUG   |091206 |  Virtual add:installation/index.php (3208) - 8
+DEBUG   |091206 |----- Finished operation 1 ------
+DEBUG   |091206 |  Adding installation/css/img/header_bg.png; Next offset:43247
+DEBUG   |091206 |  Virtual add:installation/css/img/header_bg.png (1531) - 8
+DEBUG   |091206 |----- Finished operation 2 ------
+DEBUG   |091206 |  Adding installation/css/img/logo.png; Next offset:44303
+DEBUG   |091206 |  Virtual add:installation/css/img/logo.png (1001) - 8
+DEBUG   |091206 |----- Finished operation 3 ------
+DEBUG   |091206 |  Adding installation/css/img/busy.gif; Next offset:45729
+DEBUG   |091206 |  Virtual add:installation/css/img/busy.gif (1608) - 8
+DEBUG   |091206 |----- Finished operation 4 ------
+DEBUG   |091206 |  Adding installation/css/img/btn_next.png; Next offset:47607
+DEBUG   |091206 |  Virtual add:installation/css/img/btn_next.png (1819) - 8
+DEBUG   |091206 |----- Finished operation 5 ------
+DEBUG   |091206 |Successful Smart algorithm on JoomlapackCUBEDomainInstaller
+DEBUG   |091206 |CUBE :: More work required in domain 'installer
+DEBUG   |091206 |====== Finished Step number 3 ======
+DEBUG   |091206 |Saving CUBEObject instance
+DEBUG   |091206 |JoomlapackCUBE::getInstance - Loading from database
+DEBUG   |091206 |====== Starting Step number 4 ======
+DEBUG   |091206 |Using smart algorithm for JoomlapackCUBEDomainInstaller
+DEBUG   |091206 |Smart Stepping
+DEBUG   |091206 |  Adding installation/css/img/btn_prev.png; Next offset:49491
+DEBUG   |091206 |  Virtual add:installation/css/img/btn_prev.png (1825) - 8
+DEBUG   |091206 |----- Finished operation 1 ------
+DEBUG   |091206 |  Adding installation/css/redmond/images/ui-icons_469bdd_256x240.png; Next offset:54780
+DEBUG   |091206 |  Virtual add:installation/css/redmond/images/ui-icons_469bdd_256x240.png (5399) - 8
+DEBUG   |091206 |----- Finished operation 2 ------
+DEBUG   |091206 |  Adding installation/css/redmond/images/ui-bg_inset-hard_100_f5f8f9_1x100.png; Next offset:54971
+DEBUG   |091206 |  Virtual add:installation/css/redmond/images/ui-bg_inset-hard_100_f5f8f9_1x100.png (104) - 8
+DEBUG   |091206 |----- Finished operation 3 ------
+DEBUG   |091206 |  Adding installation/css/redmond/images/ui-icons_cd0a0a_256x240.png; Next offset:59217
+DEBUG   |091206 |  Virtual add:installation/css/redmond/images/ui-icons_cd0a0a_256x240.png (4379) - 8
+DEBUG   |091206 |----- Finished operation 4 ------
+DEBUG   |091206 |  Adding installation/css/redmond/images/ui-bg_glass_75_d0e5f5_1x400.png; Next offset:59424
+DEBUG   |091206 |  Virtual add:installation/css/redmond/images/ui-bg_glass_75_d0e5f5_1x400.png (124) - 8
+DEBUG   |091206 |----- Finished operation 5 ------
+DEBUG   |091206 |Successful Smart algorithm on JoomlapackCUBEDomainInstaller
+DEBUG   |091206 |CUBE :: More work required in domain 'installer
+DEBUG   |091206 |====== Finished Step number 4 ======
+DEBUG   |091206 |Saving CUBEObject instance
+DEBUG   |091206 |JoomlapackCUBE::getInstance - Loading from database
+DEBUG   |091206 |====== Starting Step number 5 ======
+DEBUG   |091206 |Using smart algorithm for JoomlapackCUBEDomainInstaller
+DEBUG   |091206 |Smart Stepping
+DEBUG   |091206 |  Adding installation/css/redmond/images/ui-icons_217bc0_256x240.png; Next offset:63670
+DEBUG   |091206 |  Virtual add:installation/css/redmond/images/ui-icons_217bc0_256x240.png (4379) - 8
+DEBUG   |091206 |----- Finished operation 1 ------
+DEBUG   |091206 |  Adding installation/css/redmond/images/ui-icons_6da8d5_256x240.png; Next offset:67915
+DEBUG   |091206 |  Virtual add:installation/css/redmond/images/ui-icons_6da8d5_256x240.png (4379) - 8
+DEBUG   |091206 |----- Finished operation 2 ------
+DEBUG   |091206 |  Adding installation/css/redmond/images/ui-icons_d8e7f3_256x240.png; Next offset:72161
+DEBUG   |091206 |  Virtual add:installation/css/redmond/images/ui-icons_d8e7f3_256x240.png (4379) - 8
+DEBUG   |091206 |----- Finished operation 3 ------
+DEBUG   |091206 |  Adding installation/css/redmond/images/ui-bg_glass_95_fef1ec_1x400.png; Next offset:72363
+DEBUG   |091206 |  Virtual add:installation/css/redmond/images/ui-bg_glass_95_fef1ec_1x400.png (119) - 8
+DEBUG   |091206 |----- Finished operation 4 ------
+DEBUG   |091206 |  Adding installation/css/redmond/images/ui-icons_f9bd01_256x240.png; Next offset:76608
+DEBUG   |091206 |  Virtual add:installation/css/redmond/images/ui-icons_f9bd01_256x240.png (4379) - 8
+DEBUG   |091206 |----- Finished operation 5 ------
+DEBUG   |091206 |Successful Smart algorithm on JoomlapackCUBEDomainInstaller
+DEBUG   |091206 |CUBE :: More work required in domain 'installer
+DEBUG   |091206 |====== Finished Step number 5 ======
+DEBUG   |091206 |Saving CUBEObject instance
+DEBUG   |091206 |JoomlapackCUBE::getInstance - Loading from database
+DEBUG   |091206 |====== Starting Step number 6 ======
+DEBUG   |091206 |Using smart algorithm for JoomlapackCUBEDomainInstaller
+DEBUG   |091206 |Smart Stepping
+DEBUG   |091206 |  Adding installation/css/redmond/images/ui-bg_inset-hard_100_fcfdfd_1x100.png; Next offset:76783
+DEBUG   |091206 |  Virtual add:installation/css/redmond/images/ui-bg_inset-hard_100_fcfdfd_1x100.png (88) - 8
+DEBUG   |091206 |----- Finished operation 1 ------
+DEBUG   |091206 |  Adding installation/css/redmond/images/ui-bg_flat_0_aaaaaa_40x100.png; Next offset:76968
+DEBUG   |091206 |  Virtual add:installation/css/redmond/images/ui-bg_flat_0_aaaaaa_40x100.png (180) - 8
+DEBUG   |091206 |----- Finished operation 2 ------
+DEBUG   |091206 |  Adding installation/css/redmond/images/ui-bg_gloss-wave_55_5c9ccc_500x100.png; Next offset:80337
+DEBUG   |091206 |  Virtual add:installation/css/redmond/images/ui-bg_gloss-wave_55_5c9ccc_500x100.png (3457) - 8
+DEBUG   |091206 |----- Finished operation 3 ------
+DEBUG   |091206 |  Adding installation/css/redmond/images/ui-bg_glass_85_dfeffc_1x400.png; Next offset:80543
+DEBUG   |091206 |  Virtual add:installation/css/redmond/images/ui-bg_glass_85_dfeffc_1x400.png (123) - 8
+DEBUG   |091206 |----- Finished operation 4 ------
+DEBUG   |091206 |  Adding installation/css/redmond/images/ui-icons_2e83ff_256x240.png; Next offset:84789
+DEBUG   |091206 |  Virtual add:installation/css/redmond/images/ui-icons_2e83ff_256x240.png (4379) - 8
+DEBUG   |091206 |----- Finished operation 5 ------
+DEBUG   |091206 |Successful Smart algorithm on JoomlapackCUBEDomainInstaller
+DEBUG   |091206 |CUBE :: More work required in domain 'installer
+DEBUG   |091206 |====== Finished Step number 6 ======
+DEBUG   |091206 |Saving CUBEObject instance
+DEBUG   |091206 |JoomlapackCUBE::getInstance - Loading from database
+DEBUG   |091206 |====== Starting Step number 7 ======
+DEBUG   |091206 |Using smart algorithm for JoomlapackCUBEDomainInstaller
+DEBUG   |091206 |Smart Stepping
+DEBUG   |091206 |  Adding installation/css/redmond/images/ui-bg_flat_55_fbec88_40x100.png; Next offset:84977
+DEBUG   |091206 |  Virtual add:installation/css/redmond/images/ui-bg_flat_55_fbec88_40x100.png (182) - 8
+DEBUG   |091206 |----- Finished operation 1 ------
+DEBUG   |091206 |  Adding installation/css/redmond/jquery-ui-redmond.css; Next offset:90149
+DEBUG   |091206 |  Virtual add:installation/css/redmond/jquery-ui-redmond.css (27480) - 8
+DEBUG   |091206 |----- Finished operation 2 ------
+DEBUG   |091206 |  Adding installation/css/install.css; Next offset:91194
+DEBUG   |091206 |  Virtual add:installation/css/install.css (3427) - 8
+DEBUG   |091206 |----- Finished operation 3 ------
+DEBUG   |091206 |  Adding installation/index.html; Next offset:92113
+DEBUG   |091206 |  Virtual add:installation/index.html (1916) - 8
+DEBUG   |091206 |----- Finished operation 4 ------
+DEBUG   |091206 |  Adding installation/includes/utils.php; Next offset:92921
+DEBUG   |091206 |  Virtual add:installation/includes/utils.php (1462) - 8
+DEBUG   |091206 |----- Finished operation 5 ------
+DEBUG   |091206 |Successful Smart algorithm on JoomlapackCUBEDomainInstaller
+DEBUG   |091206 |CUBE :: More work required in domain 'installer
+DEBUG   |091206 |====== Finished Step number 7 ======
+DEBUG   |091206 |Saving CUBEObject instance
+DEBUG   |091206 |JoomlapackCUBE::getInstance - Loading from database
+DEBUG   |091206 |====== Starting Step number 8 ======
+DEBUG   |091206 |Using smart algorithm for JoomlapackCUBEDomainInstaller
+DEBUG   |091206 |Smart Stepping
+DEBUG   |091206 |  Adding installation/includes/storage.php; Next offset:94493
+DEBUG   |091206 |  Virtual add:installation/includes/storage.php (4816) - 8
+DEBUG   |091206 |----- Finished operation 1 ------
+DEBUG   |091206 |  Adding installation/includes/output.php; Next offset:96526
+DEBUG   |091206 |  Virtual add:installation/includes/output.php (5610) - 8
+DEBUG   |091206 |----- Finished operation 2 ------
+DEBUG   |091206 |  Adding installation/includes/translate.php; Next offset:97655
+DEBUG   |091206 |  Virtual add:installation/includes/translate.php (2526) - 8
+DEBUG   |091206 |----- Finished operation 3 ------
+DEBUG   |091206 |  Adding installation/includes/output/index.php; Next offset:98435
+DEBUG   |091206 |  Virtual add:installation/includes/output/index.php (2520) - 8
+DEBUG   |091206 |----- Finished operation 4 ------
+DEBUG   |091206 |  Adding installation/includes/output/setup.php; Next offset:100040
+DEBUG   |091206 |  Virtual add:installation/includes/output/setup.php (5970) - 8
+DEBUG   |091206 |----- Finished operation 5 ------
+DEBUG   |091206 |Successful Smart algorithm on JoomlapackCUBEDomainInstaller
+DEBUG   |091206 |CUBE :: More work required in domain 'installer
+DEBUG   |091206 |====== Finished Step number 8 ======
+DEBUG   |091206 |Saving CUBEObject instance
+DEBUG   |091206 |JoomlapackCUBE::getInstance - Loading from database
+DEBUG   |091206 |====== Starting Step number 9 ======
+DEBUG   |091206 |Using smart algorithm for JoomlapackCUBEDomainInstaller
+DEBUG   |091206 |Smart Stepping
+DEBUG   |091206 |  Adding installation/includes/output/dbsetup.php; Next offset:101175
+DEBUG   |091206 |  Virtual add:installation/includes/output/dbsetup.php (3532) - 8
+DEBUG   |091206 |----- Finished operation 1 ------
+DEBUG   |091206 |  Adding installation/includes/output/finish.php; Next offset:101868
+DEBUG   |091206 |  Virtual add:installation/includes/output/finish.php (1263) - 8
+DEBUG   |091206 |----- Finished operation 2 ------
+DEBUG   |091206 |  Adding installation/includes/db.php; Next offset:104441
+DEBUG   |091206 |  Virtual add:installation/includes/db.php (9199) - 8
+DEBUG   |091206 |----- Finished operation 3 ------
+DEBUG   |091206 |  Adding installation/includes/logic/index.php; Next offset:106268
+DEBUG   |091206 |  Virtual add:installation/includes/logic/index.php (4504) - 8
+DEBUG   |091206 |----- Finished operation 4 ------
+DEBUG   |091206 |  Adding installation/includes/logic/setup.php; Next offset:107355
+DEBUG   |091206 |  Virtual add:installation/includes/logic/setup.php (2519) - 8
+DEBUG   |091206 |----- Finished operation 5 ------
+DEBUG   |091206 |Successful Smart algorithm on JoomlapackCUBEDomainInstaller
+DEBUG   |091206 |CUBE :: More work required in domain 'installer
+DEBUG   |091206 |====== Finished Step number 9 ======
+DEBUG   |091206 |Saving CUBEObject instance
+DEBUG   |091206 |JoomlapackCUBE::getInstance - Loading from database
+DEBUG   |091206 |====== Starting Step number 10 ======
+DEBUG   |091206 |Using smart algorithm for JoomlapackCUBEDomainInstaller
+DEBUG   |091206 |Smart Stepping
+DEBUG   |091206 |  Adding installation/includes/logic/dbsetup.php; Next offset:109496
+DEBUG   |091206 |  Virtual add:installation/includes/logic/dbsetup.php (6039) - 8
+DEBUG   |091206 |----- Finished operation 1 ------
+DEBUG   |091206 |  Adding installation/includes/logic/finish.php; Next offset:111386
+DEBUG   |091206 |  Virtual add:installation/includes/logic/finish.php (4458) - 8
+DEBUG   |091206 |----- Finished operation 2 ------
+DEBUG   |091206 |  Adding installation/includes/logic/ajax.php; Next offset:112509
+DEBUG   |091206 |  Virtual add:installation/includes/logic/ajax.php (3166) - 8
+DEBUG   |091206 |----- Finished operation 3 ------
+DEBUG   |091206 |  Adding installation/includes/logic/restore.php; Next offset:116869
+DEBUG   |091206 |  Virtual add:installation/includes/logic/restore.php (13304) - 8
+DEBUG   |091206 |----- Finished operation 4 ------
+DEBUG   |091206 |  Adding installation/includes/configuration.php; Next offset:119375
+DEBUG   |091206 |  Virtual add:installation/includes/configuration.php (6866) - 8
+DEBUG   |091206 |----- Finished operation 5 ------
+DEBUG   |091206 |Successful Smart algorithm on JoomlapackCUBEDomainInstaller
+DEBUG   |091206 |CUBE :: More work required in domain 'installer
+DEBUG   |091206 |====== Finished Step number 10 ======
+DEBUG   |091206 |Saving CUBEObject instance
+DEBUG   |091206 |JoomlapackCUBE::getInstance - Loading from database
+DEBUG   |091206 |====== Starting Step number 11 ======
+DEBUG   |091206 |Using smart algorithm for JoomlapackCUBEDomainInstaller
+DEBUG   |091206 |Smart Stepping
+DEBUG   |091206 |  Adding installation/includes/ftp.php; Next offset:123145
+DEBUG   |091206 |  Virtual add:installation/includes/ftp.php (13047) - 8
+DEBUG   |091206 |----- Finished operation 1 ------
+DEBUG   |091206 |  Adding installation/lang/en.ini; Next offset:125880
+DEBUG   |091206 |  Virtual add:installation/lang/en.ini (5628) - 8
+DEBUG   |091206 |----- Finished operation 2 ------
+DEBUG   |091206 |  Adding installation/lang/fr.ini; Next offset:129052
+DEBUG   |091206 |  Virtual add:installation/lang/fr.ini (7677) - 8
+DEBUG   |091206 |----- Finished operation 3 ------
+DEBUG   |091206 |  Adding installation/configuration.php-dist; Next offset:129702
+DEBUG   |091206 |  Virtual add:installation/configuration.php-dist (1462) - 8
+DEBUG   |091206 |----- Finished operation 4 ------
+DEBUG   |091206 |Done
+DEBUG   |091206 |Initializing with JPA package has finished
+DEBUG   |091206 |JoomlapackCUBEDomainInstaller:: archive is initialized
+DEBUG   |091206 |----- Finished operation 5 ------
+DEBUG   |091206 |Successful Smart algorithm on JoomlapackCUBEDomainInstaller
+DEBUG   |091206 |CUBE :: More work required in domain 'installer
+DEBUG   |091206 |====== Finished Step number 11 ======
+DEBUG   |091206 |Saving CUBEObject instance

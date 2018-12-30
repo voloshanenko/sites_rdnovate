@@ -1,0 +1,126 @@
+/*
+** All rights reserved For Offlajn.com    342801
+*/
+
+/*
+**Reset values
+*/
+dl, dt, dd {
+	vertical-align: baseline;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	color: #CF6301;
+}
+
+dl, dd { color: #CF6301; }
+
+/*
+**Set dl width
+*/
+dl.accordion
+{
+}
+dl.accordion a {
+ color: #CF6301;
+ padding: 0;
+}
+/*
+**Link colors >>
+*/
+dl.accordion a:link {
+
+	text-decoration: none;
+}
+dl.accordion a:visited {
+	text-decoration: none;
+}
+dl.accordion a:hover {
+	text-decoration: none;
+}
+dl.accordion a:active {
+	text-decoration: none;
+}
+/*
+**<< Link Colors
+*/
+dl.accordion dt
+{
+	position: relative;
+	cursor: pointer;
+	/*background: url(../images/closed.gif) no-repeat;*/
+}
+
+* dl.accordion dt.open
+{
+  /*background: url(../images/open.gif) no-repeat;*/
+}
+
+
+* html dl.accordion dt
+{
+	cursor: hand;
+}
+
+dl.accordion dd
+{
+	position: relative;
+	overflow: hidden;
+}
+
+
+dl.accordion dt.no_sub{
+  background-image: none;
+}
+
+dl.accordion dd.accordion_content
+{
+	padding: 0 10px 0 20px;
+}
+
+dl.accordion dd.accordion_content p
+{
+	padding: 5px 0 7px 0;
+}
+
+dl.accordion dd dl dt
+{
+	background-position: 10px 12px;
+}
+
+dl.accordion dd dl dt.open
+{
+  /*background: url(../images/open.gif) no-repeat;
+  background-position: 9px 3px;*/
+}
+
+dl.accordion dd dl dd.accordion_content
+{
+	padding-left: 20px;
+}
+
+dl.accordion dd dl dd dl dt
+{
+	float: left;
+}
+
+dl.accordion dd dl dd dl dd.accordion_content
+{
+	padding-left: 30px;
+}
+
+.module dl.accordion dt {
+	padding-bottom:7px;
+	padding-left:20px !important;
+	padding-top:7px;
+}
+.module dl.accordion a {
+	line-height: 1;
+	margin: 3px 0;
+	display: block;
+	color: #CF6301;
+}
+.module dl.accordion a:hover {
+	text-decoration: underline;
+}

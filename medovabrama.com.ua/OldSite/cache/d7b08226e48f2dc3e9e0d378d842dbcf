@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- generator="FeedCreator 1.7.2" -->
+<rss version="2.0">
+	<channel>
+		<title>Sigsiu.NET Latest News</title>
+		<description>Sigsiu.NET Latest News</description>
+		<link>http://www.sigsiu.net</link>
+		<lastBuildDate>Wed, 12 Jan 2011 11:56:41 +0100</lastBuildDate>
+		<generator>FeedCreator 1.7.2</generator>
+		<image>
+			<url>http://www.sigsiu.net/images/M_images/logo-blue.jpg</url>
+			<title>Sigsiu.NET Latest News</title>
+			<link>http://www.sigsiu.net</link>
+			<description>Sigsiu.NET Latest News</description>
+		</image>
+		<item>
+			<title>Updated Sobi2 Languages Finnish, Turkish, Danish, Spanish and Serbian</title>
+			<link>http://www.sigsiu.net/latest_news/updated_sobi2_languages_finnish_turkish_danish_and_serbian.html</link>
+			<description>You will find updated versions of the Sobi2 language packages for Finnish, Turkish, Danish, Spanish and Serbian in our download directory.
+
+The Turkish language package (/download/language_packages/turkish_utf-8_language.html) can be used on Joomla! 1.5 in native and legacy mode. The back-end is fully translated and the translation files for Sobi2 system check texts and for Sobi2 Joomla! 1.5 menu texts are included.
+Thanks to Levent Cetin, who updated the Turkish language package.
+
+The Danish language package (/download/language_packages/danish_language.html) can be used on Joomla! 1.5 in native and legacy mode. Only the front-end is translated.
+Thanks to Rie Wiberg for the Danish translation.
+
+The Finnish language package (/download/language_packages/finnish_language.html) can be used on Joomla! 1.5 in legacy mode only. The back-end is fully translated and the translation files for Sobi2 system check texts and for Sobi2 Joomla! 1.5 menu texts are included.
+Thanks to Mika Salo, who updated the Finnish translation.
+
+The Spanish language package (/download/language_packages/spanish_language_utf-8.html) can be used on Joomla! 1.5 in native and legacy mode. The back-end is fully translated and the translation files for Sobi2 system check texts and for Sobi2 Joomla! 1.5 menu texts are included.
+Thanks to Isidro Baquero (aka Hefesto) for the Spanish translation.
+
+The Serbian language package (/download/language_packages/serbien_language.html) can be used on Joomla! 1.5 in native and legacy mode. The back-end is fully translated and the translation files for Sobi2 system check texts and for Sobi2 Joomla! 1.5 menu texts are included.
+Thanks to Bojan Milosavljević, who updated the Serbian translation.
+
+You will find the language packages in our Download Section (/download/language_packages/)
+</description>
+			<pubDate>Thu, 06 Jan 2011 00:00:00 +0100</pubDate>
+		</item>
+		<item>
+			<title>New Radius Distance Search Plugin and Search Module for Sobi2</title>
+			<link>http://www.sigsiu.net/latest_news/new_radius_distance_search_plugin_and_search_module_for_sobi2.html</link>
+			<description>We just released version 1.3.4 of the Radius Distance Search plugin which solves a problem with the search module.
+Additionally version 2.2 of the Search Module for Joomla! 1.5 is available. This version fixes a problem with WebKit based browsers (Safari and Chrome).
+
+The Radius Distance Search Plugin is a plugin for Sobi2, that allows adding proximity search easily to the existing search form in Sobi2 - Description of the Plugin (/addons/radius_distance_search_plugin.html).
+The Search Module is an interface module to standard Sobi2 search which can be placed in every Joomla! module position.
+
+See here for plugin update instructions (/faq/how_to_update_a_sobi2_plugin.html) and for the full changelog list of the Radius Plugin (https://shop.sigsiu.net/en/manuals/radius-distance-search-plugin/changelog) and full changelog list of the Search Module (https://shop.sigsiu.net/en/manuals/search-module/changelog) in the documentation section Manuals and more.... (https://shop.sigsiu.net/en/manuals).
+
+If you bought the Radius Distance Search Plugin or the Search Module, you can download the new version within your upgrade period from our shop.
+</description>
+			<pubDate>Mon, 13 Dec 2010 00:00:00 +0100</pubDate>
+		</item>
+		<item>
+			<title>Version 1.4.4 of Featured Listings Plugin released</title>
+			<link>http://www.sigsiu.net/latest_news/version_1.4.4_of_featured_listings_plugin_released.html</link>
+			<description>Today we released version 1.4.4 of the Featured Listings Plugin.
+We extended the 'Show Specific Category Only' feature of the module to add several categories and fixed a small bug in the plugin. Additionally we translated the back-end texts for German language and added French language (thanks to 'joedalton').
+
+The Featured Listings Plugin is a plugin for Sobi2 to show entries on a featured position in category view and/or on Sobi2 frontpage to earn more fees by selling featured listings - Description of the plugin (/addons/featured_listings_plugin.html).
+
+See the full changelog list (https://shop.sigsiu.net/en/manuals/featured-listings-plugin/changelog) in the documentation section Manuals and more.... (https://shop.sigsiu.net/en/manuals) and also How to update a Sobi2 plugin (/faq/how_to_update_a_sobi2_plugin.html).
+
+
+If you bought the Featured Listings Plugin you can download the new version within your subscription period from our shop.
+</description>
+			<pubDate>Thu, 28 Oct 2010 00:00:00 +0100</pubDate>
+		</item>
+		<item>
+			<title>Sobi2 version 2.9.3.2 published</title>
+			<link>http://www.sigsiu.net/latest_news/sobi2_version_2.9.3.2_published.html</link>
+			<description>Sobi2 version 2.9.3.2 stable for Joomla! 1.5 published.
+This is a minor security release.
+We recommend to update Sobi2 to this version.
+
+Please read the full changelog list (/changelog) before installing.
+
+See also the update instructions (/upgrading.html) for Sobi2.
+ 
+Download the new version for Joomla! 1.5 (/download/components/sigsiu_online_business_index_2.html)</description>
+			<pubDate>Mon, 04 Oct 2010 00:00:00 +0100</pubDate>
+		</item>
+		<item>
+			<title>Sobi2 version 2.9.3 available</title>
+			<link>http://www.sigsiu.net/latest_news/sobi2_version_2.9.3_available.html</link>
+			<description>We released Sobi2 version 2.9.3 stable for Joomla! 1.5 today.
+This is a maintenance release which includes some bug fixes and minor changes.
+
+Please read the full changelog list (/changelog) before installing.
+
+See also the update instructions (/upgrading.html) for Sobi2.
+ 
+Download the new version for Joomla! 1.5 (/download/components/sigsiu_online_business_index_2.html)</description>
+			<pubDate>Wed, 18 Aug 2010 00:00:00 +0100</pubDate>
+		</item>
+		<item>
+			<title>New version of Geo Category Overview Module for Sobi2 available</title>
+			<link>http://www.sigsiu.net/latest_news/new_version_of_geo_category_overview_module_for_sobi2_available.html</link>
+			<description>
+We released version 2.4 of the Geo Category Overview Module.
+Use this Joomla! module to show a Google map with markers of the Sobi2 entries on your site.
+
+The new version includes some minor improvements like the possibility to show an empty map if no entries are within a category and to adjust the date format in the bubble.
+
+See here for the full changelog list (https://shop.sigsiu.net/en/manuals/geo-category-overview-module/changelog.html) in the documentation section Manuals and more.... (https://shop.sigsiu.net/en/manuals/index.html).
+
+A detailed description (/addons/geo_category_overview_module.html) of the module is available on our site. You will find a demo of the module (http://joomla.sigsiu.net/directory.html) on our demo site.
+
+If you bought the Geo Category Overview Module you can download the new version within your update period from our shop.
+</description>
+			<pubDate>Fri, 18 Jun 2010 00:00:00 +0100</pubDate>
+		</item>
+		<item>
+			<title>Updated Languages Greek, Croatian and German</title>
+			<link>http://www.sigsiu.net/latest_news/updated_languages_greek_croatian_and_german.html</link>
+			<description>You will find updated versions of the language packages for Greek, Croatian and German in our download directory.
+
+The Greek UTF-8 package (/download/language_packages/greek_language.html) can be used on Joomla! 1.5 in native and legacy mode. The back-end is fully translated and the translation files for Sobi2 system check texts and for Sobi2 Joomla! 1.5 menu texts are included.
+Thanks to Chrysovalantis Mochlas who updated the Greek translation.
+
+The Croatian UTF-8 package (/download/language_packages/croatian_language.html) can be used on Joomla! 1.5 in native and legacy mode. The back-end is fully translated and the translation files for Sobi2 system check texts and for Sobi2 Joomla! 1.5 menu texts are included.
+Thanks to Tanja Dragisic for the Croatian language package.
+
+The German UTF-8 package (/download/language_packages/german_formal_utf-8_language.html) can be used on Joomla! 1.5 in native and legacy mode. The back-end is fully translated and the translation files for Sobi2 system check texts and for Sobi2 Joomla! 1.5 menu texts are included.
+
+You will find the language packages in our Download Section (/download/language_packages/)
+</description>
+			<pubDate>Mon, 14 Jun 2010 00:00:00 +0100</pubDate>
+		</item>
+		<item>
+			<title>Radius Distance Search Plugin version 1.3.1 released</title>
+			<link>http://www.sigsiu.net/latest_news/radius_distance_search_plugin_version_1.3.1_released.html</link>
+			<description>We just released another version of the Radius Distance Search Plugin which solves a problem with entering postal codes without using the auto suggestion box.
+
+The Radius Distance Search Plugin is a plugin for Sobi2, that allows adding proximity search easily to the existing search form in Sobi2 - Description of the Plugin (/addons/radius_distance_search_plugin.html).
+
+See here for update instructions (/faq/how_to_upgrade_a_plugin.html) and for the full changelog list (https://shop.sigsiu.net/en/manuals/radius-distance-search-plugin/changelog.html) in the documentation section Manuals and more.... (https://shop.sigsiu.net/en/manuals/index.html).
+
+If you bought the Radius Distance Search Plugin you can download the new version within your upgrade period from our shop.
+</description>
+			<pubDate>Fri, 11 Jun 2010 00:00:00 +0100</pubDate>
+		</item>
+		<item>
+			<title>Security Talk: Fortifying Your Joomla! Website</title>
+			<link>http://www.sigsiu.net/latest_news/security_talk_fortifying_your_joomla_website.html</link>
+			<description>Even if Joomla! is one of the safest Content Management Systems available, Joomla! Websites get hacked every day.
+Just because you are using Joomla!, don't think your site is safe. Actually, you are opening yourself up to a potential security risk since Joomla! relies on PHP and a MySQL database instead of static html pages.
+
+Those of you who plan to attend Security Talk (http://jandbeyond.org/radek-suski.html).
+
+As a website owner you may not think much about security, and just assume your hosting company takes care of it.
+But in this case, you may be in for a rude awakening.
+Unfortunately there are lots of myths and misleading information about dynamic websites and webserver security that need to be recognized and clarified.
+
+Based on my experience as a developer and server administrator, I was able to extend my theoretical knowledge in this field and create an efficient security system to protect webservers.
+At the same time, as a developer of Joomla! extensions, I learned which mistakes Joomla! users do most often.
+Fact is, most users are only familiar with Desktop PC and client software but Internet software is an entirely different animal.
+
+In this talk I would like to share with you my firsthand knowledge and real world experience I've gained over the years to show how you can easily improve the security of your Joomla website.
+It doesn't have to be complicated, you just need to know what to look for, and how to stay proactive in setting up a safe hosting environment.
+
+If you haven't gotten your tickets yet, be sure to visit the site as there is only room for about 250 people and they have sold a lot of tickets already!
+</description>
+			<pubDate>Tue, 25 May 2010 00:00:00 +0100</pubDate>
+		</item>
+		<item>
+			<title>Version 1.3 of Radius Distance Search Plugin available</title>
+			<link>http://www.sigsiu.net/latest_news/version_1.3_of_radius_distance_search_plugin_available.html</link>
+			<description>We released version 1.3 of the Radius Distance Search Plugin today.
+This version is a maintenance release which contains several minor bug fixes as XHTML compliance changes and it solves a problem using postal codes. Functions, deprecated in PHP 5.3 are removed as well as ISO coded language files. Several texts are changed to more common expressions.
+Also it is now possible to define a fixed search distance instead of the user selects the distance from a distance select box.
+
+The Radius Distance Search Plugin is a plugin for Sobi2, that allows adding proximity search easily to the existing search form in Sobi2 - Description of the Plugin (/addons/radius_distance_search_plugin.html).
+
+See here for upgrading instructions (/upgrading.html) and for the full changelog list (https://shop.sigsiu.net/en/manuals/radius-distance-search-plugin/changelog.html) in the documentation section Manuals and more.... (https://shop.sigsiu.net/en/manuals/index.html).
+
+If you bought the Radius Distance Search Plugin you can download the new version within your upgrade period from our shop.
+</description>
+			<pubDate>Thu, 20 May 2010 00:00:00 +0100</pubDate>
+		</item>
+	</channel>
+</rss>

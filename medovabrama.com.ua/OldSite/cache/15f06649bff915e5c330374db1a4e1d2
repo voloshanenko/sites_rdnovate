@@ -1,0 +1,832 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <base href="https://shop.sigsiu.net/index.php" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="Sigsiu.NET, Online Shop, Addons, Joomla!, Sobi2, components, modules, mambots, plugins, SOBI2 Import and Backup Plugin, CSV Import, CSV Export, Sobi2 Featured Listings Plugin, Sobi2 Radius Distance Search Plugin, Sobi2 Search Module, Sobi2 Geo Category Overview Module, Sobi2 Expiration Plugin" />
+  <meta name="description" content="Sigsiu.NET Online Shop. Here you will find Add-Ons for the directory component Sobi2. Import &amp; Backup Plugin for Sobi2 to import data into CSV file (Excel, OpenOffice Calc), backup your directory, save your configuration or migrate to Sobi2. The Featured Listings Plug-in for Sobi2 shows entries on a featured position in category view and/or on Sobi2 frontpage with a self definable featured layout. The Radius Distance Search plugin for Sobi2 allows you to add proximity search easily to your existing search form in Sobi2." />
+  <meta name="generator" content="Joomla! 1.5 - Open Source Content Management" />
+  <title>Browse</title>
+  <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link rel="stylesheet" href="/modules/mod_jflanguageselection/tmpl/mod_jflanguageselection.css" type="text/css" />
+  <script type="text/javascript" src="/media/system/js/mootools.js"></script>
+  <script src="https://shop.sigsiu.net/components/com_virtuemart/fetchscript.php?gzip=0&amp;subdir[0]=/themes/SigsiuShop&amp;file[0]=theme.js&amp;subdir[1]=/js&amp;file[1]=sleight.js&amp;subdir[2]=/js/mootools&amp;file[2]=mootools-release-1.11.js&amp;subdir[3]=/js/mootools&amp;file[3]=mooPrompt.js" type="text/javascript"></script>
+  <script type="text/javascript">var cart_title = "Shopping Cart";var ok_lbl="Continue";var cancel_lbl="Cancel";var notice_lbl="Notice";var live_site="https://shop.sigsiu.net";</script>
+  <link href="https://shop.sigsiu.net/components/com_virtuemart/fetchscript.php?gzip=0&amp;subdir[0]=/themes/SigsiuShop&amp;file[0]=theme.css&amp;subdir[1]=/js/mootools&amp;file[1]=mooPrompt.css" type="text/css" rel="stylesheet" />
+
+<meta http-equiv="Content-Type" content="text/html;" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link rel="stylesheet" href="https://shop.sigsiu.net/templates/system/css/system.css" type="text/css" />
+<link rel="stylesheet" href="https://shop.sigsiu.net/templates/system/css/general.css" type="text/css" />
+<link rel="stylesheet" href="https://shop.sigsiu.net/templates/ja_xenia_ii/css/editor.css" type="text/css" />
+<link href="https://shop.sigsiu.net/templates/ja_xenia_ii/css/template_css.css" rel="stylesheet" type="text/css" />
+<link href="https://shop.sigsiu.net/templates/ja_xenia_ii/css/ja-vm.css" rel="stylesheet" type="text/css" />
+
+
+<script language="javascript" type="text/javascript" src="https://shop.sigsiu.net/templates/ja_xenia_ii/scripts/ja.script.js"></script>
+
+			<link href="https://shop.sigsiu.net/templates/ja_xenia_ii/ja_menus/ja_cssmenu/ja.cssmenu.css" rel="stylesheet" type="text/css" />
+			<script src="https://shop.sigsiu.net/templates/ja_xenia_ii/ja_menus/ja_cssmenu/ja.cssmenu.js" language="javascript" type="text/javascript"></script>
+			
+
+<!--[if lte IE 6]>
+<style type="text/css">
+.clearfix {	height: 1%;}
+</style>
+<![endif]-->
+
+<!--[if gte IE 7.0]>
+<style type="text/css">
+.clearfix {	display: inline-block;}
+</style>
+<![endif]-->
+<script language="javascript" type="text/javascript">
+function addStyleToFeatureProduct () {
+	var obj = document.getElementById ('ja-feature-products');
+	if (!obj)
+	{
+		return;
+	}
+	var objtable = obj.getElementsByTagName ('table');
+	if (objtable && objtable.length > 0)
+	{
+		objtable = objtable[0];
+		var rows = objtable.rows;
+		for (i=0; i<rows.length; i++)
+		{
+			if (rows[i].cells.length > 0)
+			{
+				for (j=0; j<rows[i].cells.length-1; j++)
+				{
+					rows[i].cells[j].className += " ja-rightseparator";
+				}
+			}
+		}
+	}
+}
+	jaAddEvent (window, 'load', addStyleToFeatureProduct);
+</script>
+
+<!--[if gt IE 7]>
+<link href="https://shop.sigsiu.net/templates/ja_xenia_ii/css/ie8.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+</head>
+
+<body id="bd" class="wide fs4">
+<a title="Skip to content" href="/en/shop?vmcchk=1#Content" style="display: none;">Skip to content</a>
+<a name="Top" id="Top"></a>
+
+<div id="ja-wrapper">
+<div id="ja-wrapper-inner">
+
+<!-- BEGIN: HEADER -->
+<div id="ja-headerwrap">
+	<div id="ja-header" class="clearfix">
+		<h1>
+			<a href="/">
+				<img src="https://shop.sigsiu.net/templates/ja_xenia_ii/images/logo-blue.jpg" alt="Sigsiu.NET Shop" />
+			</a>
+		</h1>
+		
+		<div id="ja-topnavwrap"  style="right: 195px;" class="clearfix">
+			<ul id="mainlevel-nav"><li><a href="/en/contact" class="mainlevel-nav" >Contact</a></li></ul>
+		</div>
+
+				<div id="ja-search" style="right: 195px;">
+			<form action="index.php" method="post">
+	<div class="search">
+		<input name="searchword" id="mod_search_searchword" maxlength="35" alt="Search" class="inputbox" type="text" size="35" value="search..."  onblur="if(this.value=='') this.value='search...';" onfocus="if(this.value=='search...') this.value='';" />	</div>
+	<input type="hidden" name="task"   value="search" />
+	<input type="hidden" name="option" value="com_search" />
+	<input type="hidden" name="Itemid" value="21" />
+</form>
+		</div>
+				
+				<div id="ja-vm-cart">
+					<div class="moduletable">
+					<h3>Your Cart</h3>
+					<div class="vmCartModule">
+<div style="margin: 0 auto; padding-left: 2px;">
+    <a href="/en/shopping-cart/cart" title="Show Cart">Show Cart</a>    <br />
+    Your Cart is currently empty.</div>
+</div>		</div>
+	
+		</div>
+		
+	</div>
+</div>
+<!-- END: HEADER -->
+
+<!-- BEGIN: MAIN NAVIGATION -->
+<div id="ja-mainnavwrap" class="clearfix">
+	<div id="ja-mainnav">
+		<ul id="ja-cssmenu" class="clearfix">
+<li ><a href="/en/home" class="first-item" id="menu13" title="Home"><span>Home</span></a></li> 
+<li class="havechild-active"><a href="/en/shop" class = "active" id="menu21" title="Shop Categories"><span>Shop Categories</span></a><ul><li ><a href="/en/shop/sobi2-plugins" class="first-item" id="menu61" title="Sobi2 Plugins"><span>Sobi2 Plugins</span></a></li> 
+<li ><a href="/en/shop/sobi2-modules"  id="menu62" title="Sobi2 Modules/J! Plugins"><span>Sobi2 Modules/J! Plugins</span></a></li> 
+<li ><a href="/en/shop/sobi2-extensions" class="last-item" id="menu63" title="Sobi2 Extensions"><span>Sobi2 Extensions</span></a></li> 
+</ul></li> 
+<li class="havechild"><a href="/en/info"  id="menu41" title="Customer Info"><span>Customer Info</span></a><ul><li ><a href="/en/info/purchase-and-payment" class="first-item" id="menu58" title="Purchase and Payment"><span>Purchase and Payment</span></a></li> 
+<li ><a href="/en/info/delivery-and-download"  id="menu59" title="Delivery and Download"><span>Delivery and Download</span></a></li> 
+<li ><a href="/en/info/product-usage-and-support" class="last-item" id="menu60" title="Product Usage and Support"><span>Product Usage and Support</span></a></li> 
+</ul></li> 
+<li ><a href="/en/shopping-cart"  id="menu66" title="Shopping Cart"><span>Shopping Cart</span></a></li> 
+<li class="havechild"><a href="/en/support"  id="menu30" title="Support"><span>Support</span></a><ul><li ><a href="/en/support/overview" class="first-item" id="menu47" title="Support Overview"><span>Support Overview</span></a></li> 
+<li ><a href="https://helpdesk.sigsiu.net"  id="menu48" title="Support Center"><span>Support Center</span></a></li> 
+<li ><a href="/en/support/forum-access" class="last-item" id="menu57" title="Forum Access"><span>Forum Access</span></a></li> 
+</ul></li> 
+<li ><a href="/en/manuals" class="last-item" id="menu35" title="Manuals"><span>Manuals</span></a></li> 
+</ul>	</div>
+	
+	<div id="ja-usertoolswrap">
+		<div class="ja-sitetool"><div id="jflanguageselection"><ul class="jflanguageselection"><li id="active_language"><a href="https://shop.sigsiu.net/en/shop?vmcchk=1"><img src="/components/com_joomfish/images/flags/en.gif" alt="English" title="English" /></a></li><li><a href="https://shop.sigsiu.net/de/shop?vmcchk=1"><img src="/components/com_joomfish/images/flags/de.gif" alt="Deutsch" title="Deutsch" /></a></li></ul></div><!--Joom!fish V2.0.4 (Lightning)-->
+<!-- &copy; 2003-2009 Think Network, released under the GPL. -->
+<!-- More information: at http://www.joomfish.net -->
+</div>
+	</div>
+</div>
+
+<div class="ja-mainnavshadow"></div>
+
+<!-- END: MAIN NAVIGATION -->
+
+<div id="ja-containerwrap">
+	<div id="ja-container" class="clearfix">
+
+		<!-- BEGIN: CONTENT -->
+		<div id="ja-mainbody">
+        
+                    <div id="ja-sh" class="clearfix">
+				<script type="text/javascript" src="https://shop.sigsiu.net/modules/mod_ja_header/ja_header/swfobject.js"></script>
+		
+		<script type="text/javascript">
+			var flashvars = {
+				xml_input: "https://shop.sigsiu.net/modules/mod_ja_header/ja_header/ja.headerxml.php"
+			};
+			
+			var params = {
+			  wmode: "transparent"
+			};
+			
+			var attributes = {
+			  id: "ja-flash",
+			  name: "ja-flash"
+			};
+			
+			swfobject.embedSWF("https://shop.sigsiu.net/modules/mod_ja_header/ja_header/ja.header.swf", "ja_header_flash", "100%", "200px", "9.0.0","", flashvars, params, attributes);
+			
+		</script>
+		<div id="ja_header_flash">
+		</div>
+		
+
+            </div>
+        
+		<a name="Content" id="Content"></a>
+		<div id="ja-contentwrap">
+			<div id="ja-content">
+				<div id="ja-pathway">
+					<span class="breadcrumbs pathway">
+<a href="https://shop.sigsiu.net/" class="pathway">Home</a> <img src="/templates/ja_xenia_ii/images/arrow.png" alt=""  /> Shop Categories</span>
+
+				</div>
+                <div id="sigsiu-message">
+                    
+                </div>
+				
+        				<div ><div class="shop_info"><b>Info</b>: Your browser does not accept cookies. To put products into your cart and purchase them you need to enable cookies.<br />
+</div></div><div id="vmMainPage">
+
+
+<h3>Browse</h3>
+    <div align="right">
+        <a href="/en/shop/feed" title="Subscribe to the Feed of the latest Products in this Category!">
+        <img src="https://shop.sigsiu.net/components/com_virtuemart/themes/SigsiuShop//images/feed-icon-14x14.png" align="middle" alt="feed" border="0"/></a>
+    </div>
+
+
+<!-- ORDER BY .... FORM -->
+<form action="https://shop.sigsiu.net/index.php" method="get" name="order">
+
+
+Sort by: 
+<select class="inputbox" name="orderby" onchange="order.submit()">
+<option value="product_list" >Select</option>
+        <option value="product_name" selected="selected">
+        Product Name</option>
+                <option value="product_price" >
+        Price</option>        <option value="product_cdate" >
+        Latest Products</option>
+        </select>
+<script type="text/javascript">//<![CDATA[
+            document.write('&nbsp;<input type="hidden" name="DescOrderBy" value="ASC" /><a href="javascript: document.order.DescOrderBy.value=\'DESC\'; document.order.submit()"><img src="https://shop.sigsiu.net/images/M_images/sort_asc.png" border="0" alt="Ascending order" title="Ascending order" width="12" height="12" /></a>');
+            //]]></script>
+<noscript>
+            <select class="inputbox" name="DescOrderBy">
+            <option  value="DESC">Descending order</option>
+            <option selected="selected" value="ASC">Ascending order</option>
+        </select>
+        <input class="button" type="submit" value="Submit" />
+            </noscript>
+    <input type="hidden" name="Itemid" value="21" />
+    <input type="hidden" name="option" value="com_virtuemart" />
+    <input type="hidden" name="page" value="shop.browse" />
+    <input type="hidden" name="category_id" value="" />
+    <input type="hidden" name="manufacturer_id" value="0" />
+    <input type="hidden" name="keyword" value="" />
+    <input type="hidden" name="keyword1" value="" />
+    <input type="hidden" name="keyword2" value="" />
+    
+</form>
+<div id="product_list" style="width:100%; float:none;">
+<div style="margin-right: 5px; width:98%; float:left;" id="row_4d2d88e625274"> <div class="browseProductContainer">
+ 
+ <div class="ja-productwrap clearfix">
+    <div class="ja-product">
+        <h3 class="_browseProductTitle"><a title="SEF Service Map Integrator for SOBI2" href="/en/shop/sobi2-extensions/20-sef-service-map-integrator-for-sobi2">
+            SEF Service Map Integrator for SOBI2</a>
+        </h3>
+        
+        <div class="browseProductImageContainer clearfix">
+            <a title="SEF Service Map Integrator for SOBI2" href="/en/shop/sobi2-extensions/20-sef-service-map-integrator-for-sobi2">
+            <img src="https://shop.sigsiu.net/components/com_virtuemart/show_image_in_imgtag.php?filename=SEF_Service_Map__4c4709ac85340.png&amp;newxsize=150&amp;newysize=150&amp;fileout="00 class="browseProductImage" border="0" align="left" style="margin-right: 10px;" title="SEF Service Map Integrator for SOBI2" alt="SEF Service Map Integrator for SOBI2"  />            </a>
+        </div>
+            <div class="browsePriceContainer">
+                
+
+	<span class="productPrice">
+		9.00 &euro;		(including 19 % tax)	</span>
+
+
+            </div>
+     
+            <div class="browseRatingContainer">
+                        </div>
+
+            <div class="browseProductDescription">
+                If you are using SEF Service Map component ofRadosÅ‚aw Kubera as your sitemap you can use SEF Service Map Integrator for SOBI to show categories and entries of your directory in the sitemap.&nbsp;
+                <a href="/en/shop/sobi2-extensions/20-sef-service-map-integrator-for-sobi2" title="Product Details"><br />
+			    Product Details...</a>
+            </div>
+            <br />
+            <span class="browseAddToCartContainer">
+            
+<form action="https://shop.sigsiu.net/index.php" method="post" name="addtocart" id="addtocart7.56303_1" class="addtocart_form" >
+    <label for="quantity20" class="quantity_box">Quantity:&nbsp;</label><input type="text" class="inputboxquantity" size="4" id="quantity20" name="quantity[]" value="1" />
+		<input type="button" class="quantity_box_button quantity_box_button_up" onclick="var qty_el = document.getElementById('quantity20'); var qty = qty_el.value; if( !isNaN( qty )) qty_el.value++;return false;" />
+		<input type="button" class="quantity_box_button quantity_box_button_down" onclick="var qty_el = document.getElementById('quantity20'); var qty = qty_el.value; if( !isNaN( qty ) &amp;&amp; qty > 0 ) qty_el.value--;return false;" />
+			<input type="submit" class="addtocart_button" value="Add to Cart" title="Add to Cart" />
+    <input type="hidden" name="category_id" value="0" />
+    <input type="hidden" name="product_id" value="20" />
+    <input type="hidden" name="prod_id[]" value="20" />
+    <input type="hidden" name="page" value="shop.cart" />
+    <input type="hidden" name="func" value="cartadd" />
+    <input type="hidden" name="Itemid" value="21" />
+    <input type="hidden" name="option" value="com_virtuemart" />
+    <input type="hidden" name="set_price[]" value="" />
+    <input type="hidden" name="adjust_price[]" value="" />
+    <input type="hidden" name="master_product[]" value="" />
+</form>            </span>
+   </div>
+</div> 
+</div>
+
+</div><br class="clr" /><div style="margin-right: 5px; width:98%; float:left;" id="row_4d2d88e625a47"> <div class="browseProductContainer">
+ 
+ <div class="ja-productwrap clearfix">
+    <div class="ja-product">
+        <h3 class="_browseProductTitle"><a title="SOBI2 Expiration Plugin/Mambot" href="/en/shop/sobi2-modules/23-sobi2-expiration-pluginmambot">
+            SOBI2 Expiration Plugin/Mambot</a>
+        </h3>
+        
+        <div class="browseProductImageContainer clearfix">
+            <a title="SOBI2 Expiration Plugin/Mambot" href="/en/shop/sobi2-modules/23-sobi2-expiration-pluginmambot">
+            <img src="https://shop.sigsiu.net/components/com_virtuemart/show_image_in_imgtag.php?filename=SOBI2_Expiration_4c4709c8d22c0.png&amp;newxsize=150&amp;newysize=150&amp;fileout="00 class="browseProductImage" border="0" align="left" style="margin-right: 10px;" title="SOBI2 Expiration Plugin/Mambot" alt="SOBI2 Expiration Plugin/Mambot"  />            </a>
+        </div>
+            <div class="browsePriceContainer">
+                
+
+	<span class="productPrice">
+		20.00 &euro;		(including 19 % tax)	</span>
+
+
+            </div>
+     
+            <div class="browseRatingContainer">
+                        </div>
+
+            <div class="browseProductDescription">
+                Put the authors of the entries in your SOBI2 directory in mind of expiration of their publications.&nbsp;
+                <a href="/en/shop/sobi2-modules/23-sobi2-expiration-pluginmambot" title="Product Details"><br />
+			    Product Details...</a>
+            </div>
+            <br />
+            <span class="browseAddToCartContainer">
+            
+<form action="https://shop.sigsiu.net/index.php" method="post" name="addtocart" id="addtocart16.80672_2" class="addtocart_form" >
+    <label for="quantity23" class="quantity_box">Quantity:&nbsp;</label><input type="text" class="inputboxquantity" size="4" id="quantity23" name="quantity[]" value="1" />
+		<input type="button" class="quantity_box_button quantity_box_button_up" onclick="var qty_el = document.getElementById('quantity23'); var qty = qty_el.value; if( !isNaN( qty )) qty_el.value++;return false;" />
+		<input type="button" class="quantity_box_button quantity_box_button_down" onclick="var qty_el = document.getElementById('quantity23'); var qty = qty_el.value; if( !isNaN( qty ) &amp;&amp; qty > 0 ) qty_el.value--;return false;" />
+			<input type="submit" class="addtocart_button" value="Add to Cart" title="Add to Cart" />
+    <input type="hidden" name="category_id" value="0" />
+    <input type="hidden" name="product_id" value="23" />
+    <input type="hidden" name="prod_id[]" value="23" />
+    <input type="hidden" name="page" value="shop.cart" />
+    <input type="hidden" name="func" value="cartadd" />
+    <input type="hidden" name="Itemid" value="21" />
+    <input type="hidden" name="option" value="com_virtuemart" />
+    <input type="hidden" name="set_price[]" value="" />
+    <input type="hidden" name="adjust_price[]" value="" />
+    <input type="hidden" name="master_product[]" value="" />
+</form>            </span>
+   </div>
+</div> 
+</div>
+
+</div><br class="clr" /><div style="margin-right: 5px; width:98%; float:left;" id="row_4d2d88e625e34"> <div class="browseProductContainer">
+ 
+ <div class="ja-productwrap clearfix">
+    <div class="ja-product">
+        <h3 class="_browseProductTitle"><a title="Sobi2 Featured Listings Plugin" href="/en/shop/sobi2-plugins/28-sobi2-featured-listings-plugin">
+            Sobi2 Featured Listings Plugin</a>
+        </h3>
+        
+        <div class="browseProductImageContainer clearfix">
+            <a title="Sobi2 Featured Listings Plugin" href="/en/shop/sobi2-plugins/28-sobi2-featured-listings-plugin">
+            <img src="https://shop.sigsiu.net/components/com_virtuemart/show_image_in_imgtag.php?filename=SOBI2_Featured_L_4c470a01925a0.png&amp;newxsize=150&amp;newysize=150&amp;fileout="00 class="browseProductImage" border="0" align="left" style="margin-right: 10px;" title="Sobi2 Featured Listings Plugin" alt="Sobi2 Featured Listings Plugin"  />            </a>
+        </div>
+            <div class="browsePriceContainer">
+                
+
+	<span class="productPrice">
+		69.00 &euro;		(including 19 % tax)	</span>
+
+
+            </div>
+     
+            <div class="browseRatingContainer">
+                        </div>
+
+            <div class="browseProductDescription">
+                Earn more fees by selling featured listings.<br /> The Featured Listings Plug-in for Sobi2 shows entries on a featured position in category view and/or on Sobi2 frontpage.&nbsp;
+                <a href="/en/shop/sobi2-plugins/28-sobi2-featured-listings-plugin" title="Product Details"><br />
+			    Product Details...</a>
+            </div>
+            <br />
+            <span class="browseAddToCartContainer">
+            
+<form action="https://shop.sigsiu.net/index.php" method="post" name="addtocart" id="addtocart57.98319_3" class="addtocart_form" >
+    <label for="quantity28" class="quantity_box">Quantity:&nbsp;</label><input type="text" class="inputboxquantity" size="4" id="quantity28" name="quantity[]" value="1" />
+		<input type="button" class="quantity_box_button quantity_box_button_up" onclick="var qty_el = document.getElementById('quantity28'); var qty = qty_el.value; if( !isNaN( qty )) qty_el.value++;return false;" />
+		<input type="button" class="quantity_box_button quantity_box_button_down" onclick="var qty_el = document.getElementById('quantity28'); var qty = qty_el.value; if( !isNaN( qty ) &amp;&amp; qty > 0 ) qty_el.value--;return false;" />
+			<input type="submit" class="addtocart_button" value="Add to Cart" title="Add to Cart" />
+    <input type="hidden" name="category_id" value="0" />
+    <input type="hidden" name="product_id" value="28" />
+    <input type="hidden" name="prod_id[]" value="28" />
+    <input type="hidden" name="page" value="shop.cart" />
+    <input type="hidden" name="func" value="cartadd" />
+    <input type="hidden" name="Itemid" value="21" />
+    <input type="hidden" name="option" value="com_virtuemart" />
+    <input type="hidden" name="set_price[]" value="" />
+    <input type="hidden" name="adjust_price[]" value="" />
+    <input type="hidden" name="master_product[]" value="" />
+</form>            </span>
+   </div>
+</div> 
+</div>
+
+</div><br class="clr" /><div style="margin-right: 5px; width:98%; float:left;" id="row_4d2d88e62621f"> <div class="browseProductContainer">
+ 
+ <div class="ja-productwrap clearfix">
+    <div class="ja-product">
+        <h3 class="_browseProductTitle"><a title="Sobi2 Geo Category Overview Module" href="/en/shop/sobi2-modules/21-sobi2-geo-category-overview-module">
+            Sobi2 Geo Category Overview Module</a>
+        </h3>
+        
+        <div class="browseProductImageContainer clearfix">
+            <a title="Sobi2 Geo Category Overview Module" href="/en/shop/sobi2-modules/21-sobi2-geo-category-overview-module">
+            <img src="https://shop.sigsiu.net/components/com_virtuemart/show_image_in_imgtag.php?filename=Sobi2_Geo_Catego_4c470a2e97848.png&amp;newxsize=150&amp;newysize=150&amp;fileout="00 class="browseProductImage" border="0" align="left" style="margin-right: 10px;" title="Sobi2 Geo Category Overview Module" alt="Sobi2 Geo Category Overview Module"  />            </a>
+        </div>
+            <div class="browsePriceContainer">
+                
+
+	<span class="productPrice">
+		24.00 &euro;		(including 19 % tax)	</span>
+
+
+            </div>
+     
+            <div class="browseRatingContainer">
+                        </div>
+
+            <div class="browseProductDescription">
+                Use this Joomla! module to show a Google map with markers of the Sobi2 entries on each Sobi2 page. In the category views the shown entry markers are dependent on the entries in the categories.&nbsp;
+                <a href="/en/shop/sobi2-modules/21-sobi2-geo-category-overview-module" title="Product Details"><br />
+			    Product Details...</a>
+            </div>
+            <br />
+            <span class="browseAddToCartContainer">
+            
+<form action="https://shop.sigsiu.net/index.php" method="post" name="addtocart" id="addtocart20.16807_4" class="addtocart_form" >
+    <label for="quantity21" class="quantity_box">Quantity:&nbsp;</label><input type="text" class="inputboxquantity" size="4" id="quantity21" name="quantity[]" value="1" />
+		<input type="button" class="quantity_box_button quantity_box_button_up" onclick="var qty_el = document.getElementById('quantity21'); var qty = qty_el.value; if( !isNaN( qty )) qty_el.value++;return false;" />
+		<input type="button" class="quantity_box_button quantity_box_button_down" onclick="var qty_el = document.getElementById('quantity21'); var qty = qty_el.value; if( !isNaN( qty ) &amp;&amp; qty > 0 ) qty_el.value--;return false;" />
+			<input type="submit" class="addtocart_button" value="Add to Cart" title="Add to Cart" />
+    <input type="hidden" name="category_id" value="0" />
+    <input type="hidden" name="product_id" value="21" />
+    <input type="hidden" name="prod_id[]" value="21" />
+    <input type="hidden" name="page" value="shop.cart" />
+    <input type="hidden" name="func" value="cartadd" />
+    <input type="hidden" name="Itemid" value="21" />
+    <input type="hidden" name="option" value="com_virtuemart" />
+    <input type="hidden" name="set_price[]" value="" />
+    <input type="hidden" name="adjust_price[]" value="" />
+    <input type="hidden" name="master_product[]" value="" />
+</form>            </span>
+   </div>
+</div> 
+</div>
+
+</div><br class="clr" /><div style="margin-right: 5px; width:98%; float:left;" id="row_4d2d88e62660d"> <div class="browseProductContainer">
+ 
+ <div class="ja-productwrap clearfix">
+    <div class="ja-product">
+        <h3 class="_browseProductTitle"><a title="SOBI2 Import and Backup Plugin" href="/en/shop/sobi2-plugins/30-sobi2-import-and-backup-plugin">
+            SOBI2 Import and Backup Plugin</a>
+        </h3>
+        
+        <div class="browseProductImageContainer clearfix">
+            <a title="SOBI2 Import and Backup Plugin" href="/en/shop/sobi2-plugins/30-sobi2-import-and-backup-plugin">
+            <img src="https://shop.sigsiu.net/components/com_virtuemart/show_image_in_imgtag.php?filename=SOBI2_Import_and_4c470a54956f7.png&amp;newxsize=150&amp;newysize=150&amp;fileout="00 class="browseProductImage" border="0" align="left" style="margin-right: 10px;" title="SOBI2 Import and Backup Plugin" alt="SOBI2 Import and Backup Plugin"  />            </a>
+        </div>
+            <div class="browsePriceContainer">
+                
+
+	<span class="productPrice">
+		35.00 &euro;		(including 19 % tax)	</span>
+
+
+            </div>
+     
+            <div class="browseRatingContainer">
+                        </div>
+
+            <div class="browseProductDescription">
+                Import & Backup Plugin for SOBI2 to import data, backup your directory, save your configuration or migrate to SOBI2.&nbsp;
+                <a href="/en/shop/sobi2-plugins/30-sobi2-import-and-backup-plugin" title="Product Details"><br />
+			    Product Details...</a>
+            </div>
+            <br />
+            <span class="browseAddToCartContainer">
+                        </span>
+   </div>
+</div> 
+</div>
+
+</div><br class="clr" /><div style="margin-right: 5px; width:98%; float:left;" id="row_4d2d88e6269f9"> <div class="browseProductContainer">
+ 
+ <div class="ja-productwrap clearfix">
+    <div class="ja-product">
+        <h3 class="_browseProductTitle"><a title="Sobi2 Radius Distance Search Plugin" href="/en/shop/sobi2-plugins/27-sobi2-radius-distance-search-plugin">
+            Sobi2 Radius Distance Search Plugin</a>
+        </h3>
+        
+        <div class="browseProductImageContainer clearfix">
+            <a title="Sobi2 Radius Distance Search Plugin" href="/en/shop/sobi2-plugins/27-sobi2-radius-distance-search-plugin">
+            <img src="https://shop.sigsiu.net/components/com_virtuemart/show_image_in_imgtag.php?filename=Sobi2_Radius_Dis_4c470a7876a9f.png&amp;newxsize=150&amp;newysize=150&amp;fileout="00 class="browseProductImage" border="0" align="left" style="margin-right: 10px;" title="Sobi2 Radius Distance Search Plugin" alt="Sobi2 Radius Distance Search Plugin"  />            </a>
+        </div>
+            <div class="browsePriceContainer">
+                
+
+	<span class="productPrice">
+		79.00 &euro;		(including 19 % tax)	</span>
+
+
+            </div>
+     
+            <div class="browseRatingContainer">
+                        </div>
+
+            <div class="browseProductDescription">
+                The "Radius Distance Search" plugin for Sobi2 allows you to add proximity search easily to your existing search form in Sobi2.&nbsp;
+                <a href="/en/shop/sobi2-plugins/27-sobi2-radius-distance-search-plugin" title="Product Details"><br />
+			    Product Details...</a>
+            </div>
+            <br />
+            <span class="browseAddToCartContainer">
+            
+<form action="https://shop.sigsiu.net/index.php" method="post" name="addtocart" id="addtocart66.38655_6" class="addtocart_form" >
+    <label for="quantity27" class="quantity_box">Quantity:&nbsp;</label><input type="text" class="inputboxquantity" size="4" id="quantity27" name="quantity[]" value="1" />
+		<input type="button" class="quantity_box_button quantity_box_button_up" onclick="var qty_el = document.getElementById('quantity27'); var qty = qty_el.value; if( !isNaN( qty )) qty_el.value++;return false;" />
+		<input type="button" class="quantity_box_button quantity_box_button_down" onclick="var qty_el = document.getElementById('quantity27'); var qty = qty_el.value; if( !isNaN( qty ) &amp;&amp; qty > 0 ) qty_el.value--;return false;" />
+			<input type="submit" class="addtocart_button" value="Add to Cart" title="Add to Cart" />
+    <input type="hidden" name="category_id" value="0" />
+    <input type="hidden" name="product_id" value="27" />
+    <input type="hidden" name="prod_id[]" value="27" />
+    <input type="hidden" name="page" value="shop.cart" />
+    <input type="hidden" name="func" value="cartadd" />
+    <input type="hidden" name="Itemid" value="21" />
+    <input type="hidden" name="option" value="com_virtuemart" />
+    <input type="hidden" name="set_price[]" value="" />
+    <input type="hidden" name="adjust_price[]" value="" />
+    <input type="hidden" name="master_product[]" value="" />
+</form>            </span>
+   </div>
+</div> 
+</div>
+
+</div><br class="clr" /><div style="margin-right: 5px; width:98%; float:left;" id="row_4d2d88e626de6"> <div class="browseProductContainer">
+ 
+ <div class="ja-productwrap clearfix">
+    <div class="ja-product">
+        <h3 class="_browseProductTitle"><a title="Sobi2 Search Module" href="/en/shop/sobi2-modules/29-sobi2-search-module">
+            Sobi2 Search Module</a>
+        </h3>
+        
+        <div class="browseProductImageContainer clearfix">
+            <a title="Sobi2 Search Module" href="/en/shop/sobi2-modules/29-sobi2-search-module">
+            <img src="https://shop.sigsiu.net/components/com_virtuemart/show_image_in_imgtag.php?filename=Sobi2_Search_Mod_4c470a976cde1.png&amp;newxsize=150&amp;newysize=150&amp;fileout="00 class="browseProductImage" border="0" align="left" style="margin-right: 10px;" title="Sobi2 Search Module" alt="Sobi2 Search Module"  />            </a>
+        </div>
+            <div class="browsePriceContainer">
+                
+
+	<span class="productPrice">
+		15.00 &euro;		(including 19 % tax)	</span>
+
+
+            </div>
+     
+            <div class="browseRatingContainer">
+                        </div>
+
+            <div class="browseProductDescription">
+                Sobi2 Search Module to show a search form in a module position.<br /> Use it also as <strong>"Search by Category"</strong> or <strong>"Search by Field"</strong> module!&nbsp;
+                <a href="/en/shop/sobi2-modules/29-sobi2-search-module" title="Product Details"><br />
+			    Product Details...</a>
+            </div>
+            <br />
+            <span class="browseAddToCartContainer">
+            
+<form action="https://shop.sigsiu.net/index.php" method="post" name="addtocart" id="addtocart12.60504_7" class="addtocart_form" >
+    <label for="quantity29" class="quantity_box">Quantity:&nbsp;</label><input type="text" class="inputboxquantity" size="4" id="quantity29" name="quantity[]" value="1" />
+		<input type="button" class="quantity_box_button quantity_box_button_up" onclick="var qty_el = document.getElementById('quantity29'); var qty = qty_el.value; if( !isNaN( qty )) qty_el.value++;return false;" />
+		<input type="button" class="quantity_box_button quantity_box_button_down" onclick="var qty_el = document.getElementById('quantity29'); var qty = qty_el.value; if( !isNaN( qty ) &amp;&amp; qty > 0 ) qty_el.value--;return false;" />
+			<input type="submit" class="addtocart_button" value="Add to Cart" title="Add to Cart" />
+    <input type="hidden" name="category_id" value="0" />
+    <input type="hidden" name="product_id" value="29" />
+    <input type="hidden" name="prod_id[]" value="29" />
+    <input type="hidden" name="page" value="shop.cart" />
+    <input type="hidden" name="func" value="cartadd" />
+    <input type="hidden" name="Itemid" value="21" />
+    <input type="hidden" name="option" value="com_virtuemart" />
+    <input type="hidden" name="set_price[]" value="" />
+    <input type="hidden" name="adjust_price[]" value="" />
+    <input type="hidden" name="master_product[]" value="" />
+</form>            </span>
+   </div>
+</div> 
+</div>
+
+</div><br class="clr" /></div>
+<br class="clr" />
+<!-- BEGIN PAGE NAVIGATION -->
+<div class="sigsiu_navigation" align="center">
+	<ul class="pagination">
+<li><span class="pagenav">&laquo;&laquo; Start</span></li>
+<li><span class="pagenav">&laquo; Prev</span></li>
+<li><span class="pagenav"> 1 </span></li>
+<li><span class="pagenav">Next &raquo;</span></li>
+<li><span class="pagenav">End &raquo;&raquo;</span></li>
+</ul>			<br/><br/>
+		<form action="/en/shop/category" method="post">
+			Display #&nbsp;&nbsp;
+			<select class="inputbox" name="limit" size="1"  onchange="location.href=this.value">
+<option value="/en/shop/category&limitstart=0&limit=5" >5</option>
+<option value="/en/shop/category&limitstart=0&limit=10" >10</option>
+<option value="/en/shop/category&limitstart=0&limit=15" >15</option>
+<option value="/en/shop/category&limitstart=0&limit=20" >20</option>
+<option value="/en/shop/category&limitstart=0&limit=25" >25</option>
+<option value="/en/shop/category&limitstart=0&limit=30" >30</option>
+<option value="/en/shop/category&limitstart=0&limit=50" >50</option>
+</select>
+
+<input type="hidden" name="limitstart" value="0" />			
+			<noscript><input class="button" type="submit" value="Submit" /></noscript>
+		
+		</form>
+	Results 1 - 7 of 7</div>
+<!-- END PAGE NAVIGATION -->
+<div id="statusBox" style="text-align:center;display:none;visibility:hidden;"></div></div>
+
+								<div id="ja-newswrap">
+							<div class="moduletable_middle">
+					<div class="flexbannergroup_middle" ><div class="flexbanneritem_middle" ><div class="advert_middle"><a href="/en/component/flexbanner/?task=click&amp;bannerid=2"><img src="https://shop.sigsiu.net/images/banners/FLP-Banner-A.gif" alt="Featured Listings Plugin for Sobi2" width="468" height="60"  /></a></div></div></div>		</div>
+		
+				</div>
+								
+			<!-- BEGIN: BANNER -->
+								<!-- END: BANNER -->
+
+			</div>
+		</div>
+	
+				<!-- BEGIN: RIGHT COLUMN -->
+		<div id="ja-rightcol">
+			<div id="ja-rightcol-inner">
+						<div class="module">
+			<div>
+				<div>
+					<div>
+													<h3>Login Form</h3>
+											<form action="/en/shop" method="post" name="login" id="form-login" >
+		<fieldset class="input">
+	<p id="form-login-username">
+		<label for="modlgn_username">Username</label><br />
+		<input id="modlgn_username" type="text" name="username" class="inputbox" alt="username" size="18" />
+	</p>
+	<p id="form-login-password">
+		<label for="modlgn_passwd">Password</label><br />
+		<input id="modlgn_passwd" type="password" name="passwd" class="inputbox" size="18" alt="password" />
+	</p>
+		<p id="form-login-remember">
+		<label for="modlgn_remember">Remember Me</label>
+		<input id="modlgn_remember" type="checkbox" name="remember" class="inputbox" value="yes" alt="Remember Me" />
+	</p>
+		<input type="submit" name="Submit" class="button" value="Login" />
+	</fieldset>
+	<ul>
+		<li>
+            <a href="/en/account/reset">
+			Forgot your password?</a>
+		</li>
+		<li>
+			<a href="/en/account/remind">
+			Forgot your username?</a>
+		</li>
+				<li>
+			<a href="/en/account/register">
+				Create an account</a>
+		</li>
+			</ul>
+	
+	<input type="hidden" name="option" value="com_user" />
+	<input type="hidden" name="task" value="login" />
+	<input type="hidden" name="return" value="L2VuL3Nob3A=" />
+	<input type="hidden" name="971f48e6fd429c0c245905ee223154d9" value="1" /></form>
+					</div>
+				</div>
+			</div>
+		</div>
+			<div class="module-blue">
+			<div>
+				<div>
+					<div>
+													<h3>Shop Categories</h3>
+											
+          <a title="Sobi2 Plugins" style="display:block;" class="mainlevel-vmcat" href="/en/shop/sobi2-plugins" >Sobi2 Plugins</a>
+          <a title="Sobi2 Modules/J! Plugins" style="display:block;" class="mainlevel-vmcat" href="/en/shop/sobi2-modules" >Sobi2 Modules/J! Plugins</a>
+          <a title="Sobi2 Extensions" style="display:block;" class="mainlevel-vmcat" href="/en/shop/sobi2-extensions" >Sobi2 Extensions</a>					</div>
+				</div>
+			</div>
+		</div>
+			<div class="module">
+			<div>
+				<div>
+					<div>
+													<h3>This could be interesting...</h3>
+											<table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr align="center" class="sectiontableentry1">
+			<td>
+<!-- The product image DIV. -->
+<div style="height:150px;width: 100%;float:left; text-align: center;">
+<a title="SEF Service Map Integrator for SOBI2" href="/en/shop/sobi2-extensions/20-sef-service-map-integrator-for-sobi2">
+	<img src="https://shop.sigsiu.net/components/com_virtuemart/show_image_in_imgtag.php?filename=SEF_Service_Map__4c4709ac85340.png&amp;newxsize=150&amp;newysize=150&amp;fileout=" height="150" width="84" alt="SEF Service Map Integrator for SOBI2" border="0" /></a>
+</div>
+<!-- The product name DIV. -->
+<div class="vmRelatedProductName">
+<a title="SEF Service Map Integrator for SOBI2" href="/en/shop/sobi2-extensions/20-sef-service-map-integrator-for-sobi2">SEF Service Map Integrator for SOBI2</a>
+</div>
+
+<br />
+			</td>
+		</tr></table>					</div>
+				</div>
+			</div>
+		</div>
+		
+			</div>
+		</div>
+		<!-- END: RIGHT COLUMN -->
+		
+		</div>
+		<!-- END: CONTENT -->
+	
+				<!-- BEGIN: LEFT COLUMN -->
+			<div id="ja-leftcol">
+						<div class="moduletable">
+					
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr ><td><a href="/en/home" class="mainlevel" >Home</a></td></tr>
+<tr ><td><a href="/en/shop" class="mainlevel" id="active_menu">Shop Categories</a>
+
+<div style="padding-left: 4px"><img src="/templates/ja_xenia_ii/images/indent1.png" alt="" /><a href="/en/shop/sobi2-plugins" class="sublevel" >Sobi2 Plugins</a></div>
+<div style="padding-left: 4px"><img src="/templates/ja_xenia_ii/images/indent1.png" alt="" /><a href="/en/shop/sobi2-modules" class="sublevel" >Sobi2 Modules/J! Plugins</a></div>
+<div style="padding-left: 4px"><img src="/templates/ja_xenia_ii/images/indent1.png" alt="" /><a href="/en/shop/sobi2-extensions" class="sublevel" >Sobi2 Extensions</a></div>
+</td></tr>
+<tr ><td><a href="/en/info" class="mainlevel" >Customer Info</a></td></tr>
+<tr ><td><a href="/en/shopping-cart" class="mainlevel" >Shopping Cart</a></td></tr>
+<tr ><td><a href="/en/support" class="mainlevel" >Support</a></td></tr>
+<tr ><td><a href="/en/manuals" class="mainlevel" >Manuals</a></td></tr>
+</table>		</div>
+			<div class="moduletable">
+					
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr ><td><a href="/en/sitemap" class="mainlevel" >Sitemap</a></td></tr>
+</table>		</div>
+			<div class="moduletable">
+					<h3>External Links</h3>
+					<ul id="mainlevel"><li><a href="http://www.sigsiu.net/sobi2.html" class="mainlevel" >What is Sobi2?</a></li><li><a href="http://joomla.sigsiu.net" class="mainlevel" >Demo Site</a></li><li><a href="http://www.sigsiu.net/latest_news/" class="mainlevel" >News &amp; Infos</a></li><li><a href="http://www.sigsiu.net/download/" class="mainlevel" >Free Downloads</a></li><li><a href="http://www.sigsiu.net/forum" class="mainlevel" >Community Forum</a></li></ul>		</div>
+			<div class="moduletable">
+					<div align="left">
+<p>
+<span style="color: #808080">Visitors: </span>
+<img src="https://shop.sigsiu.net/cgi-bin/Count.cgi?dd=sigsiu_net&amp;ft=0&amp;md=8&amp;pad=N&amp;df=SGSIGSIUSHOP" alt="Visitors" />
+</p>
+</div>
+		</div>
+			<div class="moduletable">
+					<p align="center">
+<script src="https://seal.thawte.com/getthawteseal?host_name=shop.sigsiu.net&amp;size=L&amp;lang=en" type="text/javascript"></script>
+</p>		</div>
+		
+			</div>
+		<br />
+		<!-- END: LEFT COLUMN -->
+		
+	</div>
+</div>
+
+<!-- BEGIN: FOOTER -->
+<div id="ja-footerwrap">
+<div class="clr" ></div>
+<div id="sigsiu-menu">
+			<div class="moduletable-nav">
+					<table width="100%" border="0" cellpadding="0" cellspacing="1"><tr><td nowrap="nowrap"><a href="/en/imprint" class="mainlevel-nav" >Imprint</a><a href="/en/terms" class="mainlevel-nav" >Terms</a><a href="/en/revocation" class="mainlevel-nav" >Revocation</a><a href="/en/data-protection" class="mainlevel-nav" >Data Protection</a></td></tr></table>		</div>
+	
+</div>
+
+<div class="clr" ></div>
+<div id="ja-footer">
+    <div id="ja-sublogo">
+<!--        <a href="/index.php">
+            <img src="https://shop.sigsiu.net/templates/ja_xenia_ii/images/sub-logo.gif" alt="Sigsiu.NET Shop" />
+        </a>
+-->    </div>
+	<p id="ja-bottomline">
+		Copyright &copy; 2003 - 2011 Sigsiu.NET GmbH
+	</p>
+	
+	<div id="ja-cert">
+	 <a href="/en/component/rss/?feed=RSS2.0&amp;no_html=1" target="_blank" title="RSS 2.0" style="text-decoration: none;">
+		<img src="https://shop.sigsiu.net/templates/ja_xenia_ii/images/but-rss.gif" alt="RSS 2.0" />
+	 </a>
+		<a href="/en/shop?vmcchk=1#Top" title="Go to top" style="text-decoration: none;">
+			<img src="https://shop.sigsiu.net/templates/ja_xenia_ii/images/but-top-blue.gif" alt="Go to top!" />
+		</a>
+	</div>	
+</div>
+</div>
+<!-- END: FOOTER -->
+
+</div>
+</div>
+
+
+<script src="https://ssl.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1137262-5";
+urchinTracker();
+</script>
+
+<!-- Piwik -->
+<script type="text/javascript">
+var pkBaseURL = "https://stats.sigsiu-net.de/";
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 3);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="https://stats.sigsiu-net.de/piwik.php?idsite=3" style="border:0" alt=""/></p></noscript>
+<!-- End Piwik Tag -->
+
+</body>
+
+</html>

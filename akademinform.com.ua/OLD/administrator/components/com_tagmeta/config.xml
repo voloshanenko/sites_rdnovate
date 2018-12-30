@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <params>
+        <param name="use_pagination" type="radio" default="1" label="TAG META USE PAGINATION LABEL" description="TAG META USE PAGINATION DESC">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </param>
+        <param name="limit" type="text" default="" size="2" maxsize="2" label="TAG META PAGE LIMIT LABEL" description="TAG META PAGE LIMIT DESC" />
+    </params>
+</config>

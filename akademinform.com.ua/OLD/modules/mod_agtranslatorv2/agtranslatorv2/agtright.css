@@ -1,0 +1,14 @@
+#agtalignright {
+position:absolute;
+height:100%;
+right:0;
+width:30px;
+top:50px;
+margin-right: 5px;
+margin-left: 10px;
+}
+
+#agtalignright input{
+padding:3px;
+
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: russian.xml 49 2009-06-29 19:54:56Z pedrosoft $ -->
+<sobi2lang>
+	<language>russian</language>
+	<author>Alexandr Oshurkov</author>
+	<creationDate>June 2009</creationDate>
+	<copyright>Copyright (C) 2008 - 2009 Alexandr Oshurkov. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>a.oshurkov@gmail.com</authorEmail>
+	<authorUrl>www.oshurkov.com</authorUrl>
+	<version>RC 2.9.2.1</version>
+	<files>
+		<front_file>russian.php</front_file>
+		<backend_file>admin.russian.php</backend_file>
+		<syscheck_file>syscheck.russian.php</syscheck_file>
+		<flag_img>russian.gif</flag_img>
+	</files>
+	<labels>
+		<label id="1" name="street">Улица</label>
+		<label id="2" name="postcode">Индекс</label>
+		<label id="3" name="city">Город</label>
+		<label id="4" name="county">Район</label>
+		<label id="5" name="federal_state">Область</label>
+		<label id="6" name="country">Страна</label>
+		<label id="7" name="email">E-mail</label>
+		<label id="8" name="website">Сайт</label>
+		<label id="9" name="contact_person">Контактное лицо</label>
+		<label id="10" name="phone">Телефон</label>
+		<label id="11" name="fax">Факс</label>
+		<label id="12" name="hotline">Горячая линия</label>
+		<label id="13" name="description">Описание</label>
+	</labels>
+</sobi2lang>

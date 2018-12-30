@@ -1,0 +1,59 @@
+.reklitem {
+	border-bottom: dotted 1px #ccc;
+}
+.reklitem h4 {
+	margin: 0;
+	line-height: 1em;
+}
+.reklitem img {
+	margin: 0 10px 0 0;
+}
+img.reklimg {
+	margin-right: 10px;
+}
+.rekl-box-intro {
+	padding: 10px 0;
+	margin: 5px 0;
+	border-bottom: solid 1px #ccc;
+	border-top: solid 1px #ccc;
+}
+.rekl-box-intro h3 {
+	margin: 0 0 7px; 0;
+}
+.rekl-box-intro p {
+	margin: 0;
+}
+.reklitem-listing-text {
+	width: 850px;
+}
+.ads-search-keyword {
+	width: 100%;
+	padding: 0;
+	font-size: 1.4em;
+	margin-bottom: 10px;
+}
+
+.keyword-div label {
+	border: medium none !important;
+}
+#ads-filter .radio-values {
+	width: 100% !important;
+	float: left;
+}
+#ads-filter .radio-values .ui-button-text {
+	padding: 0.1em 0.6em 0.2em;
+}
+#ads-filter input[type="text"] {
+	width: 200px;
+}
+#ads-filter input[type="submit"],
+#ads-filter input[type="reset"] {
+	width: 140px;
+}
+#ads-filter select {
+	width: 212px
+}
+#ads-filter input#Ads_title {
+	width: 944px;
+	font-size: 1.4em;
+}

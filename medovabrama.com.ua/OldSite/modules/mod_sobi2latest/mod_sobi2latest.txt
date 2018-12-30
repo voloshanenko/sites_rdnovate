@@ -1,0 +1,41 @@
+Changelog for Latest Entries Module for SOBI2
+Authors: Sigrid and Radek Suski, Sigsiu.NET
+
+1.8 (24.1.2009)
+-------------------
++ Add: Joomla! 1.5 installer (different packages)
++ Add: Joomla! 1.5 native compatibility
++ Add: Different style formats selectable (div or list) -> horizontal view
++ Add: Show only items of the actual category
++ Add: Show items of one category on non-SOBI2 pages
+! Change: Possibility to show only one item
+! Change: CSS style classes
+
+1.7
+-------------------
+Added: Exception for J15 to get the SOBI2 ItemId
+Changed: Div container sobi2MenuMod removed for J15
+Fixed: Module class suffix
+
+1.6
+-------------------
+Added: Max. number of characters for title string
+Added: Possibility to display entry image
+Added: ul/li class "sobi2latest" with class suffix
+Changed: Removed ampersand from XML file to work with Joomla 1.5
+Fixed: Default parameters
+Fixed: expired entries were shown
+
+1.5
+-------------------
+Added: Possibility to remove entry title
+
+1.4
+-------------------
+Added: Possibility to display entry icon
+
+1.3
+-------------------
+Fixed: HTML Entities and special chars
+
+

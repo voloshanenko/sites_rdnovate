@@ -1,0 +1,81 @@
+<?php
+/**
+* @version 1.2.0
+* @package RSForm! Pro Into Content
+* @copyright (C) 2007-2008 www.rsjoomla.com
+* @license Commercial License, http://www.rsjoomla.com/terms-and-conditions.html
+*/
+@session_start();
+require_once(dirname(__FILE__).'/../../components/com_rsform/controller/adapter.php');
+require_once(dirname(__FILE__).'/../../components/com_rsform/controller/functions.php');
+require_once(dirname(__FILE__).'/../../components/com_rsform/controller/validation.php');
+
+$RSadapter = new RSadapter();
+$GLOBALS['RSadapter'] = $RSadapter;
+
+//require backend language file
+require_once(_RSFORM_FRONTEND_ABS_PATH.'/languages/'._RSFORM_FRONTEND_LANGUAGE.'.php');
+
+$RSadapter->registerEvent('onPrepareContent', 'botMosRSform');
+
+
+function processRSform ( &$row, &$matches, $count, $regex ) {
+	for ( $i=0; $i < $count; $i++ ) {
+		$load = str_replace( '{rsform', '', $matches[0][$i] );
+ 		$load = str_replace( '}', '', $load );
+ 		$load = trim( $load );
+ 		$row->text 	= str_replace($matches[0][$i], rsform($load), $row->text);
+	}
+  	// removes tags without matching module positions
+	$row->text = preg_replace( $regex, '', $row->text );
+}
+
+
+function rsform($formId)
+{
+	$output = '';
+	$RSadapter = $GLOBALS['RSadapter'];
+
+	if(isset($_SESSION['form'][$formId]['thankYouMessage']) && !empty($_SESSION['form'][$formId]['thankYouMessage']))
+	{
+		$output .= RSshowThankyouMessage($formId);
+	}
+	else
+	{
+		if(!empty($_POST['form']['formId']) && $_POST['form']['formId'] == $formId)
+		{
+			$invalid = RSprocessForm($formId);
+			if($invalid)
+			{
+				//the invalid variable is returned
+				$output .= RSshowForm($formId, $_POST['form'], $invalid);
+			}
+		}
+		else
+		{
+			if(isset($_SESSION['form'][$formId]['thankYouMessage']) && empty($_SESSION['form'][$formId]['thankYouMessage']))
+			{
+				unset($_SESSION['form'][$formId]['thankYouMessage']);
+
+				//is there a return url?
+				$query = mysql_query("SELECT ReturnUrl FROM `{$RSadapter->tbl_rsform_forms}` WHERE `formId` = '$formId'");
+				$returnUrl = mysql_fetch_assoc($query);
+				if(!empty($returnUrl['ReturnUrl']))
+				{
+					if(!isset($_SESSION['form'][$formId]['submissionId']))$_SESSION['form'][$formId]['submissionId'] = '';
+					$returnUrl['ReturnUrl'] = RSprocessField($returnUrl['ReturnUrl'],$_SESSION['form'][$formId]['submissionId']);
+					unset($_SESSION['form'][$formId]['submissionId']);
+
+					$RSadapter->redirect($returnUrl['ReturnUrl']);
+				}
+
+				$output .= _RSFORM_FRONTEND_THANKYOU;
+			}
+			$output .= RSshowForm($formId);
+		}
+	}
+
+	return $output;
+}
+
+?>

@@ -1,0 +1,20 @@
+<?php
+$config=array();
+$config["allow_comments"]="0";
+$config["from_email"]="info@akvariumistika-nova.com.ua";
+$config["from_name"]="Аквариумистика";
+$config["orders_email"]="veterina@mail.ru";
+$config["spam_email"]="rdbio@yandex.ua";
+$config["image_height"]="400";
+$config["image_width"]="400";
+$config["thumb_image_height"]="50";
+$config["thumb_image_width"]="50";
+$config["minimum_order_summ"]="100.00";
+$config["number_of_products_on_page"]="25";
+$config["delivery_variants"]="Самовывоз=0;Доставка курьером=0;Почтой или транспортной компанией=0";
+$config["payments_variants"]="Наличными=0;Безналичный расчет=0;Наложенный платеж=0";
+$config["items_per_tab"]="64";
+$config["front_title"]="Аквариумистика";
+$config["front_keywords"]="Аквариумистика";
+$config["front_description"]="Аквариумистика";
+$config["ad_exp_header"]="Аквариумистика Нова- центр современной аквариумистик и и аквадизайна";

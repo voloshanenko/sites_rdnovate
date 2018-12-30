@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install type="module" version="1.5.0">
+	<name>SOBI2 Top Rated Module</name>
+	<author>Sigrid and Radek Suski, Sigsiu.NET</author>
+	<creationDate>February 2009</creationDate>
+	<copyright>(C) 2007-2009 Sigsiu.NET All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>sobi@sigsiu.net</authorEmail>
+	<authorUrl>www.Sigsiu.NET</authorUrl>
+	<version>1.0</version>
+	<description>SOBI2 Top Rated Module. This modules shows the top rated entries of SOBI2 in a module position. The SOBI2 Reviews and Ratings Plugin has to be installed in order to use this module.</description>
+	<files>
+		<filename module="mod_sobi2toprated">mod_sobi2toprated.php</filename>
+		<filename>mod_sobi2toprated.txt</filename>
+		<filename>index.html</filename>
+	</files>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css classes of the module, this allows individual module styling." />
+		<param name="direction" type="radio" default="1" label="Item Style" description="Style of the items in the module. If 'DIV Container' is selected, the items are within separate DIV containers. Use this to show the module horizontally. Style the container view by adding the CSS class 'sobi2toprated' to your template CSS file. If 'List' is selected the items are in list view.">
+			<option value="1">List</option>
+			<option value="0">DIV Container</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="count" type="text" default="5" label="Count" description="Number of items to display (default 5, min. 1)." />
+		<param name="title" type="radio" default="1" label="Show Entry Title" description="Show the entry title." >
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="item_length" type="text" default="0" label="Title Length" description="Max. length of the title. If the title is longer, it will be shortened and three dots are added. Enter '0' for unlimited title length."></param>
+		<param name="entryicon" type="radio" default="0" label="Show Entry Icon" description="Show the entry icon." >
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="entryimage" type="radio" default="0" label="Show Entry Image" description="Show the entry image." >
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="categorydepend" type="radio" default="0" label="Category Dependant" description="If in category view, show only the items of that category." >
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="showNoEntries" cols="40" rows="6" type="textarea" default="No voted entries available" label="Empty Text" description="Text to be shown if no entries are shown in the module. You can insert HTML code here." />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="showlimit" type="text" default="15" label="Top List Limit" description="Minimum number of votes to get in the top list (default 15)." />
+		<param name="showvotes" type="radio" default="1" label="Show Vote Average" description="Show the vote average next to the title in brackets." >
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="showvotesimage" type="radio" default="0" label="Show Vote Image" description="Show the vote image (e.g. the stars) next to the title." >
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="catsignore" type="text" default="" label="Ignore Categories" description="To ignore entries from specific categories, enter comma-separated all ids of these categories." />
+	</params>
+</install>

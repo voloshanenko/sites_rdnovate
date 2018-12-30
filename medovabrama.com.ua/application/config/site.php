@@ -1,0 +1,20 @@
+<?php
+$config=array();
+$config["allow_comments"]="0";
+$config["from_email"]="bionova@ukr.net";
+$config["from_name"]="MedovaBrama";
+$config["orders_email"]="bionova@ukr.net";
+$config["spam_email"]="bionova@ukr.net";
+$config["image_height"]="400";
+$config["image_width"]="400";
+$config["thumb_image_height"]="50";
+$config["thumb_image_width"]="50";
+$config["minimum_order_summ"]="150.00";
+$config["number_of_products_on_page"]="50";
+$config["delivery_variants"]="Самовывоз=0;Доставка курьером=0;Почтой или транспортной компанией=0";
+$config["payments_variants"]="Наличными=0;Безналичный расчет=0;Наложенный платеж=0";
+$config["items_per_tab"]="100";
+$config["front_title"]="Медовая Брама, пчеловодство для начинающих, пчеловодство, пчеловодство Украины, пасека, улей, содержание пчел,  лечение пчел, лекарства для пчел, книги по пчеловодству, продам мед ";
+$config["front_keywords"]="Медовая Брама, пчеловодство для начинающих, пчеловодство, пчеловодство Украины, пасека, улей, содержание пчел, лечение пчел, лекарства для пчел, книги по пчеловодству, продам мед ";
+$config["front_description"]="Медовая Брама, пчеловодство для начинающих, пчеловодство, пчеловодство Украины, пасека, улей, содержание пчел, лечение пчел, лекарства для пчел, книги по пчеловодству, продам мед ";
+$config["ad_exp_header"]="Медовая Брама - это современные технологии, оборудование и лекарственные препараты для пчеловодства.";

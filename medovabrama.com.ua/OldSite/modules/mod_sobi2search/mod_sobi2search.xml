@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: mod_sobi2search.xml 4815. svn: 11732-4305. 2008-12-19 12:32:45Z Sigrid Suski $ -->
+<mosinstall type="module" version="1.0">
+	<name>SOBI2 Search Module</name>
+	<author>Sigrid and Radek Suski, Sigsiu.NET</author>
+	<creationDate>January 2009</creationDate>
+	<copyright>(C) 2008-2009 Sigsiu.NET All rights reserved.</copyright>
+	<license>Commercial Licence</license>
+	<authorEmail>sobi@sigsiu.net</authorEmail>
+	<authorUrl>http://www.Sigsiu.NET</authorUrl>
+	<version>1.6</version>
+	<description>SOBI2 Search Module. This module shows a search form for the SOBI2 search function in a module position. The base search settings of the SOBI2 fields as set up in the Fields Manager are considered. Additional module settings are available in the module settings area. This module needs SOBI2 component.</description>
+	<files>
+		<filename module="mod_sobi2search">mod_sobi2search.php</filename>
+		<filename>mod_sobi2search.txt</filename>
+	</files>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling." />
+		<param name="moduletable" type="radio" default="0" label="Add moduletable" description="Add a module table around the search div container." >
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="Visibility of the Module"  description="Define the Visibility of the Module."/>
+		<param name="labelOver" type="radio" default="0" label="Module Orientation" description="Orientation of the module. For horizontal orientation, the labels are positioned at the left of the input fields, the top search button is at the right side of the search inputbox and the search 'phrases' are in one line. For vertical orientation, the labels are positioned above the input fields, the top search button is below the search inputbox and the search 'phrases' are below each other.">
+			<option value="1">Vertical</option>
+			<option value="0">Horizontal</option>
+		</param>
+		<param name="labelAdd" type="radio" default="0" label="Add Label to Select" description="Add the labels for the custom fields to the 'select' text within the drop down list instead of in front of the drop down list (not for the category lists).">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="ignoreTask" type="textarea" default="search, addNew, editSobi" label="Tasks to Ignore" cols="50" rows="2" description="Tasks to Ignore - Enter the SOBI2 tasks (comma separated) where the module should not be displayed. If the module should be shown on the SOBI2 search page, the standard SOBI2 search should be switched off by setting the key 'do_not_show_search_form' in the section 'search' of the Registry Editor to 1!" />
+		<param name="ignoreFields" type="text" size="59" default="" label="Fields to Ignore" description="Fields to Ignore - Enter the IDs (numbers) of the fields (comma separated) which should not be shown in the module. By default all fields, as defined in the SOBI2 Fields Manager will be shown. You can remove some of them here for the module. It is not possible to add fields which are not defined by SOBI2 Fields Manager." />
+		<param name="ignorePlugins" type="textarea" default="" label="Plugins to Ignore" cols="50" rows="2" description="Plugins to Ignore - Enter the plugins which should not be displayed in the module. The IDs as defined in the SOBI2 Plugin Manager has to be entered (comma separated). This is valid only for plugins which modify the search form (E.g. the Radius Distance Search Plugin)." />
+		<param name="@spacer" type="spacer" default="" label="General Module Settings" description="General Module Settings." />
+		<param name="search_button_top" type="radio" default="1" label="Top Search Button" description="Show a search button on the top of the module (below or at the right side of the search inputbox).">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="search_button_bottom" type="radio" default="0" label="Bottom Search Button" description="Show a search button at the bottom of the module.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="search_box" type="radio" default="1" label="Show Searchbox" description="Show the inputbox for the search phrase. If no search inputbox is shown, the phrase options are also not shown.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="phrase_any" type="radio" default="1" label="Show 'Phrase Any'" description="Show the option for 'Any' phrase.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="phrase_all" type="radio" default="1" label="Show 'Phrase All'" description="Show the option for 'All' phrase.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="phrase_exact" type="radio" default="1" label="Show 'Phrase Exact'" description="Show the option for 'Exact' phrase.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="defPhrase" type="radio" default="any" label="Default Selected Phrase" description="Select the default predefined phrase. If you switch off all 'phrases' this will be the only possible phrase.">
+			<option value="any">Any</option>
+			<option value="all">All</option>
+			<option value="exact">Exact</option>
+		</param>
+		<param name="selectWidth" type="text" size="10" default="165" label="Width of Select Lists" description="Width of all select lists shown in the module (e.g. fields, categories). Enter a decimal value without 'px'. Enter '0' to switch off adjusting the width." />
+		<param name="boxWidth" type="text" size="10" default="165" label="Width of Inputboxes" description="Width of all inputboxes shown in the module (e.g. search inputbox). Enter a decimal value without 'px'. Enter '0' to switch off adjusting the width." />
+		<param name="@spacer" type="spacer" default="" label="Category Module Settings" description="Category Module Settings." />
+		<param name="cats" type="radio" default="1" label="Show Category Selection" description="Allow choosing categories in the module.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="preselectCats" type="radio" default="1" label="Preselect Category" description="Preselect the category boxes to the currently visited category.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+	</params>
+</mosinstall>

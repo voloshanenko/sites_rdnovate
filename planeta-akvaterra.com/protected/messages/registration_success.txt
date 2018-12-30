@@ -1,0 +1,15 @@
+<html>
+<head>
+	<style>
+		body	{ font-size:75%;color:#222;background:#fff;font-family:"Helvetica Neue", Verdana, Helvetica, sans-serif;}
+		h1		{ color: #52C000;}
+	</style>
+</head>
+<body>
+	<h1>Поздравляем!</h1>
+	<h3>Регистрация прошла успешно!</h3>
+	<p>Завершающий шаг регистрации - активация аккаунта. Нажмите на эту <a href="%LINK%" target="_blank">ссылку</a>, что бы активировать Ваш аккаунт.</p>
+	<p>Если по каким-либо причинам ссылка не активна, попробуйте перейти по этому адресу: %LINK%</p>
+	<p>С уважением,<br />Планета Акватерра.</p>
+</body>
+</html>

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="2.0.0">
+        <name>Automatic Google Translator V2</name>
+        <author>Mack Hristofor	</author>
+        <creationDate>Mar 2009</creationDate>
+        <copyright>(c) 2009 Mack Hristofor. All rights reserved.</copyright>
+        <license>N/A</license>
+        <authorEmail>m.hristofor@gmail.com</authorEmail>
+        <authorUrl>http://www.m-artini.co.cc</authorUrl>
+        <version>2.3.0.0</version>
+        <description>
+		This is one of the best automatic language translating extension ever made for Joomla.The best thing about this module is its absolute positioning ability. Works absolutely fantastic with Firefox and Internet Explorer as well. Has png fix option too. Please download the detailed instruction manual for further details from http://www.m-artini.co.cc</description>
+        <files>
+                <filename module="mod_agtranslatorv2">mod_agtranslatorv2.php</filename>
+				
+			
+				<filename>agtranslatorv2/agtleft.css</filename>
+				<filename>agtranslatorv2/agtright.css</filename>
+				<filename>agtranslatorv2/iepngfix.htc</filename>
+				<filename>agtranslatorv2/blank.gif</filename>
+				
+				
+				<filename>agtranslatorv2/arabic.png</filename>
+				<filename>agtranslatorv2/filipino.png</filename>
+				<filename>agtranslatorv2/greek.png</filename>
+				<filename>agtranslatorv2/hebrew.png</filename>
+				<filename>agtranslatorv2/indonesian.png</filename>
+				<filename>agtranslatorv2/latvian.png</filename>
+				<filename>agtranslatorv2/lithuanian.png</filename>
+				<filename>agtranslatorv2/serbian.png</filename>
+				<filename>agtranslatorv2/slovakian.png</filename>
+				<filename>agtranslatorv2/ukrainian.png</filename>
+				<filename>agtranslatorv2/vietnamese.png</filename>
+				<filename>agtranslatorv2/english.png</filename>
+				<filename>agtranslatorv2/bulgarian.png</filename>
+				<filename>agtranslatorv2/chinese.png</filename>
+				<filename>agtranslatorv2/croatian.png</filename>
+				<filename>agtranslatorv2/czech.png</filename>
+				<filename>agtranslatorv2/danish.png</filename>
+				<filename>agtranslatorv2/dutch.png</filename>
+				<filename>agtranslatorv2/finnish.png</filename>
+				<filename>agtranslatorv2/french.png</filename>
+				<filename>agtranslatorv2/german.png</filename>
+				<filename>agtranslatorv2/hindi.png</filename>
+				<filename>agtranslatorv2/italian.png</filename>
+				<filename>agtranslatorv2/japanese.png</filename>
+				<filename>agtranslatorv2/korean.png</filename>
+				<filename>agtranslatorv2/norwegian.png</filename>
+				<filename>agtranslatorv2/polish.png</filename>
+				<filename>agtranslatorv2/portuguese.png</filename>
+				<filename>agtranslatorv2/romanian.png</filename>
+				<filename>agtranslatorv2/russian.png</filename>
+				<filename>agtranslatorv2/spanish.png</filename>
+				<filename>agtranslatorv2/swedish.png</filename>
+				
+        </files>
+        <params>
+                <param name="topframe" type="radio" default="1" label="Hide Top Frame" description="Hides the top frame that appears after the page is translated">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+						
+                </param>	
+				
+				<param name="suggest" type="radio" default="0" label="Hide Original Language Popup" description="Hides the popup when you hover over some text in the translated page">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+						
+                </param>	
+				 
+				  <param name="position" type="radio" default="normal" label="Location (not related to Joomla positions)" description="Displays the module either normally at the user defined position or at the top, left or right area of the page. If you choose top, left or right then you may have to define a new module location for this module in the index.php just before the body tag starts. But you should give it a try because it may work for you without changing anything. Check the documentation for details.">
+                        <option value="normal">Normal</option>
+                        <option value="top">Top</option>
+                        <option value="left">Left</option>
+						<option value="right">Right</option>
+                  </param>	
+				 
+				   <param type="spacer" default="&lt;hr&gt;" />
+				 
+				 
+				  <param type="spacer" description="If your template does not have space at the top, then you can enter a value here to create some space for the module to fit in." default="&lt;font color=green&gt;&lt;b&gt;Alter this only if you choose 'Top' in the previous option.&lt;/b&gt;&lt;/font&gt;" />
+				 
+			      <param name="bodytopmargin" type="text" default="" label="Body Top margin" description="Please do not write 'px' at the end. For example: 50">
+                  </param>	
+				  
+				  <param type="spacer" default="&lt;hr&gt;" />
+				 
+				  
+				  <param type="spacer" description="If your template does not have space at the left side, then you can enter a value here to create some space for the module to fit in." default="&lt;font color=red&gt;&lt;b&gt;Alter this only if you choose 'Left' in the previous option.&lt;/b&gt;&lt;/font&gt;" />
+				   
+				  <param name="bodyleftmargin" type="text" default="" label="Body Left margin" description="Please do not write 'px' at the end. For example: 20">
+                  </param>	
+				   
+			     <param type="spacer" default="&lt;hr&gt;" />
+				   
+				  <param type="spacer" description="If your template does not have space at the right side, then you can enter a value here to create some space for the module to fit in." default="&lt;font color=blue&gt;&lt;b&gt;Alter this only if you choose 'Right' in the previous option.&lt;/b&gt;&lt;/font&gt;" />
+				  
+				  <param name="bodyrightmargin" type="text" default="" label="Body Right margin" description="Please do not write 'px' at the end. For example: 20">
+                  </param>	
+				 
+				  <param type="spacer" default="&lt;hr&gt;" />
+				 
+				 
+				 <param name="iefix" type="radio" default="0" label="Fix IETransparency problem" description="An IE hack will be applied so that the png flags remain transparent. Select 'yes' if you dont already have some IE hack applied to your current theme or having some transparency problems with this module in IE6">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+						
+                </param>	
+				
+				  <param type="spacer" description="speparator" default="&lt;hr&gt;" />
+												
+				<param name="language" type="list" default="en" label="Site Language" description="Your site's native language">
+                        <option value="tr">Turkish</option>
+						<option value="en">English</option>
+						<option value="ar">Arabic</option>
+						<option value="bg">Bulgarian</option>
+                        <option value="zhCN">Chinese</option>
+						<option value="zhTW">Chinese</option>
+                        <option value="hr">Croatian</option>
+                        <option value="cs">Czech</option>
+                        <option value="da">Danish</option>
+                        <option value="nl">Dutch</option>
+                        <option value="fi">Finnish</option>
+                        <option value="fr">French</option>
+						<option value="tl">Filipino</option>						
+                        <option value="de">German</option>
+                        <option value="el">Greek</option>
+						<option value="iw">Hebrew</option>
+                        <option value="hi">Hindi</option>
+						<option value="id">Indonesian</option>
+                        <option value="it">Italian</option>
+                        <option value="ja">Japanese</option>
+                        <option value="ko">Korean</option>
+						<option value="lv">Latvian</option>
+						<option value="lt">lithuanian</option>
+                        <option value="no">Norwegian</option>
+                        <option value="pl">Polish</option>
+                        <option value="pt">Portuguese</option>
+                        <option value="ro">Romanian</option>
+                        <option value="ru">Russian</option>
+						<option value="sr">Serbian</option>
+						<option value="sl">Slovakian</option>
+                        <option value="es">Spanish</option>
+                        <option value="sv">Swedish</option>
+						<option value="uk">Ukrainian</option>
+						<option value="vi">Vietnamese</option>
+                        
+			
+                </param>
+				
+				<param type="spacer" description="speparator" default="&lt;hr&gt;" />
+				  
+                <param name="flag_en" type="radio" default="1" label="display English" description="display English Flag">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+                
+                <param name="flag_ar" type="radio" default="1" label="display Arabic" description="display Arabic Flag">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+				
+				<param name="flag_bg" type="radio" default="1" label="display Bulgarian" description="display Bulgarian Flag">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+				
+                <param name="flag_zhCN" type="radio" default="1" label="display Chinese Simplified" description="display Chinese Simplified Flag">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+				
+				<param name="flag_zhTW" type="radio" default="1" label="display Chinese Traditional" description="display Chinese Traditional Flag">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+                
+                <param name="flag_hr" type="radio" default="1" label="display Croatian" description="display Croatian Flag">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+				
+                <param name="flag_cs" type="radio" default="1" label="display Czech" description="display Czech Flag">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+				
+                <param name="flag_da" type="radio" default="1" label="display Danish" description="display Danish Flag">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+				
+                <param name="flag_nl" type="radio" default="1" label="display Dutch" description="display Dutch Flag">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+				
+				<param name="flag_tl" type="radio" default="1" label="display Filipino" description="display Filipino Flag">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+				
+                <param name="flag_fi" type="radio" default="1" label="display Finnish" description="display Finnish Flag">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+				
+                <param name="flag_fr" type="radio" default="1" label="display French" description="display French Flag">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+				
+                <param name="flag_de" type="radio" default="1" label="display German" description="display German Flag">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+				
+                <param name="flag_el" type="radio" default="1" label="display Greek" description="display Greek Flag">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+				
+				<param name="flag_iw" type="radio" default="1" label="display Hebrew" description="display Hebrew Flag">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+				
+                <param name="flag_hi" type="radio" default="1" label="display Hindi" description="display Hindi Flag">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+				
+				<param name="flag_id" type="radio" default="1" label="display Indonesian" description="display Indonesian Flag">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+				
+                <param name="flag_it" type="radio" default="1" label="display Italian" description="display Italian Flag">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+				
+                <param name="flag_ja" type="radio" default="1" label="display Japanese" description="display Japanese Flag">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+				
+                <param name="flag_ko" type="radio" default="1" label="display Korean" description="display Korean Flag">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+				
+				<param name="flag_lv" type="radio" default="1" label="display Latvian" description="display Latvian Flag">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+				
+				<param name="flag_lt" type="radio" default="1" label="display Lithuanian" description="display Lithuanian Flag">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+				
+                <param name="flag_no" type="radio" default="1" label="display Norwegian" description="display Norwegian Flag">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+				
+                <param name="flag_pl" type="radio" default="1" label="display Polish" description="display Polish Flag">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+				
+                <param name="flag_pt" type="radio" default="1" label="display Portuguese" description="display Portuguese Flag">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+				
+                <param name="flag_ro" type="radio" default="1" label="display Romanian" description="display Romanian Flag">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+				
+                <param name="flag_ru" type="radio" default="1" label="display Russian" description="display Russian Flag">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+				
+				<param name="flag_sr" type="radio" default="1" label="display Serbian" description="display Serbian Flag">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+				
+				<param name="flag_sl" type="radio" default="1" label="display Slovakian" description="display Slovakian Flag">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+				
+                <param name="flag_es" type="radio" default="1" label="display Spanish" description="display Spanish Flag">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+				
+                <param name="flag_sv" type="radio" default="1" label="display Swedish" description="display Swedish Flag">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+				
+				<param name="flag_uk" type="radio" default="1" label="display Ukrainian" description="display Ukrainian Flag">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+				
+				<param name="flag_vi" type="radio" default="1" label="display Vietnamese" description="display Vietnamese Flag">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+				
+              
+		
+        </params>
+</install>

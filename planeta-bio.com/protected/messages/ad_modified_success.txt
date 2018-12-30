@@ -1,0 +1,15 @@
+<html>
+<head>
+	<style>
+		body	{ font-size:75%;color:#222;background:#fff;font-family:"Helvetica Neue", Verdana, Helvetica, sans-serif;}
+		h1		{ color: #52C000;}
+	</style>
+</head>
+<body>
+	<h1>Здравствуйте!</h1>
+	<h3>Ваше объявление №%ADNUMBER% успешно изменено!</h3>
+	<p>Ссылка на объявление: <a href="%ADLINK%" target="_blank">%ADLINK%</a></p>
+	<p>Если Вы знаете о чем идет речь, пожалуйста, сообщите об этом администрации. Спасибо!</p>
+	<p>С уважением,<br />Планета Био.</p>
+</body>
+</html>

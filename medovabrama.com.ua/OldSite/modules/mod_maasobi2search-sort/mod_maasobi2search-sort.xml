@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+	<name>Поиск для Sobi2 (с расширенным поиском)</name>
+	<author>Milchenko Alexey</author>
+	<creationDate>July 2010</creationDate>
+	<copyright>Copyright (C)</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>prixodik@gmail.com</authorEmail>
+	<authorUrl>www.misuse.su</authorUrl>
+	<version>1.0.0</version>
+	<description>Этот модуль позволяет создавать сортировку по параметрам и просто поиск в компоненте Sobi2. Подробное описание и FAQ - http://maa.pp.ua/index.php/sobi2sort-faq</description>
+	<files>
+		<filename module="mod_maasobi2search-sort">mod_maasobi2search-sort.php</filename>
+		<filename>mod_maasobi2search-sort.xml</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>style.css</filename>
+		<filename>jquery.js</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/index.html</filename>
+		<filename>images/plus.png</filename>
+		<filename>images/search_bg.jpg</filename>
+		<filename>images/search_button.png</filename>
+		<filename>images/search_label.png</filename>
+	</files>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		<param name="search_button" type="text" default="Поиск" label="Надпись на кнопке поиска" description="Надпись на кнопке поиска" />
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="search" type="list" default="1" label="Отображать обычный поиск?" description="Отображать обычный поиск?">
+			<option value="1">Да</option>
+			<option value="0">Нет</option>
+		</param>	
+		<param name="searchphrase_any" type="list" default="1" label="Поиск по Любому слову" description="Отображать обычный поиск с параметром По любому слову">
+			<option value="1">Да</option>
+			<option value="0">Нет</option>
+		</param>	
+		<param name="searchphrase_all" type="list" default="1" label="Поиск по Всем словам" description="Отображать обычный поиск с параметром Все слова">
+			<option value="1">Да</option>
+			<option value="0">Нет</option>
+		</param>	
+		<param name="searchphrase_exact" type="list" default="1" label="Поиск по Точной фразе" description="Отображать обычный поиск с параметром Точная фраза">
+			<option value="1">Да</option>
+			<option value="0">Нет</option>
+		</param>	
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="search_for_cat" type="list" default="1" label="Сортировка по категориям" description="Отображать сортировку по категориям">
+			<option value="1">Да</option>
+			<option value="0">Нет</option>
+		</param>	
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="sort" type="list" default="1" label="Сортировка включена" description="Осуществлять ли сортировку по параметрам?">
+			<option value="1">Да</option>
+			<option value="0">Нет</option>
+		</param>	
+		<param name="field_id" type="text" default="" label="ID параметров для сортировки" description="Введите ID параметров по которым должна осуществлятся сортировка. Через пробел!" />
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="js" type="list" default="1" label="Подключать jQuery" description="Подключать jQuery">
+			<option value="1">Да</option>
+			<option value="0">Нет</option>
+		</param>	
+		<param name="css" type="list" default="1" label="Подключать Css" description="Подключать Css">
+			<option value="1">Да</option>
+			<option value="0">Нет</option>
+		</param>	
+	</params>
+	<params group="advanced">
+		<param name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</params>
+</install>

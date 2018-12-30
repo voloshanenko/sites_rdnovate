@@ -1,0 +1,15 @@
+<html>
+<head>
+	<style>
+		body	{ font-size:75%;color:#222;background:#fff;font-family:"Helvetica Neue", Verdana, Helvetica, sans-serif;}
+		h1		{ color: #52C000;}
+	</style>
+</head>
+<body>
+	<h1>Ув. %USER%!</h1>
+	<h3>Срок публикации Вашего объявления №%ADNUMBER% истекает менее, чем через 3 дня.</h3>
+	<p>Объявление можно актуализировать либо оно будет перенесено в архив.</p>
+	<p>Ссылка на объявление: <a href="%ADLINK%" target="_blank">%ADLINK%</a></p>
+	<p>С уважением,<br />Территория Живпром.</p>
+</body>
+</html>

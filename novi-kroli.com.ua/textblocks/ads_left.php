@@ -1,0 +1,6 @@
+<p>
+	<a href="http://novi-kroli.com.ua/page/kroliki_jeto_ne_tolko_cennyj_meh_neskolko_kilogrammov_dieticheskogo_mjasa_jeto_ochen_ser_eznyj_vid_biznesa_nk"><img alt="" src="/images/banners/%D0%91%D0%B0%D0%BD%D0%BD%D0%B5%D1%80-%D0%BC%D0%B0%D0%BB%D0%B5%D0%BD%D1%8C%D0%BA%D0%B8%D0%B9-%D0%BF%D0%BE-%D0%BA%D1%80%D0%BE%D0%BB%D0%B8%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D1%83-02.gif" style="width: 180px; height: 110px;" /></a><br />
+	<br />
+	<a href="http://novi-kroli.com.ua/page/zashhita_ulev_ot_myshej_ptic_prochi_prochih_vrediteley_vazhny_element_uspeshnoy_zimovki_pchel" target="_blank"><img alt="" src="/images/banners/%D0%9A%D0%BB%D1%8E%D1%87%D0%B5%D0%B2%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%BC%D0%B5%D0%BD%D1%82%D1%8B%20%D0%B7%D0%B8%D0%BC%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%BF%D1%87%D0%B5%D0%BB-02-%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2.png" style="width: 180px; height: 110px;" /></a></p>
+<p>
+	<a href="http://novi-kroli.com.ua/page/tri_tipa_izgotovlenija_zimnej_podkormki_dlja_pchel_iz_invertirovannyh_siropov_prigotovlennyh_pri_pomoshhi_kisloty_meda_fermentov"><img alt="" src="/images/banners/%D0%9A%D0%B0%D0%BD%D0%B4%D0%B8-%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D0%B2%D1%8B%D0%B1%D0%BE%D1%80-%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.gif" style="width: 180px; height: 110px;" /></a></p>

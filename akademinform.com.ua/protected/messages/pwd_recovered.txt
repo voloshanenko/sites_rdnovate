@@ -1,0 +1,15 @@
+<html>
+<head>
+	<style>
+		body	{ font-size:12px;color:#222;background:#fff;font-family:"Helvetica Neue", Verdana, Helvetica, sans-serif;}
+		h1		{ color: #52C000;}
+	</style>
+</head>
+<body>
+	<h1>Восстановление пароля</h1>
+	<p>Запрос на установку нового пароля успешно выполнен.</p>
+	<p>Ваш новый пароль: <strong>%NP%</strong></p>
+	<p>Вы сможете в любой момент заменить его на ваш собственный в личном кабинете.</p>
+	<p>С уважением,<br />комманда Планеты Био.</p>
+</body>
+</html>

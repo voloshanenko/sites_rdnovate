@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+    <!-- Name of the Module -->
+	<name>Latest Articles</name> 
+ 
+    <!-- Name of the Author -->
+	<author>Maverick</author> 
+ 
+    <!-- Version Date of the Module -->
+    <creationDate>2009-07-30</creationDate>
+ 
+    <!-- Copyright information -->
+    <copyright>All rights reserved by boddunan.com 2009.</copyright> 
+ 
+    <!-- License Information -->
+    <license>GPL 2.0</license> 
+ 
+    <!-- Author's email address -->
+    <authorEmail>maverick@boddunan.com</authorEmail> 
+ 
+    <!-- Author's website -->
+    <authorUrl>www.boddunan.com</authorUrl> 
+ 
+    <!-- Module version number -->
+    <version>1.0.5</version>
+ 
+    <!-- Description of what the module does -->
+    <description>Please support us by donating. Please visit joomladev.boddunan.com</description>
+ 
+    <!-- Listing of all files that should be installed for the module to function -->
+    <files>
+    <!-- The "module" attribute signifies that this is the main controller file -->
+    	<filename module="mod_latest_articles">mod_latest_articles.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+        <filename>elements/lacategories.php</filename>
+        <filename>elements/index.html</filename>
+	</files>
+
+  <languages>
+		<!-- Any language files included with the module -->
+	    <language tag="en-GB">en-GB.mod_latest_articles.ini</language>
+	</languages>
+ 
+    <!-- Optional parameters -->
+	<params addpath="/modules/mod_latest_articles/elements">
+        <!-- parameter to allow placement of a module class suffix for the module table / xhtml display -->
+        <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+ 
+        <!-- just gives us a little room between the previous paramter and the next -->
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+ 
+		<param name="showheader" type="list" default="1" label="LA_SHOW_TABLE_HEADER" description="LA_SHOW_TABLE_HEADER_INFO">
+			<option value="1">LA_SHOW</option> 
+			<option value="0">LA_HIDE</option> 
+		</param>
+				
+		<param name="showleaderboard" type="list" default="1" label="LA_SHOW_LEADER_BOARD" description="LA_SHOW_LEADER_BOARD_INFO">
+			<option value="1">LA_SHOW</option> 
+			<option value="0">LA_HIDE</option> 
+		</param>
+
+		<!-- A parameter that allows an administrator to modify the number of articles that this module will display -->
+		<param name="count" type="text" default="5" label="ARTICLE_COUNT" description="ARTICLE_COUNT_INFO" />
+
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+
+		<param name="incl_excl" type="list" default="1" label="LA_INCLUSION_EXCLUSION" description="LA_INCLUSION_EXCLUSION_DESC">
+			<option value="1">LA_INCLUSION</option>
+			<option value="0">LA_EXCLUSION</option>
+		</param>
+        
+        <param name="sec_cat_ids" type="lacategories" label="LA_SEC_CATS" description="LA_SEC_CATS_DESC" />
+
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="adminflag" type="radio" default="1" label="LABEL_ADMIN_ARTICLES" description="LABEL_ADMIN_ARTICLES_INFO">
+			<option value="1">LA_SHOW</option>
+			<option value="0">LA_HIDE</option>
+		</param>
+		
+		<param name="frontpage" type="radio" default="1" label="LABEL_FRONT_PAGE_ARTICLES" description="LABEL_FRONT_PAGE_ARTICLES_INFO">
+			<option value="1">LA_SHOW</option>
+			<option value="0">LA_HIDE</option>
+		</param>
+		
+		<param name="showsection" type="radio" default="1" label="LABEL_SECTION" description="LA_SHOW_SECTION_INFO">
+            <option value="1">LA_SHOW</option>
+			<option value="0">LA_HIDE</option>
+		</param>
+		
+		<param name="showcategory" type="radio" default="1" label="LABEL_CATEGORY" description="LA_SHOW_CATEGORY_INFO">
+			<option value="1">LA_SHOW</option>
+			<option value="0">LA_HIDE</option>
+		</param>
+
+		<param name="showauthor" type="radio" default="1" label="LABEL_AUTHOR" description="LA_SHOW_AUTHOR_INFO">
+			<option value="1">LA_SHOW</option>
+			<option value="0">LA_HIDE</option>
+		</param>
+
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="sortorder" type="radio" default="1" label="LABEL_SORT_ORDER" description="LABEL_SORT_ORDER_INFO">
+			<option value="1">LA_CREATEDATE</option>
+			<option value="0">LA_MODIFYDATE</option>
+		</param>
+
+		<param name="username" type="radio" default="name" label="LA_AUTHOR_NAME" description="LA_AUTHOR_NAME_INFO">
+			<option value="name">LA_NAME</option>
+			<option value="username">LA_USERNAME</option>
+		</param>		
+    </params>
+</install>

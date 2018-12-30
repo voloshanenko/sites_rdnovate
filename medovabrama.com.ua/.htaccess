@@ -1,0 +1,13 @@
+DirectoryIndex index.html index.php
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+RewriteCond %{REQUEST_URI} ^/system.*
+RewriteRule ^(.*)$ index.php?/$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)$ index.php?/$1 [L]
+
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www.medovabrama.com.ua [NC]
+RewriteRule ^(.*)$ http://medovabrama.com.ua/$1 [L,R=301]

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Latest articles with thumbnails</name>
+	<author>Atanas Tchobanov based on mod_latestnews and Smart Image Resizer </author>
+	<creationDate>February 2008</creationDate>
+	<copyright>Copyright (C) 2005 - 2008 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>at@atanas.fr</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.5.0</version>
+	<description>Thumbsup module displays article list with thumbnails. Based on Smart Image Resizer 1.4.1 by: Joe Lencioni (http://shiftingpixel.com) If you like this module you may consider a donation for the further development.
+	</description>
+	<files>
+		<filename module="mod_thumbsup">mod_thumbsup.php</filename>
+		<filename>mod_thumbsup.css.php</filename>
+		<filename>mod_thumbsup.xml</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>image.php</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/index.html</filename>
+		<filename>styles/index.html</filename>
+		<filename>styles/style.css</filename>
+		<filename>styles/style_ie.css</filename>
+	</files>
+  	<languages>
+		<!-- Any language files included with the module -->
+		<language tag="ru-RU">ru-RU.mod_thumbsup.ini</language>
+	</languages>
+	<params>
+	<param name="@spacer" type="spacer" default="" label="Sections and Categories" description="Sections and Categories" />
+		<param name="secid" type="text" default="" label="Section(s) ID(s)" description="A list of content sections which items are used for the module (comma separated)"></param>
+		<param name="catid" type="text" default="" label="Category(s) ID(s)" description="A list of content categories which items are used for the module (comma separated)"></param>
+		<param name="secid_exc" type="text" default="" label="Exclude Section(s) ID(s)" description="A list of content sections which items are excluded (comma separated)"></param>
+		<param name="catid_exc" type="text" default="" label="Exclude Category(s) ID(s)" description="A list of content categories which items are excluded (comma separated)"></param>
+		
+	<param name="@spacer" type="spacer" default="" label="Items and disposition" description="Items and disposition" />
+		
+		<param name="count" type="text" default="6" label="Displayed items" description="The number of items to display (default 5)"></param>
+		<param name="count_pic" type="text" default="3" label="Displayed items with Picture" description="The number of items to display with picture (default 2)"></param>
+		<param name="limit_leading" type="text" default="0" label="Exclude leading articles" description="The number of leading articles to exclude from the list"></param>
+		<param name="disp_ordering" type="list" default="t-a-d-i" label="Display order" description="Display order">
+			<option value="t-a-d-i-h">Title-Author-Date-Intro-Hits</option>
+			<option value="t-d-i-a-h">Title-Date-Intro-Author-Hits</option>
+			<option value="t-i-a-d-h">Title-Intro-Author-Date-Hits</option>
+			<option value="d-t-i-a-h">Date-Title-Intro-Author-Hits</option>
+			<option value="d-a-t-i-h">Date-Author-Title-Intro-Hits</option>
+			<option value="custom">Custom</option>
+		</param>
+		
+		<param name="disp_ordering_custom" type="text" default="t-a-d-i-h" label="Custom ordering" description="Custom ordering (t=title, a=article, d=date, i=introtext, h=hits separated by dashes (t-a-d-i-h)"/>
+		
+		<param name="thumbsup_hv" type="radio" default="1" label="Disposition" description="Disposition">
+			<option value="v">Vertical</option>
+			<option value="h">Horizontal</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="" label="Titles" description="Titles" />
+		
+		<param name="show_title" type="radio" default="1" label="Display title" description="Display the article title">
+			<option value="1">yes</option>
+			<option value="0">no</option>
+		</param>
+		
+		<param name="link_title" type="radio" default="1" label="Title as link" description="Title as link">
+			<option value="1">yes</option>
+			<option value="0">no</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="" label="Intro text" description="Intro text" />
+		
+		<param name="show_intro" type="radio" default="0" label="Display intro text" description="Display the introduction text">
+			<option value="1">yes</option>
+			<option value="0">no</option>
+		</param>
+		<param name="intro_limit" type="text" default="" label="Intro text limit" description="Limit the intro text to the number of characters."></param>
+		<param name="link_intro" type="radio" default="1" label="Intro text as link" description="Intro text as link">
+			<option value="1">yes</option>
+			<option value="0">no</option>
+		</param>
+		<param name="show_readmore" type="radio" default="0" label="Display Read More link" description="Display the Read More link">
+			<option value="1">yes</option>
+			<option value="0">no</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="" label="Thumbnails" description="Thumbnails" />
+		
+		<param name="show_thumb" type="radio" default="1" label="Display thumbnail" description="Display thumbnail picture">
+			<option value="1">yes</option>
+			<option value="0">no</option>
+		</param>
+		<param name="link_thumb" type="radio" default="1" label="Thumbnail as link" description="Thumbnail as link">
+			<option value="1">yes</option>
+			<option value="0">no</option>
+		</param>
+		<param name="pic_align" type="radio" default="left" label="Thumbnail alignment" description="Left or right thumbnail">
+			<option value="left">left</option>
+			<option value="right">right</option>
+		</param>
+		<param name="imgcolumn" type="radio" default="0" label="Thumbnail in a separate column" description="Thumbnail in a separate column (left only)">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="pic_width" type="text" default="" label="Thumbnail width in pixels" description="Thumbnail width"></param>
+		<param name="pic_height" type="text" default="" label="Thumbnail height in pixels" description="Thumbnail height"></param>
+		<param name="pic_ratio" type="text" default="" label="Thumbnail crop ratio (3 : 4, 16 : 9)" description="Thumbnail crop ratio"></param>
+		<param name="pic_quality" type="text" default="90" label="Picture quality" description="Picture quality in %"></param>
+		<param name="pic_default" type="text" default="articles.jpg" label="Default picture" description="Default picture name (place it in images/stories)" />
+		<param name="color" type="text" default="" label="PNG background color" description="PNG background color" />
+		
+		<param name="@spacer" type="spacer" default="" label="Date" description="Date" />
+		
+		<param name="show_date" type="radio" default="1" label="Display date" description="Display the article creation date">
+			<option value="1">yes</option>
+			<option value="0">no</option>
+		</param>
+		<param name="date_format" type="text" default="%A, %d %B %Y %H:%M" label="Date format (default %A, %d %B %Y %H:%M)" description="Display the date in the following format"></param>
+		
+		<param name="@spacer" type="spacer" default="" label="Author" description="Author" />
+		
+		<param name="show_author" type="radio" default="0" label="Display author" description="Display the author name">
+			<option value="1">yes</option>
+			<option value="0">no</option>
+		</param>
+		<param name="user_id" type="list" default="0" label="Authors" description="A filter for the authors">
+			<option value="0">Anyone</option>
+			<option value="by_me">Added or modified by me</option>
+			<option value="not_me">Not added or modified by me</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="" label="Hits" description="Hits" />
+		<param name="show_hits" type="radio" default="0" label="Display the number of hits" description="Display the number of hits">
+			<option value="1">yes</option>
+			<option value="0">no</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="" label="Front page" description="Front page" />
+		<param name="front" type="radio" default="0" label="Display on front page" description="Display module on front page as replacement of the front page articles(with bold titles and intro text">
+			<option value="1">yes</option>
+			<option value="0">no</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="" label="CSS" description="CSS" />
+		
+		<param name="css_suffix" type="text" default="" label="CSS name suffix" description="CSS name suffix (default css are thumbsup-image and thumbsup-text)" />
+		
+		<param name="@spacer" type="spacer" default="" label="Ordering" description="Ordering" />
+		
+		<param name="ordering" type="list" default="create_dsc" label="Ordering" description="Ordering options">
+			<option value="c_dsc">Recently Added First</option>
+			<option value="c_asc">Recently Added Last (reverse order)</option>
+			<option value="m_dsc">Recently Modified First</option>
+			<option value="o_dsc">Explicit ordering in the manager</option>
+			<option value="o_asc">Reversed ordering in the manager</option>
+			<option value="rand">Random</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="" label="Most readed" description="Most readed" />
+		
+		<param name="show_most" type="radio" default="0" label="Show most readed items" description="Show the most readed items with the corresponding period of novelty">
+			<option value="1">show</option>
+			<option value="0">hide</option>
+		</param>
+		<param name="period" type="text" default="61" label="Period of Novelty" description="Show popular items for the last Period-of-Novelty days. (default is 61)" />
+		
+		<param name="@spacer" type="spacer" default="" label="Archived items" description="Archived items" />
+		<param name="archived" type="list" default="1" label="Archived" description="Include archived items">
+			<option value="1">No archived items</option>
+			<option value="-1">Only archived items</option>
+			<option value="0">Active and archived items</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="" label="Frontpage Items" description="Frontpage Items" />
+		<param name="show_front" type="radio" default="1" label="Frontpage Items" description="PARAMFRONTPAGEITEMS">
+			<option value="1">show</option>
+			<option value="0">hide</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="" label="Class" description="Class" />
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		<param name="imgpath" type="text" size="30" default="" label="The path to the document root folder" description="The path to the server documents root folder. Only needed if the script can't guess it correctly. Don't forget the trailing slash"></param>
+	</params>
+	<params group="advanced">
+		<param name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</params>
+</install>

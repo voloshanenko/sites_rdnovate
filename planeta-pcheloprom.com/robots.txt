@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow:
+Host: planeta-bio.com
+Crawl-delay: 5

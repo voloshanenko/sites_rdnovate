@@ -1,0 +1,255 @@
+2012/06/21 11:11:20 [error] [php] include(Users.php): failed to open stream: No such file or directory (/home/h35043/data/www/planeta-bio.com/framework/YiiBase.php:421)
+Stack trace:
+#0 /home/h35043/data/www/planeta-bio.com/framework/db/ar/CActiveRecord.php(371): spl_autoload_call()
+#1 /home/h35043/data/www/planeta-bio.com/framework/db/ar/CActiveFinder.php(221): model()
+#2 /home/h35043/data/www/planeta-bio.com/framework/db/ar/CActiveFinder.php(51): CActiveFinder->buildJoinTree()
+#3 /home/h35043/data/www/planeta-bio.com/framework/db/ar/CActiveRecord.php(258): CActiveFinder->__construct()
+#4 /home/h35043/data/www/planeta-bio.com/framework/db/ar/CActiveRecord.php(127): Ads->getRelated()
+#5 /home/h35043/data/www/planeta-bio.com/protected/commands/AdsReminderCommand.php(11): Ads->__get()
+#6 /home/h35043/data/www/planeta-bio.com/framework/console/CConsoleCommandRunner.php(63): AdsReminderCommand->run()
+#7 /home/h35043/data/www/planeta-bio.com/framework/console/CConsoleApplication.php(88): CConsoleCommandRunner->run()
+#8 /home/h35043/data/www/planeta-bio.com/framework/base/CApplication.php(158): CConsoleApplication->processRequest()
+#9 /home/h35043/data/www/planeta-bio.com/framework/yiic.php(33): CConsoleApplication->run()
+#10 /home/h35043/data/www/planeta-bio.com/protected/yiic.php(7): require_once()
+#11 /home/h35043/data/www/planeta-bio.com/protected/yiic(4): require_once()
+
+2012/06/21 11:11:55 [error] [php] include(Users.php): failed to open stream: No such file or directory (/home/h35043/data/www/planeta-bio.com/framework/YiiBase.php:421)
+Stack trace:
+#0 /home/h35043/data/www/planeta-bio.com/framework/db/ar/CActiveRecord.php(371): spl_autoload_call()
+#1 /home/h35043/data/www/planeta-bio.com/framework/db/ar/CActiveFinder.php(221): model()
+#2 /home/h35043/data/www/planeta-bio.com/framework/db/ar/CActiveFinder.php(51): CActiveFinder->buildJoinTree()
+#3 /home/h35043/data/www/planeta-bio.com/framework/db/ar/CActiveRecord.php(258): CActiveFinder->__construct()
+#4 /home/h35043/data/www/planeta-bio.com/framework/db/ar/CActiveRecord.php(127): Ads->getRelated()
+#5 /home/h35043/data/www/planeta-bio.com/protected/commands/AdsReminderCommand.php(11): Ads->__get()
+#6 /home/h35043/data/www/planeta-bio.com/framework/console/CConsoleCommandRunner.php(63): AdsReminderCommand->run()
+#7 /home/h35043/data/www/planeta-bio.com/framework/console/CConsoleApplication.php(88): CConsoleCommandRunner->run()
+#8 /home/h35043/data/www/planeta-bio.com/framework/base/CApplication.php(158): CConsoleApplication->processRequest()
+#9 /home/h35043/data/www/planeta-bio.com/cron.php(9): CConsoleApplication->run()
+
+2012/06/21 11:12:20 [error] [exception.CException] exception 'CException' with message 'Ads and its behaviors do not have a method or closure named "getAdLink".' in /home/h35043/data/www/planeta-bio.com/framework/base/CComponent.php:269
+Stack trace:
+#0 /home/h35043/data/www/planeta-bio.com/framework/db/ar/CActiveRecord.php(214): CComponent->__call('getAdLink', Array)
+#1 /home/h35043/data/www/planeta-bio.com/protected/commands/AdsReminderCommand.php(14): CActiveRecord->__call('getAdLink', Array)
+#2 /home/h35043/data/www/planeta-bio.com/protected/commands/AdsReminderCommand.php(14): Ads->getAdLink()
+#3 /home/h35043/data/www/planeta-bio.com/framework/console/CConsoleCommandRunner.php(63): AdsReminderCommand->run(Array)
+#4 /home/h35043/data/www/planeta-bio.com/framework/console/CConsoleApplication.php(88): CConsoleCommandRunner->run(Array)
+#5 /home/h35043/data/www/planeta-bio.com/framework/base/CApplication.php(158): CConsoleApplication->processRequest()
+#6 /home/h35043/data/www/planeta-bio.com/cron.php(9): CApplication->run()
+#7 {main}
+2012/06/21 11:25:17 [error] [exception.CException] exception 'CException' with message 'Ads and its behaviors do not have a method or closure named "getAdLink".' in /home/h35043/data/www/planeta-bio.com/framework/base/CComponent.php:269
+Stack trace:
+#0 /home/h35043/data/www/planeta-bio.com/framework/db/ar/CActiveRecord.php(214): CComponent->__call('getAdLink', Array)
+#1 /home/h35043/data/www/planeta-bio.com/protected/commands/AdsReminderCommand.php(12): CActiveRecord->__call('getAdLink', Array)
+#2 /home/h35043/data/www/planeta-bio.com/protected/commands/AdsReminderCommand.php(12): Ads->getAdLink()
+#3 /home/h35043/data/www/planeta-bio.com/framework/console/CConsoleCommandRunner.php(63): AdsReminderCommand->run(Array)
+#4 /home/h35043/data/www/planeta-bio.com/framework/console/CConsoleApplication.php(88): CConsoleCommandRunner->run(Array)
+#5 /home/h35043/data/www/planeta-bio.com/framework/base/CApplication.php(158): CConsoleApplication->processRequest()
+#6 /home/h35043/data/www/planeta-bio.com/cron.php(9): CApplication->run()
+#7 {main}
+2012/06/21 11:32:09 [error] [php] file_get_contents(/protected/messages/ad_publish_remind_alt.txt): failed to open stream: No such file or directory (/home/h35043/data/www/planeta-bio.com/protected/helpers/CString.php:35)
+Stack trace:
+#0 /home/h35043/data/www/planeta-bio.com/protected/commands/AdsReminderCommand.php(17): sendEmailAsSiteRobot()
+#1 /home/h35043/data/www/planeta-bio.com/framework/console/CConsoleCommandRunner.php(63): AdsReminderCommand->run()
+#2 /home/h35043/data/www/planeta-bio.com/framework/console/CConsoleApplication.php(88): CConsoleCommandRunner->run()
+#3 /home/h35043/data/www/planeta-bio.com/framework/base/CApplication.php(158): CConsoleApplication->processRequest()
+#4 /home/h35043/data/www/planeta-bio.com/cron.php(9): CConsoleApplication->run()
+
+2012/06/21 11:34:24 [error] [php] file_get_contents(/protected/messages/ad_publish_remind_alt.txt): failed to open stream: No such file or directory (/home/h35043/data/www/planeta-bio.com/protected/helpers/CString.php:35)
+Stack trace:
+#0 /home/h35043/data/www/planeta-bio.com/protected/commands/AdsReminderCommand.php(17): sendEmailAsSiteRobot()
+#1 /home/h35043/data/www/planeta-bio.com/framework/console/CConsoleCommandRunner.php(63): AdsReminderCommand->run()
+#2 /home/h35043/data/www/planeta-bio.com/framework/console/CConsoleApplication.php(88): CConsoleCommandRunner->run()
+#3 /home/h35043/data/www/planeta-bio.com/framework/base/CApplication.php(158): CConsoleApplication->processRequest()
+#4 /home/h35043/data/www/planeta-bio.com/cron.php(9): CConsoleApplication->run()
+
+2012/06/21 11:38:01 [error] [php] file_get_contents(/protected/messages/ad_publish_remind_alt.txt): failed to open stream: No such file or directory (/home/h35043/data/www/planeta-bio.com/protected/helpers/CString.php:35)
+Stack trace:
+#0 /home/h35043/data/www/planeta-bio.com/protected/commands/AdsReminderCommand.php(17): sendEmailAsSiteRobot()
+#1 /home/h35043/data/www/planeta-bio.com/framework/console/CConsoleCommandRunner.php(63): AdsReminderCommand->run()
+#2 /home/h35043/data/www/planeta-bio.com/framework/console/CConsoleApplication.php(88): CConsoleCommandRunner->run()
+#3 /home/h35043/data/www/planeta-bio.com/framework/base/CApplication.php(158): CConsoleApplication->processRequest()
+#4 /home/h35043/data/www/planeta-bio.com/cron.php(9): CConsoleApplication->run()
+
+2012/06/21 11:43:13 [error] [php] file_get_contents(/protected/messages/ad_publish_remind_alt.txt): failed to open stream: No such file or directory (/home/h35043/data/www/planeta-bio.com/protected/helpers/CString.php:35)
+Stack trace:
+#0 /home/h35043/data/www/planeta-bio.com/protected/commands/AdsReminderCommand.php(17): sendEmailAsSiteRobot()
+#1 /home/h35043/data/www/planeta-bio.com/framework/console/CConsoleCommandRunner.php(63): AdsReminderCommand->run()
+#2 /home/h35043/data/www/planeta-bio.com/framework/console/CConsoleApplication.php(88): CConsoleCommandRunner->run()
+#3 /home/h35043/data/www/planeta-bio.com/framework/base/CApplication.php(158): CConsoleApplication->processRequest()
+#4 /home/h35043/data/www/planeta-bio.com/cron.php(9): CConsoleApplication->run()
+
+2012/06/21 11:49:27 [error] [php] file_get_contents(/protected/messages/ad_publish_remind_alt.txt): failed to open stream: No such file or directory (/home/h35043/data/www/planeta-bio.com/protected/helpers/CString.php:35)
+Stack trace:
+#0 /home/h35043/data/www/planeta-bio.com/protected/commands/AdsReminderCommand.php(17): sendEmailAsSiteRobot()
+#1 /home/h35043/data/www/planeta-bio.com/framework/console/CConsoleCommandRunner.php(63): AdsReminderCommand->run()
+#2 /home/h35043/data/www/planeta-bio.com/framework/console/CConsoleApplication.php(88): CConsoleCommandRunner->run()
+#3 /home/h35043/data/www/planeta-bio.com/framework/base/CApplication.php(158): CConsoleApplication->processRequest()
+#4 /home/h35043/data/www/planeta-bio.com/cron.php(9): CConsoleApplication->run()
+
+2012/06/21 11:50:34 [error] [php] file_get_contents(/protected/messages/ad_publish_remind_alt.txt): failed to open stream: No such file or directory (/home/h35043/data/www/planeta-bio.com/protected/helpers/CString.php:35)
+Stack trace:
+#0 /home/h35043/data/www/planeta-bio.com/protected/commands/AdsReminderCommand.php(17): sendEmailAsSiteRobot()
+#1 /home/h35043/data/www/planeta-bio.com/framework/console/CConsoleCommandRunner.php(63): AdsReminderCommand->run()
+#2 /home/h35043/data/www/planeta-bio.com/framework/console/CConsoleApplication.php(88): CConsoleCommandRunner->run()
+#3 /home/h35043/data/www/planeta-bio.com/framework/base/CApplication.php(158): CConsoleApplication->processRequest()
+#4 /home/h35043/data/www/planeta-bio.com/cron.php(9): CConsoleApplication->run()
+
+2012/06/21 11:54:45 [error] [php] file_get_contents(/protected/messages/ad_publish_remind_alt.txt): failed to open stream: No such file or directory (/home/h35043/data/www/planeta-bio.com/protected/helpers/CString.php:35)
+Stack trace:
+#0 /home/h35043/data/www/planeta-bio.com/protected/commands/AdsReminderCommand.php(17): sendEmailAsSiteRobot()
+#1 /home/h35043/data/www/planeta-bio.com/framework/console/CConsoleCommandRunner.php(63): AdsReminderCommand->run()
+#2 /home/h35043/data/www/planeta-bio.com/framework/console/CConsoleApplication.php(88): CConsoleCommandRunner->run()
+#3 /home/h35043/data/www/planeta-bio.com/framework/base/CApplication.php(158): CConsoleApplication->processRequest()
+#4 /home/h35043/data/www/planeta-bio.com/cron.php(9): CConsoleApplication->run()
+
+2012/06/22 04:00:02 [error] [php] include(Users.php): failed to open stream: No such file or directory (/home/h35043/data/www/planeta-bio.com/framework/YiiBase.php:421)
+Stack trace:
+#0 /home/h35043/data/www/planeta-bio.com/framework/db/ar/CActiveRecord.php(371): spl_autoload_call()
+#1 /home/h35043/data/www/planeta-bio.com/framework/db/ar/CActiveFinder.php(221): model()
+#2 /home/h35043/data/www/planeta-bio.com/framework/db/ar/CActiveFinder.php(51): CActiveFinder->buildJoinTree()
+#3 /home/h35043/data/www/planeta-bio.com/framework/db/ar/CActiveRecord.php(258): CActiveFinder->__construct()
+#4 /home/h35043/data/www/planeta-bio.com/framework/db/ar/CActiveRecord.php(127): Ads->getRelated()
+#5 /home/h35043/data/www/planeta-bio.com/protected/commands/AdsReminderCommand.php(11): Ads->__get()
+#6 /home/h35043/data/www/planeta-bio.com/framework/console/CConsoleCommandRunner.php(63): AdsReminderCommand->run()
+#7 /home/h35043/data/www/planeta-bio.com/framework/console/CConsoleApplication.php(88): CConsoleCommandRunner->run()
+#8 /home/h35043/data/www/planeta-bio.com/framework/base/CApplication.php(158): CConsoleApplication->processRequest()
+#9 /home/h35043/data/www/planeta-bio.com/cron.php(9): CConsoleApplication->run()
+
+2012/06/23 04:00:01 [error] [php] include(Users.php): failed to open stream: No such file or directory (/home/h35043/data/www/planeta-bio.com/framework/YiiBase.php:421)
+Stack trace:
+#0 /home/h35043/data/www/planeta-bio.com/framework/db/ar/CActiveRecord.php(371): spl_autoload_call()
+#1 /home/h35043/data/www/planeta-bio.com/framework/db/ar/CActiveFinder.php(221): model()
+#2 /home/h35043/data/www/planeta-bio.com/framework/db/ar/CActiveFinder.php(51): CActiveFinder->buildJoinTree()
+#3 /home/h35043/data/www/planeta-bio.com/framework/db/ar/CActiveRecord.php(258): CActiveFinder->__construct()
+#4 /home/h35043/data/www/planeta-bio.com/framework/db/ar/CActiveRecord.php(127): Ads->getRelated()
+#5 /home/h35043/data/www/planeta-bio.com/protected/commands/AdsReminderCommand.php(11): Ads->__get()
+#6 /home/h35043/data/www/planeta-bio.com/framework/console/CConsoleCommandRunner.php(63): AdsReminderCommand->run()
+#7 /home/h35043/data/www/planeta-bio.com/framework/console/CConsoleApplication.php(88): CConsoleCommandRunner->run()
+#8 /home/h35043/data/www/planeta-bio.com/framework/base/CApplication.php(158): CConsoleApplication->processRequest()
+#9 /home/h35043/data/www/planeta-bio.com/cron.php(9): CConsoleApplication->run()
+
+2012/06/23 08:47:00 [error] [php] include(Users.php): failed to open stream: No such file or directory (/home/h35043/data/www/planeta-bio.com/framework/YiiBase.php:421)
+Stack trace:
+#0 /home/h35043/data/www/planeta-bio.com/framework/db/ar/CActiveRecord.php(371): spl_autoload_call()
+#1 /home/h35043/data/www/planeta-bio.com/framework/db/ar/CActiveFinder.php(221): model()
+#2 /home/h35043/data/www/planeta-bio.com/framework/db/ar/CActiveFinder.php(51): CActiveFinder->buildJoinTree()
+#3 /home/h35043/data/www/planeta-bio.com/framework/db/ar/CActiveRecord.php(258): CActiveFinder->__construct()
+#4 /home/h35043/data/www/planeta-bio.com/framework/db/ar/CActiveRecord.php(127): Ads->getRelated()
+#5 /home/h35043/data/www/planeta-bio.com/protected/commands/AdsReminderCommand.php(11): Ads->__get()
+#6 /home/h35043/data/www/planeta-bio.com/framework/console/CConsoleCommandRunner.php(63): AdsReminderCommand->run()
+#7 /home/h35043/data/www/planeta-bio.com/framework/console/CConsoleApplication.php(88): CConsoleCommandRunner->run()
+#8 /home/h35043/data/www/planeta-bio.com/framework/base/CApplication.php(158): CConsoleApplication->processRequest()
+#9 /home/h35043/data/www/planeta-bio.com/cron.php(9): CConsoleApplication->run()
+REQUEST_URI=/mancgi/cronrun?command=00%2004%20*%20*%20*%20%2Fusr%2Fbin%2Fphp%20%2Fhome%2Fh35043%2Fdata%2Fwww%2Fplaneta-bio.com%2Fcron.php%20adsreminder%20%3E%2Fdev%2Fnull%202%3E%261
+2012/06/23 08:48:53 [error] [php] include(Users.php): failed to open stream: No such file or directory (/home/h35043/data/www/planeta-bio.com/framework/YiiBase.php:421)
+Stack trace:
+#0 /home/h35043/data/www/planeta-bio.com/framework/db/ar/CActiveRecord.php(371): spl_autoload_call()
+#1 /home/h35043/data/www/planeta-bio.com/framework/db/ar/CActiveFinder.php(221): model()
+#2 /home/h35043/data/www/planeta-bio.com/framework/db/ar/CActiveFinder.php(51): CActiveFinder->buildJoinTree()
+#3 /home/h35043/data/www/planeta-bio.com/framework/db/ar/CActiveRecord.php(258): CActiveFinder->__construct()
+#4 /home/h35043/data/www/planeta-bio.com/framework/db/ar/CActiveRecord.php(127): Ads->getRelated()
+#5 /home/h35043/data/www/planeta-bio.com/protected/commands/AdsReminderCommand.php(11): Ads->__get()
+#6 /home/h35043/data/www/planeta-bio.com/framework/console/CConsoleCommandRunner.php(63): AdsReminderCommand->run()
+#7 /home/h35043/data/www/planeta-bio.com/framework/console/CConsoleApplication.php(88): CConsoleCommandRunner->run()
+#8 /home/h35043/data/www/planeta-bio.com/framework/base/CApplication.php(158): CConsoleApplication->processRequest()
+#9 /home/h35043/data/www/planeta-bio.com/cron.php(9): CConsoleApplication->run()
+
+2012/06/23 08:50:05 [error] [php] include(Users.php): failed to open stream: No such file or directory (/home/h35043/data/www/planeta-bio.com/framework/YiiBase.php:421)
+Stack trace:
+#0 /home/h35043/data/www/planeta-bio.com/framework/db/ar/CActiveRecord.php(371): spl_autoload_call()
+#1 /home/h35043/data/www/planeta-bio.com/framework/db/ar/CActiveFinder.php(221): model()
+#2 /home/h35043/data/www/planeta-bio.com/framework/db/ar/CActiveFinder.php(51): CActiveFinder->buildJoinTree()
+#3 /home/h35043/data/www/planeta-bio.com/framework/db/ar/CActiveRecord.php(258): CActiveFinder->__construct()
+#4 /home/h35043/data/www/planeta-bio.com/framework/db/ar/CActiveRecord.php(127): Ads->getRelated()
+#5 /home/h35043/data/www/planeta-bio.com/protected/commands/AdsReminderCommand.php(11): Ads->__get()
+#6 /home/h35043/data/www/planeta-bio.com/framework/console/CConsoleCommandRunner.php(63): AdsReminderCommand->run()
+#7 /home/h35043/data/www/planeta-bio.com/framework/console/CConsoleApplication.php(88): CConsoleCommandRunner->run()
+#8 /home/h35043/data/www/planeta-bio.com/framework/base/CApplication.php(158): CConsoleApplication->processRequest()
+#9 /home/h35043/data/www/planeta-bio.com/cron.php(9): CConsoleApplication->run()
+
+2012/06/23 08:50:23 [error] [php] file_get_contents(/protected/messages/ad_publish_remind_alt.txt): failed to open stream: No such file or directory (/home/h35043/data/www/planeta-bio.com/protected/helpers/CString.php:35)
+Stack trace:
+#0 /home/h35043/data/www/planeta-bio.com/protected/commands/AdsReminderCommand.php(17): sendEmailAsSiteRobot()
+#1 /home/h35043/data/www/planeta-bio.com/framework/console/CConsoleCommandRunner.php(63): AdsReminderCommand->run()
+#2 /home/h35043/data/www/planeta-bio.com/framework/console/CConsoleApplication.php(88): CConsoleCommandRunner->run()
+#3 /home/h35043/data/www/planeta-bio.com/framework/base/CApplication.php(158): CConsoleApplication->processRequest()
+#4 /home/h35043/data/www/planeta-bio.com/cron.php(9): CConsoleApplication->run()
+
+2012/06/23 08:53:04 [error] [php] file_get_contents(/home/h35043/data/www/planeta-bio.com/protected/helpers../messages/ad_publish_remind_alt.txt): failed to open stream: No such file or directory (/home/h35043/data/www/planeta-bio.com/protected/helpers/CString.php:35)
+Stack trace:
+#0 /home/h35043/data/www/planeta-bio.com/protected/commands/AdsReminderCommand.php(17): sendEmailAsSiteRobot()
+#1 /home/h35043/data/www/planeta-bio.com/framework/console/CConsoleCommandRunner.php(63): AdsReminderCommand->run()
+#2 /home/h35043/data/www/planeta-bio.com/framework/console/CConsoleApplication.php(88): CConsoleCommandRunner->run()
+#3 /home/h35043/data/www/planeta-bio.com/framework/base/CApplication.php(158): CConsoleApplication->processRequest()
+#4 /home/h35043/data/www/planeta-bio.com/cron.php(9): CConsoleApplication->run()
+
+2012/06/24 17:59:39 [error] [exception.CException] exception 'CException' with message 'Ads and its behaviors do not have a method or closure named "getAdLink".' in /home/h35043/data/www/planeta-bio.com/framework/base/CComponent.php:269
+Stack trace:
+#0 /home/h35043/data/www/planeta-bio.com/framework/db/ar/CActiveRecord.php(214): CComponent->__call('getAdLink', Array)
+#1 /home/h35043/data/www/planeta-bio.com/protected/commands/AdsReminderCommand.php(18): CActiveRecord->__call('getAdLink', Array)
+#2 /home/h35043/data/www/planeta-bio.com/protected/commands/AdsReminderCommand.php(18): Ads->getAdLink()
+#3 /home/h35043/data/www/planeta-bio.com/framework/console/CConsoleCommandRunner.php(63): AdsReminderCommand->run(Array)
+#4 /home/h35043/data/www/planeta-bio.com/framework/console/CConsoleApplication.php(88): CConsoleCommandRunner->run(Array)
+#5 /home/h35043/data/www/planeta-bio.com/framework/base/CApplication.php(158): CConsoleApplication->processRequest()
+#6 /home/h35043/data/www/planeta-bio.com/cron.php(9): CApplication->run()
+#7 {main} REQUEST_URI=/mancgi/cronrun?command=00%2004%20*%20*%20*%20%2Fusr%2Fbin%2Fphp%20%2Fhome%2Fh35043%2Fdata%2Fwww%2Fplaneta-bio.com%2Fcron.php%20adsreminder
+2012/07/21 06:27:43 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[HY000]: General error: 2013 Lost connection to MySQL server during query. The SQL statement executed was: SELECT * FROM `users` `t` WHERE `t`.`user_id`='67' LIMIT 1.
+2012/07/21 06:27:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 2013 Lost connection to MySQL server during query. The SQL statement executed was: SELECT * FROM `users` `t` WHERE `t`.`user_id`='67' LIMIT 1' in /home/h41500/data/www/planeta-bio.com/framework/db/CDbCommand.php:516
+Stack trace:
+#0 /home/h41500/data/www/planeta-bio.com/framework/db/CDbCommand.php(393): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /home/h41500/data/www/planeta-bio.com/framework/db/ar/CActiveRecord.php(1290): CDbCommand->queryRow()
+#2 /home/h41500/data/www/planeta-bio.com/framework/db/ar/CActiveRecord.php(1426): CActiveRecord->query(Object(CDbCriteria))
+#3 /home/h41500/data/www/planeta-bio.com/protected/commands/AdsReminderCommand.php(14): CActiveRecord->findByPk('67')
+#4 /home/h41500/data/www/planeta-bio.com/framework/console/CConsoleCommandRunner.php(63): AdsReminderCommand->run(Array)
+#5 /home/h41500/data/www/planeta-bio.com/framework/console/CConsoleApplication.php(88): CConsoleCommandRunner->run(Array)
+#6 /home/h41500/data/www/planeta-bio.com/framework/base/CApplication.php(158): CConsoleApplication->processRequest()
+#7 /home/h41500/data/www/planeta-bio.com/cron.php(9): CApplication->run()
+#8 {main}
+2012/11/03 19:40:25 [error] [php] include(CWebTools.php): failed to open stream: No such file or directory (/home/h41500/data/www/akademinform.com.ua/framework/YiiBase.php:421)
+Stack trace:
+#0 /home/h41500/data/www/akademinform.com.ua/protected/commands/AdsReminderCommand.php(31): spl_autoload_call()
+#1 /home/h41500/data/www/akademinform.com.ua/framework/console/CConsoleCommandRunner.php(63): AdsReminderCommand->run()
+#2 /home/h41500/data/www/akademinform.com.ua/framework/console/CConsoleApplication.php(88): CConsoleCommandRunner->run()
+#3 /home/h41500/data/www/akademinform.com.ua/framework/base/CApplication.php(158): CConsoleApplication->processRequest()
+#4 /home/h41500/data/www/akademinform.com.ua/cron.php(9): CConsoleApplication->run()
+REQUEST_URI=/mancgi/cronrun?command=00%2002%20*%20*%20*%20%2Fusr%2Fbin%2Fphp%20%2Fhome%2Fh41500%2Fdata%2Fwww%2Fakademinform.com.ua%2Fcron.php%20adsreminder%20%3E%2Fdev%2Fnull%202%3E%261
+2012/11/03 19:40:35 [error] [php] include(CWebTools.php): failed to open stream: No such file or directory (/home/h41500/data/www/akademinform.com.ua/framework/YiiBase.php:421)
+Stack trace:
+#0 /home/h41500/data/www/akademinform.com.ua/protected/commands/AdsReminderCommand.php(31): spl_autoload_call()
+#1 /home/h41500/data/www/akademinform.com.ua/framework/console/CConsoleCommandRunner.php(63): AdsReminderCommand->run()
+#2 /home/h41500/data/www/akademinform.com.ua/framework/console/CConsoleApplication.php(88): CConsoleCommandRunner->run()
+#3 /home/h41500/data/www/akademinform.com.ua/framework/base/CApplication.php(158): CConsoleApplication->processRequest()
+#4 /home/h41500/data/www/akademinform.com.ua/cron.php(9): CConsoleApplication->run()
+
+2012/11/03 19:41:32 [error] [php] include(CWebTools.php): failed to open stream: No such file or directory (/home/h41500/data/www/akademinform.com.ua/framework/YiiBase.php:421)
+Stack trace:
+#0 /home/h41500/data/www/akademinform.com.ua/protected/commands/AdsReminderCommand.php(31): spl_autoload_call()
+#1 /home/h41500/data/www/akademinform.com.ua/framework/console/CConsoleCommandRunner.php(63): AdsReminderCommand->run()
+#2 /home/h41500/data/www/akademinform.com.ua/framework/console/CConsoleApplication.php(88): CConsoleCommandRunner->run()
+#3 /home/h41500/data/www/akademinform.com.ua/framework/base/CApplication.php(158): CConsoleApplication->processRequest()
+#4 /home/h41500/data/www/akademinform.com.ua/cron.php(9): CConsoleApplication->run()
+
+2012/11/03 19:43:35 [error] [php] include(CWebTools.php): failed to open stream: No such file or directory (/home/h41500/data/www/akademinform.com.ua/framework/YiiBase.php:421)
+Stack trace:
+#0 /home/h41500/data/www/akademinform.com.ua/protected/commands/AdsReminderCommand.php(31): spl_autoload_call()
+#1 /home/h41500/data/www/akademinform.com.ua/framework/console/CConsoleCommandRunner.php(63): AdsReminderCommand->run()
+#2 /home/h41500/data/www/akademinform.com.ua/framework/console/CConsoleApplication.php(88): CConsoleCommandRunner->run()
+#3 /home/h41500/data/www/akademinform.com.ua/framework/base/CApplication.php(158): CConsoleApplication->processRequest()
+#4 /home/h41500/data/www/akademinform.com.ua/cron.php(9): CConsoleApplication->run()
+
+2013/08/13 02:20:02 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 0' in /home/h41500/data/www/planeta-pischeprom.com/framework/db/CDbConnection.php:364
+Stack trace:
+#0 /home/h41500/data/www/planeta-pischeprom.com/framework/db/CDbConnection.php(313): CDbConnection->open()
+#1 /home/h41500/data/www/planeta-pischeprom.com/framework/db/CDbConnection.php(291): CDbConnection->setActive(true)
+#2 /home/h41500/data/www/planeta-pischeprom.com/framework/base/CModule.php(372): CDbConnection->init()
+#3 /home/h41500/data/www/planeta-pischeprom.com/framework/base/CApplication.php(429): CModule->getComponent('db')
+#4 /home/h41500/data/www/planeta-pischeprom.com/framework/db/ar/CActiveRecord.php(609): CApplication->getDb()
+#5 /home/h41500/data/www/planeta-pischeprom.com/framework/db/ar/CActiveRecord.php(2275): CActiveRecord->getDbConnection()
+#6 /home/h41500/data/www/planeta-pischeprom.com/framework/db/ar/CActiveRecord.php(372): CActiveRecordMetaData->__construct(Object(Ads))
+#7 /home/h41500/data/www/planeta-pischeprom.com/protected/modules/ads/models/Ads.php(72): CActiveRecord::model('Ads')
+#8 /home/h41500/data/www/planeta-pischeprom.com/protected/commands/AdsReminderCommand.php(7): Ads::model()
+#9 /home/h41500/data/www/planeta-pischeprom.com/framework/console/CConsoleCommandRunner.php(63): AdsReminderCommand->run(Array)
+#10 /home/h41500/data/www/planeta-pischeprom.com/framework/console/CConsoleApplication.php(88): CConsoleCommandRunner->run(Array)
+#11 /home/h41500/data/www/planeta-pischeprom.com/framework/base/CApplication.php(158): CConsoleApplication->processRequest()
+#12 /home/h41500/data/www/planeta-pischeprom.com/cron.php(9): CApplication->run()
+#13 {main}
