@@ -17,18 +17,4 @@
 		<?php } } ?>
 	</head>
 	<body>
-    <!--Yandex.Metrika counter -->
-    <div style="display:none;"><script type="text/javascript">
-    (function(w, c) {
-    (w[c] = w[c] || []).push(function() {
-    try {
-    w.yaCounter7969618 = new Ya.Metrika({id:7969618, enableAll: true, webvisor:true});
-    }
-    catch(e) { }
-    });
-    })(window, "yandex_metrika_callbacks");
-    </script></div>
-    <script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript" defer="defer"></script>
-    <noscript><div><img src="//mc.yandex.ru/watch/7969618" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!--/Yandex.Metrika counter -->
 	<div id="wrapper">

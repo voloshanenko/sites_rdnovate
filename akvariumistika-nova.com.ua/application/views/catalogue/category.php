@@ -109,7 +109,6 @@ $filter_vendor = ($this->session->userdata('fv'))?$this->session->userdata('fv')
 		</tr>
 		<tr>
 			<td colspan="8"> 
-			<script type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script>
 			<div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="link" data-yashareQuickServices="yaru,vkontakte,facebook,twitter,odnoklassniki,moimir,lj,friendfeed"></div>
 			</td>
 		</tr>
