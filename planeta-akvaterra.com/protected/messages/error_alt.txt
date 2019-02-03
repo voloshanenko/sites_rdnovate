@@ -1,9 +1,0 @@
-Error!
-
-Domain:		%URL%
-Code:		%CODE%
-Type:		%TYPE%
-Message:	%MESSAGE%
-File:		%FILE%
-Line:		%LINE%
-Trace:		%TRACE%
