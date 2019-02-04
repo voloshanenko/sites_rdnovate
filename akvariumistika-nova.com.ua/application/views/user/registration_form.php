@@ -49,36 +49,14 @@ $this->db->query($query);
 				<td><small>Укажите, пожалуйста, контактный телефон для уточнения нюансов по заказу</small></td>
 			</tr>
 			<tr>
-				<td class="user-info-caption">Адрес доставки:</td>
-				<td>
-				    <small>Индекс:</small><br />
-				    <input type="text" name="delivery_index" value="<?php echo (isset($delivery_index)) ? $delivery_index : '' ?>" />
-
-				    <small>Адрес:</small><br />
-				    <input type="text" name="delivery_addr" value="<?php echo (isset($delivery_addr)) ? $delivery_addr : '' ?>" />
-			    </td>
+				<td class="user-info-caption">Куда и чем доставлять:</td>
+				<td><textarea name="delivery_addr" cols="63" rows="3"><?php echo (isset($delivery_addr)) ? $delivery_addr : '' ?></textarea></td>
 				<td><small>Требуется в случае, если Вы будете заказывать доставку товара</small></td>
 			</tr>
 			<tr>
 				<td>Введите, пожалуйста, изображенные числа.</td>
 				<td><?php echo $cap['image']; ?><input type="text" name="captcha" value="" style="width: 65px" /></td>
 				<td><?php if(isset($captcha_msg)) { echo "<p style=\"color: red\"><big>$captcha_msg</big></p>"; } ?></td>
-			</tr>
-			<tr>
-				<td colspan="3">
-					<big>Дополнительная информация</big><br />
-					Заполнять не обязательно.
-				</td>
-			</tr>
-			<tr>
-				<td class="user-info-caption">Ваш род деятельности:</td>
-				<td><input type="text" name="line" value="<?php echo (isset($line)) ? $line : '' ?>" /></td>
-				<td><small>Например, Ваша профессия или место работы.</small></td>
-			</tr>
-			<tr>
-				<td class="user-info-caption">О себе:</td>
-				<td><input type="text" name="user_from" value="<?php echo (isset($user_from)) ? $user_from : '' ?>" /></td>
-				<td><small>Например, город, в котором Вы живете и возраст</small></td>
 			</tr>
 			<tr>
 				<td colspan="3">

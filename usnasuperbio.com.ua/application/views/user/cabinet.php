@@ -13,7 +13,7 @@
 			<tr>
 				<td class="user-info-caption">Пароль:</td>
 				<td><input type="password" name="password" value="" /><br /><?=form_error('password')?></td>
-				<td><small>Парль может состоянить только из латинских символов, цифр, знака подчеркивания и точки и иметь длину от 4 до 15 символов</small></td>
+				<td><small>Пароль может состоянить только из латинских символов, цифр, знака подчеркивания и точки и иметь длину от 4 до 15 символов</small></td>
 			</tr>
 			<tr>
 				<td class="user-info-caption">E-mail:</td>
@@ -21,7 +21,7 @@
 				<td><small>E-mail требуется только для того, что бы с Вами смогли связаться в дальнейшем</small></td>
 			</tr>
 			<tr>
-				<td class="user-info-caption">Контактное лицо:</td>
+				<td class="user-info-caption">Покупатель:</td>
 				<td><input type="text" name="name" value="<?=$user['name']?>" /><br /><?=form_error('name')?></td>
 				<td><small>Укажите, пожалуйста, Ваше имя, фамилию и отчество полностью</small></td>
 			</tr>
@@ -30,28 +30,11 @@
 				<td><input type="text" name="phone" value="<?=$user['phone']?>" /><br /><?=form_error('phone')?></td>
 				<td><small>Укажите, пожалуйста, контактный телефон для уточнения нюансов по заказу</small></td>
 			</tr>
-			<tr>
-				<td class="user-info-caption">Адрес доставки:</td>
-				<td>
-				    <small>Индекс</small><br />
-				    <input type="text" name="delivery_index" value="<?=$user['delivery_index']?>" />
-				    
-				    <small>Адрес</small><br />
-				    <input type="text" name="delivery_addr" value="<?=$user['delivery_addr']?>" />
-				</td>
-				<td><small>Эта информация будет использована в процессе оформления заказа</small></td>
-			</tr>
-			<tr>
-				<td class="user-info-caption">Ваш род деятельности:</td>
-				<td><input type="text" name="line" value="<?=$user['line']?>" /></td>
-				<td><small>Например, Ваша профессия или место работы</small></td>
-			</tr>
-			<tr>
-				<td class="user-info-caption">О себе:</td>
-				<td><input type="text" name="user_from" value="<?=$user['user_from']?>" /></td>
-				<td><small>Например, город, в котором Вы живете и возраст</small></td>
-			</tr>
-			<tr>
+            <tr>
+                <td class="user-info-caption">Куда и чем доставлять:</td>
+                <td><textarea name="delivery_addr" cols="18" rows="3"><?php echo (isset($delivery_addr)) ? $delivery_addr : '' ?></textarea></td>
+                <td><small>Требуется в случае, если Вы будете заказывать доставку товара</small></td>
+            </tr>
 				<td colspan="3">
 					<input type="submit" value="Сохранить" />
 				</td>
