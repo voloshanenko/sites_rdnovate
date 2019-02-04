@@ -13,7 +13,7 @@
 			<tr>
 				<td class="user-info-caption">Пароль:</td>
 				<td><input type="password" name="password" value="" /><br /><?=form_error('password')?></td>
-				<td><small>Парль может состоянить только из латинских символов, цифр, знака подчеркивания и точки и иметь длину от 4 до 15 символов</small></td>
+				<td><small>Пароль может состоянить только из латинских символов, цифр, знака подчеркивания и точки и иметь длину от 4 до 15 символов</small></td>
 			</tr>
 			<tr>
 				<td class="user-info-caption">E-mail:</td>
@@ -21,7 +21,7 @@
 				<td><small>E-mail требуется только для того, что бы с Вами смогли связаться в дальнейшем</small></td>
 			</tr>
 			<tr>
-				<td class="user-info-caption">Контактное лицо:</td>
+				<td class="user-info-caption">Покупатель:</td>
 				<td><input type="text" name="name" value="<?=$user['name']?>" /><br /><?=form_error('name')?></td>
 				<td><small>Укажите, пожалуйста, Ваше имя, фамилию и отчество полностью</small></td>
 			</tr>
@@ -32,7 +32,7 @@
 			</tr>
             <tr>
                 <td class="user-info-caption">Куда и чем доставлять:</td>
-                <td><textarea name="delivery_addr" cols="63" rows="3"><?php echo (isset($delivery_addr)) ? $delivery_addr : '' ?></textarea></td>
+                <td><textarea name="delivery_addr" cols="18" rows="3"><?php echo (isset($delivery_addr)) ? $delivery_addr : '' ?></textarea></td>
                 <td><small>Требуется в случае, если Вы будете заказывать доставку товара</small></td>
             </tr>
 				<td colspan="3">
