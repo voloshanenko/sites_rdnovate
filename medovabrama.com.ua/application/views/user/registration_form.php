@@ -50,7 +50,7 @@ $this->db->query($query);
 			</tr>
 			<tr>
 				<td class="user-info-caption">Куда и чем доставлять:</td>
-				<td><textarea name="delivery_addr" rows="3"><?php echo (isset($delivery_addr)) ? $delivery_addr : '' ?></textarea></td>
+				<td><textarea name="delivery_addr" cols="40" rows="3"><?php echo (isset($delivery_addr)) ? $delivery_addr : '' ?></textarea></td>
 				<td><small>Требуется в случае, если Вы будете заказывать доставку товара</small></td>
 			</tr>
 			<tr>
