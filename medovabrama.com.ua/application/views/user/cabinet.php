@@ -30,28 +30,11 @@
 				<td><input type="text" name="phone" value="<?=$user['phone']?>" /><br /><?=form_error('phone')?></td>
 				<td><small>Укажите, пожалуйста, контактный телефон для уточнения нюансов по заказу</small></td>
 			</tr>
-			<tr>
-				<td class="user-info-caption">Адрес доставки:</td>
-				<td>
-				    <small>Индекс</small><br />
-				    <input type="text" name="delivery_index" value="<?=$user['delivery_index']?>" />
-				    
-				    <small>Адрес</small><br />
-				    <input type="text" name="delivery_addr" value="<?=$user['delivery_addr']?>" />
-				</td>
-				<td><small>Эта информация будет использована в процессе оформления заказа</small></td>
-			</tr>
-			<tr>
-				<td class="user-info-caption">Ваш род деятельности:</td>
-				<td><input type="text" name="line" value="<?=$user['line']?>" /></td>
-				<td><small>Например, Ваша профессия или место работы</small></td>
-			</tr>
-			<tr>
-				<td class="user-info-caption">О себе:</td>
-				<td><input type="text" name="user_from" value="<?=$user['user_from']?>" /></td>
-				<td><small>Например, город, в котором Вы живете и возраст</small></td>
-			</tr>
-			<tr>
+            <tr>
+                <td class="user-info-caption">Куда и чем доставлять:</td>
+                <td><textarea name="delivery_addr" cols="63" rows="3"><?php echo (isset($delivery_addr)) ? $delivery_addr : '' ?></textarea></td>
+                <td><small>Требуется в случае, если Вы будете заказывать доставку товара</small></td>
+            </tr>
 				<td colspan="3">
 					<input type="submit" value="Сохранить" />
 				</td>
