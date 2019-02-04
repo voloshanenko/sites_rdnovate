@@ -105,7 +105,7 @@
 		)); ?>
 		<div id="user-menu">
 			<?php if( Yii::app()->user->isGuest ) { ?>
-				<a href="/site/login">Вход</a> | <a href="/site/registration">Регистрация</a>
+				<a href="/site/login">Вход</a> 
 			<?php } else { ?>
 				<div id="user">
 					<?=Yii::app()->user->name?>

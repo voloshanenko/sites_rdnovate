@@ -1,4 +1,8 @@
 <?php
+header('Location: /', true, 301);
+die();
+header('Location: /', true, 301);
+die();
 $this->breadcrumbs=array(
 	'Регистрация',
 );

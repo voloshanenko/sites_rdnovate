@@ -1,4 +1,6 @@
 <?php
+header('Location: /', true, 301);
+die();
 $this->pageTitle='Регистрация - '.Yii::app()->name;
 $this->breadcrumbs=array(
 	'Регистрация',
